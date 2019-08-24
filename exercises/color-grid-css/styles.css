@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+div {
+    width: 1000px;
+    margin: auto;
+}
+p {
+    height: 175px;
+    margin: auto;
+    border: 5px solid white;
+}
+.lt-pink {
+    width: 100%;
+    background-color:#F5C6D6;
+
+}
+.hot-pink {
+    width: 25%;
+    display:inline-block;
+    background-color: #EE2E84;
+}
+.lt-blue {
+    width: 50%;
+    display: inline-block;
+    background-color: #85CFD8;
+}
+.green {
+    width:75%;
+    display: inline-block;
+    background-color:#8DC63F;
+}
+.orange {
+    width:25%;
+    display: inline-block;
+    background-color: #E76E34;
+}
+
+
+
+
+/* p{
+    color: burlywood;
+} */
