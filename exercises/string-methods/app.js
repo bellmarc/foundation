@@ -8,29 +8,43 @@
 //     return string + string2;
 
 // }
-// //let str = "company";
+// let str = "seaworld";
 // console.log(capitalizeAndLowercase(str));
-//     capitalizeAndLowercase("seaworld");
+
 
 // Make a function that returns a number half the length, and rounded down. You'll need to use Math.floor()
-let cat = "Something good";
+// let cat = "Something good";
 
-function findMidIndex(string) {//param must match str.length
-    let dog = string.length / 2;
-    let midNum = Math.floor(dog);
-    console.log(midNum);
-        return midNum;
-}
-    console.log(findMidIndex(cat));
-
+// function findMidIndex(string) {//param must match str.length
+//     let cat = string.length / 2;
+//     let midNum = Math.floor(cat);
+//     //console.log(midNum);
+//         return midNum;
+// }
+//     console.log(findMidIndex(cat));
 
 // Make a function that uses slice() and the other functions you've written to return the first half of the string
 
-// function firstHalfStr(){
-//  console.log(name.slice(0, name.indexOf(str)));
+
+// function returnFirstHalf (){
+//     let greeting = "Good morning";
+//         newGreeting = greeting.slice(5);
+//         console.log(newGreeting);
 // }
-//regex global modifier to replace lower/uppercase
+// return returnFirstHalf();
+// Make a function that takes a string and returns that string where the first half is capitalized, and the second half is lower cased.
+//(If the string length is odd, capitalize the shorter of the first half.)
 
-// let str = "seaworld";
+function capitalizeAndLowercase (string){//param
+        if(string.length % 2 == 0 ){
+            console.log(string.toUpperCase().slice(0,3) + string.toLowerCase().slice(3));
+        } else {
+            console.log(string.toLowerCase().slice(0,3) + string.toUpperCase().slice(3));
+        }
+      let newString = string.concat();//connecting the string
+            console.log(newString);
+}
+capitalizeAndLowercase("carmen"); //only argument here, no need to declare
 
-// let regex =
+
+//Make a function that takes any string and capitalizes any character that follows a space.

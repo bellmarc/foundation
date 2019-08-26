@@ -35,29 +35,29 @@ function food(){
         food();
 //Array methods extra:
 
-let serviceDog = ['Romo', 'Russ', 'Penelope'];
-let dogHandler = ['Todd', 'Clarissa', 'Max'];
+// let serviceDog = ['Romo', 'Russ', 'Penelope'];
+// let dogHandler = ['Todd', 'Clarissa', 'Max'];
 
-serviceDog.push('Skylar');
-(console.log(serviceDog));
+// serviceDog.push('Skylar');
+// (console.log(serviceDog));
 
-dogHandler.reverse();
-console.log(dogHandler);
+// dogHandler.reverse();
+// console.log(dogHandler);
 
-let serviceTeam = serviceDog.concat(dogHandler);
-console.log(serviceTeam);
+// let serviceTeam = serviceDog.concat(dogHandler);
+// console.log(serviceTeam);
 
-dogHandler.splice(2,1, 'Aria', 'Dave')
-console.log(dogHandler);
+// dogHandler.splice(2,1, 'Aria', 'Dave')
+// console.log(dogHandler);
 
-serviceDogRetired = serviceDog.shift();
-console.log(serviceDog);//new Array shown
-console.log(serviceDogRetired); //details who retired
+// serviceDogRetired = serviceDog.shift();
+// console.log(serviceDog);//new Array shown
+// console.log(serviceDogRetired); //details who retired
 
-newServiceDog = serviceDog.unshift("Justin");
-serviceDog[0].toString();
-console.log(newServiceDog + " is the new service Dog." ); //4 is the new Service Dog..
-console.log(serviceDog);
+// newServiceDog = serviceDog.unshift("Justin");
+// serviceDog[0].toString();
+// console.log(newServiceDog + " is the new service Dog." ); //4 is the new Service Dog..
+// console.log(serviceDog);
 
 
 
