@@ -40,7 +40,7 @@ input[type = number]:focus {
     box-sizing: border-box;
     }
 /* Buttons for submit */
-input[type= submit] {
+button {
     font-family: Helvetica, Arial, sans-serif;
     /* background-color:#C8C8C8; */
     background-color: rgb(24, 164, 224);

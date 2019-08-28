@@ -4,26 +4,34 @@
     flex-direction: column;
 }
 
-.name {
-    color: peachpuff;
+body {
+    background-color: #D0D0F5;
 }
+
+.name {
+    color: #1313A4;
+}
+
 
 .messages {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid rgb(40, 40, 115);
     margin: 10px 0px;
     padding: 20px;
+    background-color: white;
 }
 
 #main {
     margin: 30px;
-    border: 1px solid black;
+    border: 1px solid rgb(40, 40, 115);
     padding: 10px;
+    color: rgb(25, 25, 112);
+    background-color: rgb(83, 66, 144);
 }
 
 .message {
-    padding: 5px;
+    padding: 5px
 }
 
 .right {
@@ -33,5 +41,10 @@
 
 .left {
     align-self: flex-start;
-    background-color: burlywood;
+    background-color: rgb(239, 205, 146);
+}
+
+button :focus {
+
+    background-color:rgb(108, 202, 158);
 }

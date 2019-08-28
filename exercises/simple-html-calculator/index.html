@@ -12,32 +12,31 @@
    <div><h1>Simple HTML Calculator</h1> <p> Perform three basic types of math operations in the below forms.</p>
         <img src="https://icon-library.net/images/calc-icon/calc-icon-29.jpg" class="calc-icon" alt="calculator icon">
     </div>
-    <div class="calc-add">
+    <form name="calcAdd">
         <div><label for= "calc1" class="firstcalc">  Addition: </label>
         </div>
-        <div class="first-input">
-            <input type="number" id="firstNum" name="add-num1" placeholder="Enter/Select Number" required></input>
-            <input type="number" id="secondNum" name="add-num2" placeholder="Enter/Select Number" required></input>
-            <input type="submit" id="addBtn" value="Submit"></input>
+            <input type="number"  name="addNum1" placeholder="Enter/Select Number" required></input>
+            <input type="number"  name="addNum2" placeholder="Enter/Select Number" required></input>
+            <button>Submit</button>
             <div id="addOutput" class="answer"></div>
-        </div>
-    </div>
+
+    </form>
     <div><label for= "calc2" class="secondcalc"> Subtraction: </label>
     </div>
-    <div class="calc-subtract">
-            <input type="number" id="subNum" name="sub-num1" placeholder="Enter/Select Number" required></input>
-            <input type="number" id="subNum2" name="sub-num2" placeholder="Enter/Select Number" required></input>
-            <input type="submit" id="subBtn" value="Submit"></input>
+    <form name="calcSubtract">  <!--Form must be a name -->
+            <input type="number"  name="subNum1" placeholder="Enter/Select Number" required></input>
+            <input type="number"  name="subNum2" placeholder="Enter/Select Number" required></input>
+            <button>Submit</button>
             <div id="subOutput" class="subAnswer"></div>
-    </div>
+    </form>
     <div><label for= "calc3" class="thirdcalc"> Multiplication: </label>
     </div>
-    <div class="calc-multi">
-            <input type="number" id="multiNum" name="multiNum" placeholder="Enter/Select Number" required></input>
-            <input type="number" id="multiNum2" name="multiNum2" placeholder="Enter/Select Number" required></input>
-            <input type="submit" id="multiplyBtn" value="Submit"></input>
+    <form name="calcMulti">
+            <input type="number"  name="multiNum" placeholder="Enter/Select Number" required></input>
+            <input type="number"  name="multiNum2" placeholder="Enter/Select Number" required></input>
+            <button>Submit</button>
             <div id="multiOutput" class="multiplyAnswer"></div>
-    </div>
+    </form>
 
 <script src="index.js"></script>
 </body>

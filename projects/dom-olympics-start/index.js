@@ -1,94 +1,69 @@
-//Vanilla JS to insert a header to top of page
 
-const header = document.getElementById
 
-// header.innerHTML = `<div class='header'>
-// <h2>js made</h2>
-// <div>
-// <h3>
-// <span class='name'> Diana </span>
-// <span>wrote the JS</span>
-// </div>`
-// Template literal = Can wrap this with ticks instead
-const container = document.createElement("div")
-container.className = "header"
+const h1 = document.createElement("h1") //creates an element w/ tag name of what's passed into it
 
-const h2 = document.createElement("h2")
-h2.textContent = "JS made this"
-const subHeader = document.createElement("div")
-// Put stuff inside of div not using innerHTML
+h1.textContent = "JavaScript made this!!"; //gives  h1 tag some text, not visible yet until you append it to DOM
+
+document.getElementById("header").appendChild(h1); //selects  something that exits in the DOM & appends h1 as last child.
+
+
+h1.className = "header";
+
+//creating an element span to wrap text in
 const name = document.createElement("span")
-name.textContent = "Diana"
-name.className = "name"
-const rest = document.createElement("span")
-// Rest of the text
-rest.textContent = "wrote the JS"
-//Parent event child
-subHeader.appendChild(name)
-subHeader.appendChild(rest) //can append as many as you want, we need to select an element to append to
-container.appendChild(h2)
-container.appendChild(subHeader) //
-header.appendChild(container)// header is parent, take what's in parent variable & give that to the child var to display to the page
+//Must assign a text & ClassName to our variable name
+
+name.textContent = "Marc";
+name.className = "name";
+document.getElementById("header").appendChild(name);
+
+const otherText = document.createElement("span")
+otherText.textContent = " wrote the JS";
+otherText.className = "otherText"
+document.getElementById("header").appendChild(otherText);
 
 
-
-//===========
-const header = document.getElementById
+labelTheme = document.getElementById("theme-drop-down")
 
 
-const h2 = document.createElement('h2)')// we want to give it a nested element
-h2.textContent = "JS made this"
-h2.className = "name"
-header.appendChild(h2)
+//created toggle as a counter to when msg is L or R side of screen
+let toggle = true
 
 
-const p = document.createElement("p")
-p.innerHTML = "Marc wrote JS"
-p.className = "header"
-header.appendChild(p)
+//Submit btn
+document.message.addEventListener("submit", (e)=> { //add evt listener
+    e.preventDefault();
+//create div to style MsgInput based on HTML
+//     <div class="message right">
+//     I'm just a simple farmer
+// </div>
+    let newMsgDiv = document.createElement("div") //building div first then appending to existing msg div
+    if (toggle){ // (toggle by itself = asking if var exists &  if is T/F
+        newMsgDiv.className = "message left"
+        toggle = false
+    } else {
+        newMsgDiv.className = "message right"
+        toggle = true
+    }
 
-//const name = document.createElement("span")
-//name.innerHTML = "Marcklklk"
-//name.className = "name"
+    let msgValue = document.message.input.value //get value
+    newMsgDiv.append(msgValue)
+    console.log(document.getElementsByClassName("messages")[0])
+    let msgDiv = document.getElementsByClassName("messages")[0]  //targeting Msg div
+    msgDiv.append(newMsgDiv) //append that value to the div
+    //output messages to messages Class & append values here
 
-const secondChild = document.createElement("span")
-secondChild.textContent = "wrote layout"
-p.className = "header"
+})
 
-//name and 2nd child appended to p
+// Write some JavaScript that will wait until the user clicks the "clear" button, and then clears out all conversation.
 
-p.appendChild("secondChild")
-p.appendChild("span")
+let clearMsgBtn = document.getElementById("clear-button") //declaring it globally
+
+clearMsgBtn.addEventListener("click", (e)=> {  //target id of clear btn
+    let removeMsgDiv = document.getElementsByClassName("messages")[0] //need to target the messages array
+// console.log(removeMsgDiv)
+    document.getElementsByClassName("messages")[0].textContent = " ";
+
+})
 
 
-const messages = document.getElementsByClassName("message") //one msg div but 4 msgs
-
-console.log(messages) //returns an array
-message[0].textContent = "hey"
-message[2].textContent = "Hallo"
-message[3].textContent = "Hello"
-message[4].textContent = "Oye"
-
-const container = document.getElementsByClassName("messages") //create a div give it the class msg & L or R//
-
-//.create Element for a div, give div two class names using Class List property, give message left
-const newMessage = document.createElement("div")
-newMessage.classList = "msg left"
-newMessage.textContent = "this is new"
-
-//add event listener to square
-
-//typing is on document
-
-//  document.getElementById("header").innerHTML = "<h1>Javascript Made This!!</h1>"
-
-//  document.createElement(name)
-
-//  let headerInsert = document.addEventListener(function(e){
-//     e.preventDefault()
-// });
-// console.log(headerInsert)
-
-// document.getElementById("").addEventListener("header", function(){
-// console.log("Testing...1234")
-// })
