@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    font-size: 0px;
+
+}
+/* .france1 {
+    display: inline-block;
+    background-color: blue;
+    margin: 60px;
+    padding: 80px;
+    height: 160px;
+}
+.france2 {
+
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 30px;
+    height: 180px;
+    width: 90%;
+} */
+
+.france-flag {
+    display:inline-block;
+    background-color: blue;
+    height: 100px;
+    width: 180px;
+    margin: 50px;
+    border-radius: 1%;
+    border-color: gray;
+    background-image: linear-gradient(to right, blue 0 33%, white 33% 68%, red 64%)
+}
+
+.germany-flag {
+    display:inline-block;
+    height: 100px;
+    width: 180px;
+    margin: 50px;
+    border-radius: 1%;
+    background-image: linear-gradient(to bottom, black 0 33%, red 33% 60%, gold 68% 100%)
+}
+/*
+.madagascar-flag {
+
+} */

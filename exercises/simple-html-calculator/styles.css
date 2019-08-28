@@ -1,0 +1,91 @@
+.bg-grad {
+        background: linear-gradient(rgb(129, 140, 255), rgb(126, 250, 167), rgb(162, 198, 252)) fixed;
+}
+
+h1 {
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    line-height: 1.3em;
+    font-weight: lighter;
+}
+
+.calc-icon {
+    max-width:12%;
+    height:auto;
+
+}
+
+.firstcalc  {
+    font-size: 16px;
+    font-family: Fira Code, Arial, sans-serif;
+}
+.secondcalc {
+    font-size: 16px;
+    font-family: Fira Code, Arial, sans-serif;
+}
+
+.thirdcalc {
+    font-size: 16px;
+    font-family: Fira Code, Arial, sans-serif;
+}
+
+input[type = number]:focus {
+    border: 3px solid #555;
+    width: 70%;
+    padding: 6px 12px 4px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    }
+/* Buttons for submit */
+input[type= submit] {
+    font-family: Helvetica, Arial, sans-serif;
+    /* background-color:#C8C8C8; */
+    background-color: rgb(24, 164, 224);
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    }
+
+body {
+    /* display: fixed; */
+    margin: 35%;
+    padding: 0px;
+}
+
+.answer {
+    text-align: center;
+    margin: 8px 0px;
+    height: 30px;
+    width: 50px;
+    border: 2px plum solid;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: aliceblue;
+}
+
+.subAnswer {
+    text-align: center;
+    margin: 8px 0px;
+    height: 30px;
+    width: 50px;
+    border: 2px plum solid;
+    border-radius: 6px;
+    display: inline-block;
+    background-color:aliceblue;
+}
+
+.multiplyAnswer {
+    text-align: center;
+    margin: 8px 0px;
+    height: 30px;
+    width: 50px;
+    border: 2px plum solid;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: aliceblue;
+}

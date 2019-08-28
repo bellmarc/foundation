@@ -37,14 +37,14 @@
 
 function capitalizeAndLowercase (string){//param
         if(string.length % 2 == 0 ){
-            console.log(string.toUpperCase().slice(0,3) + string.toLowerCase().slice(3));
+            console.log(string.toUpperCase().slice(0, string.length / 2) + string.toLowerCase().slice(string.length / 2));
         } else {
-            console.log(string.toLowerCase().slice(0,3) + string.toUpperCase().slice(3));
+            console.log(string.toLowerCase().slice(0, string.length / 2) + string.toUpperCase().slice(string.length / 2));
         }
-      let newString = string.concat();//connecting the string
-            console.log(newString);
+    //   let newString = string.concat();//connecting the string
+    //         console.log(newString);
 }
 capitalizeAndLowercase("carmen"); //only argument here, no need to declare
-
+capitalizeAndLowercase("playa del carmen");
 
 //Make a function that takes any string and capitalizes any character that follows a space.
