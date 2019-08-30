@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel= "stylesheet" href="styles.css">
+</head>
+<body>
+    <form name="travelForm" id="travelForm" >
+        <p>Fill out the traveller's information below:</p>
+        <div>
+            <label for="firstname"> First Name</label>
+            <input type="text" name="firstName"></input></input>
+            <label for="lastname"> Last Name</label>
+            <input type="text" name="lastName"></input>
+            <label for="lastname"> Age </label>
+            <input type="number" name="age"></input>
+        <div>
+            <br>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">Male</input>
+            <input type="radio" id="female" name="gender" value="female">Female</input>
+            <input type="radio" id="nonbinary" name="gender" value="nonbinary">Non-binary</input>
+        </div>
+        <br>
+        <div>
+            <select name="location"> <!--target name in JS-->
+                <option value="0">Select location:</option>
+                <option value="Frankfurt, DE">Frankfurt, DE</option>
+                <option value="Madrid, ES">Madrid, ES</option>
+                <option value="Amsterdam, NE">Amsterdam, NE</option>
+                <option value="Lisbon, PT">Lisbon, PT</option>
+                <option value="Helsinki, FI">Helsinki, FI</option>
+                <option value="Copenhagen, DK">Copenhagen, DK</option>
+                <option value="Vienna, AU">Vienna, AU</option>
+                <option value="Paris, FR">Paris, FR</option>
+                <option value="Milan, IT">Milan, IT</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <div><label for="food"> Indicate Dietary Preferences:</label></div>
+            <br>
+            <input type="checkbox" value="Vegetarian" name="foodType">Vegetarian </input>
+            <input type="checkbox" value="Gluten-free" name="foodType">Gluten-Free </input>
+            <input type="checkbox" value="vegan" name="foodType">Vegan </input>
+            <input type="checkbox" value="Kosher" name="foodType"> Kosher </input>
+            <input type="checkbox" value="Lactose-free" name="foodType"> Lactose Free</input>
+        <div>
+        <br>
+            <button type="submit" id="subBtn">Submit</button>
+        </div>
+    </form>
+    <script src= "index.js"></script>
+</body>
+</html>

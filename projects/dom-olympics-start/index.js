@@ -1,13 +1,17 @@
-
-
 const h1 = document.createElement("h1") //creates an element w/ tag name of what's passed into it
 
-h1.textContent = "JavaScript made this!!"; //gives  h1 tag some text, not visible yet until you append it to DOM
+h1.textContent = "JavaScript made this Messaging Application!"; //gives  h1 tag some text, not visible yet until you append it to DOM
 
 document.getElementById("header").appendChild(h1); //selects  something that exits in the DOM & appends h1 as last child.
 
 
 h1.className = "header";
+
+const h3 = document.createElement("h3") //tag name here
+ h3.textContent = "The most important conversations you will ever have are the ones you have with yourself "
+
+document.getElementById("header").append(h3) //h3 object
+
 
 //creating an element span to wrap text in
 const name = document.createElement("span")
@@ -16,6 +20,7 @@ const name = document.createElement("span")
 name.textContent = "Marc";
 name.className = "name";
 document.getElementById("header").appendChild(name);
+
 
 const otherText = document.createElement("span")
 otherText.textContent = " wrote the JS";
@@ -59,11 +64,14 @@ document.message.addEventListener("submit", (e)=> { //add evt listener
 
 let clearMsgBtn = document.getElementById("clear-button") //declaring it globally
 
-clearMsgBtn.addEventListener("click", (e)=> {  //target id of clear btn
+clearMsgBtn.addEventListener("click", (e)=> {  // add event by targeting id of clear btn & no need to write document since you're already in it
     let removeMsgDiv = document.getElementsByClassName("messages")[0] //need to target the messages array
 // console.log(removeMsgDiv)
     document.getElementsByClassName("messages")[0].textContent = " ";
 
-})
+ })
+
+
+
 
 

@@ -44,7 +44,6 @@ body {
     background-color: rgb(239, 205, 146);
 }
 
-button :focus {
-
+button {
     background-color:rgb(108, 202, 158);
 }
