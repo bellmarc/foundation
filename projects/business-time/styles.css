@@ -1,10 +1,36 @@
-html, body {
+* {
+    margin: 0;
+    padding: 0;
+  }
 
+
+.main-layout {
+display: grid;
+grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 
+.header {
+    background-color: #4F8D7D;
+    grid-column: 1 / 7;
+    height: 60px;
+}
 
 .nav-container {
+    grid-column: 1/ 7;
+}
+.navbar {
+    background-color: burlywood;
+    grid-column:1/ 7;
+}
 
+.main-content {
+    grid-column: 2/ 6;
+    background-color: firebrick;
+}
 
+.footer {
+    background-color:#2E554C;
+    grid-column: 1/ 7;
+    height: 40px;
 }
