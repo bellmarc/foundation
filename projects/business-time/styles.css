@@ -86,7 +86,7 @@ section {
     display: flex;
     flex-direction: row;
     padding-top: 60px;
-    flex-wrap: wrap; /*added for responsive image*/
+    /* flex-wrap: wrap; added for responsive image */
 }
 
 section > img {
@@ -101,7 +101,7 @@ section > div > p {
 }
 
 .team {
-    display: flex;
+    display: block;
     margin: 20px;
 
 }
@@ -228,3 +228,17 @@ footer > ul {
       height: 500px;
       width: 100%;
   } */
+
+
+  @media only screen and (max-width: 650px){
+      section {
+        flex-wrap: wrap;
+      }
+  }
+
+
+  @media only screen and (min-width: 650px){
+      seection {
+        flex-wrap: nowrap;
+      }
+  }

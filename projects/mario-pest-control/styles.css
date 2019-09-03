@@ -3,25 +3,16 @@
     padding: 0;
 }
 
-header, section {
-    /* display: grid;
-    width: 100%; */
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas:
-    "header header header header header"
-    "nav main main main main"
-    "nav main main main main"
-    "nav main main main main"
-    "nav main main main main"
-    "footer footer footer footer footer";
+section {
+    display: flex;
+    justify-content: center;
   }
+
+/* header { //display & grid  ALWAYS only on container outside of the item */
 
 
 header > .mario-brand {
     text-align: center;
-    grid-area: header;
     text-decoration: none;
 
 }
@@ -41,30 +32,25 @@ body {
     display: grid;
     width: 100%;
     background-image: url(/images/mario_start.jpg);
-    background-size: 780px;
+    background-size: 900px;
     border: 2px solid;
     color: firebrick;
 }
 
-.goomba-section {
-    display: grid;
-    width: 100%;
-
-}
+/* body > section {
+    border: 2px solid black;
+} Testing alignment*/
 
 .goomba-container {
     display: grid;
+    grid-column: 2/ 3;
     width:60%;
     justify-items: center;
-    grid-column: 3/4;
-    grid-area: main;
-    text-align: center;
+    /*flex property*/
+    /* grid-area: main; */
+
 
 }
-/* input {
-    display: flex;
-    justify-items: center;
-} */
 
 .bobombs-container {
     display: grid;
@@ -78,7 +64,7 @@ body {
 
 .cheeps-container {
     display: grid;
-    grid-column: 2/-1;
+    grid-column: 1/-1;
     justify-items: center;
     width: 60%;
     height: 60%;
@@ -105,7 +91,7 @@ body {
     display: inline-block;
     background-color: aliceblue;
 }
-/* section {} */
+
 
 img {
     max-width:16%;
