@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Business Time</title>
+    <title>Business Time: Contact</title>
 </head>
 <body>
 <!-- main-layout -->
-    <header class="header">
-        <a href="index.html" class="header-brand">SDS logo</a>
+<header class="header">
+        <a href="index.html" class="header-brand"><img src="images/logo.png"></a>
         <nav>
         <ul class="navbar">
             <li><a href="about.html">About</a></li>
@@ -23,23 +23,29 @@
     </header>
 
     <main class="main">
-        <form>
-            Contact Us Form
-        </form>
         <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio in cumque, fugit quidem esse ea omnis corporis facilis architecto molestias sapiente voluptatibus excepturi accusantium. Laborum ad nostrum alias fugiat placeat!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio in cumque, fugit quidem esse ea omnis corporis facilis architecto molestias sapiente voluptatibus excepturi accusantium. Laborum ad nostrum alias fugiat placeat!
         </p>
+        <form name="contact">
+            <input type="text" name="name" placeholder="Enter your Name"></input>
+            <input type="text" name="email" placeholder="Enter your email address"></input>
+           <textarea name="message" placeholder="Write your message to the Service Dog Squad"></textarea>
+           <button>Submit</button>
 
-        <div id="map"></div>
+        </form>
+
+        <!-- <div id="map"></div> -->
     </main>
 
-    <footer class="footer"> <!--Social Media Buttons -->
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-youtube"></a>
-
-    </footer>
+<!--Social Media Buttons -->
+<footer class="page-footer">
+        <ul class="footer">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-youtube"></a></li>
+            </ul>
+        </footer>
     <script src="index.js"></script>
 </body>
 

@@ -4,33 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheets" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Business Time</title>
 </head>
 <body>
-   <header>
+<!-- main-layout -->
+    <header class="header">
+        <a href="index.html" class="header-brand"><img src="images/logo.png"></a>
+        <nav>
+        <ul class="navbar">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="apply.html">Apply</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <h1>Our Application Process</h1>
+    <!-- Information -->
+    <div class="flag">
+            <img src="images/flag-hope.jpg" class="flag-img">
+    </div>
+    <section>
+        <div class="team">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem adipisci voluptatem, quos porro eius labore, error sint vero officia suscipit repudiandae cumque tempore asperiores laudantium enim totam accusantium voluptas molestiae?
+        </p>
+        </div>
+    </section>
+    <h1>
        Service Dog Squad Application
-   </header>
-   <nav class="nav"> <!-- Logo here-->
-        <a class="nav-item" href="index.html">Home</a>
-        <a class="nav-item" href="about.html">About</a>
-        <a class="nav-item" href="contact.html">Contact Us</a>
-        <a class="nav-item" href="apply.html">Apply</a>
-   </nav>
-<form name="sdApplyForm">
+    </h1>
+    <form name="apply">
     <div>
         <label for="firstname"> First Name</label>
-        <input type="text" name="firstName"></input></input>
+        <input type="text" name="firstName" placeholder="Enter your First Name"></input></input>
         <label for="lastname"> Last Name</label>
-        <input type="text" name="lastName"></input>
+        <input type="text" name="lastName" placeholder="Enter your Last Name"></input>
         <label for="lastname"> Age </label>
-        <input type="number" name="age"></input>
+        <input type="number" name="age" placeholder="Enter your Age"></input>
     <div>
-</form>
-<button type="submit" id="subBtn">Submit</button>
+    <button>Submit</button>
+    </form>
 
 
-<footer>Social Media Links</footer>
+
+<!--Social Media Buttons -->
+<footer class="page-footer">
+    <ul class="footer">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <li><a href="#" class="fa fa-youtube"></a></li>
+    </ul>
+</footer>
 
 </body>
 </html>

@@ -5,12 +5,9 @@
     list-style: none;
   }
 
-html, body {
+body {
     display: grid;
     background-color: #D5E8E4;
-    grid-template-columns: auto auto auto auto;
-    /* grid-template-columns: repeat(6, 1fr); */
-    grid-template-rows: auto;
     grid-gap: 8px;
 }
 
@@ -18,9 +15,7 @@ html, body {
     display: grid;
     background-color: #4F8D7D;
     width: 100%;
-    height: 100px;
     grid-column: 1/ -1;
-    /* grid-template-columns: repeat(12, 1fr); */
 }
 
 header > .header-brand {
@@ -30,7 +25,6 @@ header > .header-brand {
     color: #111;
     text-transform: uppercase;
     text-align: center;
-
 }
 
 .navbar {
@@ -38,62 +32,196 @@ header > .header-brand {
     text-align: center;
     justify-content: space-evenly;
     grid-column: 1/ -1;
+    padding: 20px;
 }
 
-ul .navbar {
+.navbar > li > a {
     text-decoration: none;
+    color: white;
 }
 
 header > ul {
     display: inline;
 }
 
-.main > p {
+.hero-img, .hero-img > img {
+    width: 100%;
+}
+
+.hero-img {
+    background-image: url(images/canine1.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flag .flag-img {
+    flex-direction: column;
+    height: 300px;
+    background-image: url(images/flag-hope.jpg);
+    margin: auto;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(220, 220, 220, 0.582);
+    font-size: 40px;
+    color: #2E554C;
+}
+
+.overlay > p {
+    padding-right: 80px;
+    text-align: right;
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #2E554C;
+    padding-top: 60px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+}
+
+section > img {
+    width:50%;
+    margin: 20px;
+}
+
+section > div > p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.team {
+    margin: 20px;
+}
+
+main > p {
+    margin: auto;
     font-family: Roboto, Catamaran;
     overflow: auto;
-    padding-bottom: 100px;
-    grid-column: 1/ -1;
+    width: 50%;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
 }
 
-.footer {
+
+/* Contact form */
+
+form {
+    background: #4F8D7D;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom:40px;
+    padding-top:40px;
+    padding-bottom:40px;
+    border: 3px solid #4F8D7D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    font-size:18px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background: #2E554C;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 6%;
+    border-color: #4F8D7D;
+    width: 25%;
+    margin: 20px;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 140px;
+    width: 90%;
+    font-size:18px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+input, textarea {
+display: flex;
+align-items: center;
+outline: none;
+border: 1px solid #ddd;
+}
+
+input:focus, textarea:focus {
+box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+border: 1px solid #ddd;
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color:#2E554C;
-    grid-column: 1/ -1;
-    position: relative;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
+    margin-top: 60px;
 }
 
-footer > .fa {
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 20px;
     font-size: 20px;
     width: 20px;
-    text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    justify-items: center;
     opacity: 0.7;
-  }
+}
 
-  .fa-facebook {
-    background: #2E554C;
-    color: white;
-  }
-  .fa-youtube {
-    background: #2E554C;
-    color: white;
-  }
+.footer > li {
+    padding: 20px;
+    margin: 30px;
+}
 
-  .fa-instagram {
+.fa-facebook {
     background: #2E554C;
     color: white;
-  }
-  .fa-twitter {
-    background: #2E554C;
-    color: white;
-  }
+}
 
+.fa-youtube {
+    background: #2E554C;
+    color: white;
+}
+
+.fa-instagram {
+    background: #2E554C;
+    color: white;
+}
+
+.fa-twitter {
+    background: #2E554C;
+    color: white;
+}
+
+
+
+
+
+/*
   #map {
       height: 500px;
       width: 100%;
-  }
+  } */
