@@ -5,42 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mario Pest Control</title>
-    <link rel="stylesheets" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 </head>
 
-<div>
-    <h1>Mario Pest Control</h1>
+<body>
 
-</div>
-<div class='goomba-container'>
+<header class="header">
+    <a href="index.html" class="mario-brand"><img src="images/super-mario.svg"><h1> Pest Control</h1>
+    </a>
+</header>
+
+<section class="goomba-section">
+    <div class="goomba-container">
     <h3>Goomba</h3>
-    <p>Explanation</p>
+    <img src="/images/goomba.png" alt="Goomba mushroom villan from Super Mario Bros"></img>
     <input type="number" id="goomba"name="baddie"></input>
-</div>
-<div class="bobombs-container">
-    <h3>Bomb</h3>
-    <p>Explanation</p>
-    <input type="number"id="bob-ombs" name="baddie"></input>
-</div>
+    </div>
+
+</section>
+<section>
+    <div class="bobombs-container">
+        <h3>Bob-Omb</h3>
+        <img src="/images/bob-omb.png" alt="Bob Omb bomb villan  from Super Mario Bros"></img>
+        <input type="number"id="bob-ombs" name="baddie"></input>
+    </div>
+</section>
+
 <div class="cheeps-container">
     <h3>Cheeps</h3>
-    <p>Explanation</p>
+    <img src="/images/cheepcheeps.png" alt="Cheep Cheep fish villan from Super Mario Bros"></img>
     <input type="number"id="cheeps" name="baddie"></input>
 </div>
 
-
 <div class="output-container">
-    <h3>total</h3>
-    <button id="total">Calc Total</button>
-    <div class='output'>Box
-        <p id="result"></p>
+    <button id="total"> Total Coins</button>
+    <div class="output">
+        <div id="result"></div>
     </div>
 </div>
 
 
-
-
-
+<footer>
+    <p>Credits: Icon
+    made by <a rel="nofollow" class="external text" href="https://www.freepik.com/home"><strong><em>Freepik </em></strong></a>from <a href="http://www.flaticon.com/">www.flaticon.com</a>
+    </p>
+</footer>
 <script src="index.js"></script>
 </body>
 </html>

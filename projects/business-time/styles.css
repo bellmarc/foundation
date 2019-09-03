@@ -86,6 +86,7 @@ section {
     display: flex;
     flex-direction: row;
     padding-top: 60px;
+    flex-wrap: wrap; /*added for responsive image*/
 }
 
 section > img {
@@ -100,7 +101,9 @@ section > div > p {
 }
 
 .team {
+    display: flex;
     margin: 20px;
+
 }
 
 main > p {

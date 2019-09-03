@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, section {
+    /* display: grid;
+    width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+    "header header header header header"
+    "nav main main main main"
+    "nav main main main main"
+    "nav main main main main"
+    "nav main main main main"
+    "footer footer footer footer footer";
+  }
+
+
+header > .mario-brand {
+    text-align: center;
+    grid-area: header;
+    text-decoration: none;
+
+}
+
+h1 {
+    display: grid;
+    color: firebrick;
+    font-family: 'Bangers', cursive;
+    text-transform: uppercase;
+    /* grid-area: header; */
+}
+
+h3 {
+    margin: 10px;
+}
+body {
+    display: grid;
+    width: 100%;
+    background-image: url(/images/mario_start.jpg);
+    background-size: 780px;
+    border: 2px solid;
+    color: firebrick;
+}
+
+.goomba-section {
+    display: grid;
+    width: 100%;
+
+}
+
+.goomba-container {
+    display: grid;
+    width:60%;
+    justify-items: center;
+    grid-column: 3/4;
+    grid-area: main;
+    text-align: center;
+
+}
+/* input {
+    display: flex;
+    justify-items: center;
+} */
+
+.bobombs-container {
+    display: grid;
+    grid-column: 2/-1;
+    justify-items: center;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+
+}
+
+.cheeps-container {
+    display: grid;
+    grid-column: 2/-1;
+    justify-items: center;
+    width: 60%;
+    height: 60%;
+    text-align: center;
+
+}
+.output-container {
+    display: grid;
+    grid-column: 2/-1;
+    justify-items: center;
+    margin: 20px;
+
+}
+
+#result {
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: center;
+    margin: 8px 0px;
+    height: 40px;
+    width: 120px;
+    border: 2px firebrick solid;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: aliceblue;
+}
+/* section {} */
+
+img {
+    max-width:16%;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    width: 15%;
+    margin: 20px;
+    padding:8px;
+    border-radius: 30%;
+    background-color: gold;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+    font-size: 12px;
+    /* text-align: center; */
+}
