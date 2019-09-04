@@ -20,7 +20,10 @@ const marie = new Employee("Marie", "Chief of Finance", "$90/hour")
 marie.status = "Contractor"
 // console.log(marie);
 employees.push(rosalia, maxine, marie)
-
+//Alternate way to ln 22 below:
+employees.push(...newHire)
+newHire = [rosalia, maxine, marie];
+//Array to gather information from all employees
 for(let i = 0; i < employees.length; i++ ){
     employees[i].printEmployeeForm();
 }
