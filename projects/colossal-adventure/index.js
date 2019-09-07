@@ -8,16 +8,15 @@ let startQuest = true
 let controlDisplay = 0
 const player = { //User needs properties
     name: "",
-        stats: {
-        hp: 400,//health points
+    stats: {
+        hp: 500,//health points
         attack: function() {
-            return randomNum(35)
+        return randomNum(35)
         },
-        inventory: [], //player.inventory.push, current enemy.inventory goods to player
-        skills: "attack",
+        inventory: ["rusty knife", " small pouch"], //player.inventory.push, current enemy.inventory goods to player
+        skills: "unknown"
+    }
 }
-}
-
 // must store enemy's dropped items & save response in object vs variable player.name
 
 /////////////////
@@ -25,9 +24,10 @@ const player = { //User needs properties
 
 //Constructor function to help generate new Enemy
 
-function Enemy(type, hpGauge) {
+function Enemy(type, hpGauge, item) {
     this.type = type
     this.hpGauge = hpGauge
+    this.item = item
 }
 
 Enemy.prototype.attack = function (){
@@ -35,11 +35,14 @@ Enemy.prototype.attack = function (){
 }
 
 function generateEnemy(currentEnemy) {
-    if (randomNum(2)=== 0) {
-        return new Enemy("common subDweller", 420)
+    let number = randomNum(3)
+    if (number === 0) {
+        return new Enemy("common subDweller", 420, "item1")
+    } else if (number === 1){
+        return new Enemy ("native swampMoss", 300, "item2")
     } else {
-       return new Enemy ("native swampMoss", 200)
-}
+        return new Enemy ("massive subDweller", 600, "item3")
+    }
 }
 
 function fight(currentEnemy){
@@ -49,38 +52,42 @@ function fight(currentEnemy){
         if (userFightChoice === 0){
 
         const enemyAttackPower =  currentEnemy.attack()
-       console.log(`${player.name} attacked ${currentEnemy.type} for ${enemyAttackPower} your Enemy's current hp is ${currentEnemy.hpGauge -= enemyAttackPower}`)
+        let enemyHealth =  currentEnemy.hpGauge -= enemyAttackPower
+        if(enemyHealth <= 0){ //enemy death
+            player.stats.inventory.push(currentEnemy.item)
+            enemyHealth = 0
+        }
+        console.log(`${player.name} attacked ${currentEnemy.type} for ${enemyAttackPower} damage. Your Enemy's current hp is ${enemyHealth}`)
 
-       const playerAttackPower = player.stats.attack()
-       console.log(`${currentEnemy.type} attacked ${player.name} for ${playerAttackPower} your current hp is ${player.stats.hp -= playerAttackPower}`)
+        const playerAttackPower = player.stats.attack()
+        let playerHealth =  player.stats.hp -= playerAttackPower
+        if(playerHealth <= 0){
+            playerHealth = 0
+            startQuest = false
+        }
+        console.log(`${currentEnemy.type} attacked ${player.name} for ${playerAttackPower} damage. Your current hp is ${playerHealth}`)
         } else {
            const num = randomNum(2)
-           if (0 === 0){
-                console.log(`You barely escaped. you have ${player.stats.hp} hp remaining` )
+           if (randomNum === 0){
+                console.log(`You barely escaped. You have ${player.stats.hp} hp remaining.` )
                 break
            } else {
-               console.log("The enemy caught you-You are dead.")
+               console.log(`
+
+                    Suddenly, your vision blackens, your legs are numb, you slump to the ground and as you feel your lifeforce weakening, you reach out a hand in desperation.
+                                    You have died.`)
                startQuest = false
            }
         }
+    }
+    if (currentEnemy.hpGauge < 0) { //enemy
 
-       }
+    }
 }
-
-// console.log(commSubDweller) testing if it displays: works
-
-// const enemy = generateEnemy(){
-//     console.log(commSubDweller)
-// }
-//create two functions one for damage to player & one for damage to monster
-
-// function playerDamage() { //currentEnemy.attackPower
-//     if (player.a)
-// }
 
 //Counter functions
 
-function randomNum(num){ //dynamic input of num
+function randomNum(num) { //dynamic input of num
     return Math.floor(Math.random()* num)
 }
 
@@ -125,45 +132,47 @@ function eventTrigger(){
 }
 
 // Walk function
-function walk(){ //add limit p for inventory print later
+function walk(){
     const userChoice = readline.keyIn("Enter your action: ", {limit: 'wp'})
 
-    if(userChoice === 'w'){
+    if(userChoice === 'w') {
         console.log(`You are walking carefully through the subterrain.`)
         eventTrigger() //Every time player walks, an algorithm runs that determines if a wild enemy appears
-    } else if (userChoice === 'p'){
-        console.log(player.stats)
+    } else if (userChoice === 'p') {
+        console.log(`
+        Name: ${player.name}
+        HP: ${player.stats.hp}
+        Items: ${player.stats.inventory} `)
     }
 }
-
 
 //////////////
 ////Game/////
 console.log(
             `Oh, you're awake!
-             It's a wonder you've survived the fall from Terrakott above-ah...erhm..`);
+             It's a wonder you've survived the fall from Terrakott above-ah...erhm..`)
 
-player.name = readline.question("\n\t\t\tSo..what might your name be?");
+player.name = readline.question("\n\t\t\tSo..what might your name be?")
 console.log(`
 
             Oh! well hello there,  ${player.name}  !`
 
-);
+)
 
 console.log(
 
             `Looks like you must fight your way out of the subterranean regions-unfortunately, the locals are a hostile species.`)
 
-let questYes = readline.keyInYNStrict("\n\t\t\tAre you prepared to start your journey back to your homeland?");
+let questYes = readline.keyInYNStrict("\n\t\t\tAre you prepared to start your journey back to your homeland?")
 
 if (questYes === true){
     console.log(
 
-            `Seems like  ${player.name}  is ready to begin the journey! An adventure awaits you.` );
+            `Seems like  ${player.name}  is ready to begin the journey! An adventure awaits you.` )
 } else {
     console.log(
 
-            ` ${player.name}  , are you sure you're not ready?`);
+            ` ${player.name}  , are you sure you're not ready?`)
 }
 
 //The console will ask the user to enter a "w" to walk
