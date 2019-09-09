@@ -28,11 +28,103 @@ console.log(doubleNumbers([2,5,100]))
 
 // 2) Take an array of numbers and make them strings
 
-function stringItUp(arr){
-  arr.map()
+// function stringItUp(arr){ //ned to change vlue to string
+//     let newMap = arr
+//       return newMap.toString() //turns array to String
+// }
 
+// // console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
 
+// const arr = [2, 5, 100]
+// newArray = arr.map(function(value){ //anon fcn
+//     return value.toString() //turns array to String
+// })
 
+// console.log(newArray); // ["2", "5", "100"]
+
+// function newArray(arr){
+//   let bacon = arr.map(function(value){ //anon fcn
+//     return value.toString()
+//   })
+
+//   return bacon
+// }
+// console.log(newArray([2, 5, 100]))
+
+function capitalizeNames(arr){
+
+   let captName = arr.map(function(name){
+      let newName = name.toLowerCase()  //Read right to left
+      newName = newName.slice(1, newName.length)
+      console.log(newName)
+      newName = name[0].toUpperCase().concat(newName)
+
+     return newName
+
+  })
+    return captName
 }
 
-console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
+console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
+
+
+//What do I want to do? - How do I do this?
+//Write it out!!!!
+
+
+
+people = [
+  {
+      name: "Angelina Jolie",
+      age: 80
+  },
+  {
+      name: "Eric Jones",
+      age: 2
+  },
+  {
+      name: "Paris Hilton",
+      age: 5
+  },
+  {
+      name: "Kayne West",
+      age: 16
+  },
+  {
+      name: "Bob Ziroll",
+      age: 100
+  }
+]
+
+
+let nameStrOnly = function namesOnly(arr){// want to convert each array of objects into an array of strings
+  //want to extract the object's name (string) and push it into an empty array
+  }
+
+// function namesOnly(arr){// want to convert each array of objects into an array of strings
+//want to extract the object's name (string) and push it into an empty array
+// }
+
+// console.log(namesOnly([
+//     {
+//         name: "Angelina Jolie",
+//         age: 80
+//     },
+//     {
+//         name: "Eric Jones",
+//         age: 2
+//     },
+//     {
+//         name: "Paris Hilton",
+//         age: 5
+//     },
+//     {
+//         name: "Kayne West",
+//         age: 16
+//     },
+//     {
+//         name: "Bob Ziroll",
+//         age: 100
+//     }
+// ]));
+// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
