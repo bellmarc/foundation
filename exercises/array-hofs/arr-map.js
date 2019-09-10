@@ -18,12 +18,12 @@
 //   console.log(mappedArray)
 // }
 
-function doubleNumbers(arr){
-    return arr.map(function(num){
-      return num * 2
-    })
-}
-console.log(doubleNumbers([2,5,100]))
+// function doubleNumbers(arr){
+//     return arr.map(function(num){
+//       return num * 2
+//     })
+// }
+// console.log(doubleNumbers([2,5,100]))
 
 
 // 2) Take an array of numbers and make them strings
@@ -51,21 +51,21 @@ console.log(doubleNumbers([2,5,100]))
 // }
 // console.log(newArray([2, 5, 100]))
 
-function capitalizeNames(arr){
+// function capitalizeNames(arr){
 
-   let captName = arr.map(function(name){
-      let newName = name.toLowerCase()  //Read right to left
-      newName = newName.slice(1, newName.length)
-      console.log(newName)
-      newName = name[0].toUpperCase().concat(newName)
+//    let captName = arr.map(function(name){
+//       let newName = name.toLowerCase()  //Read right to left
+//       newName = newName.slice(1, newName.length)
+//       console.log(newName)
+//       newName = name[0].toUpperCase().concat(newName)
 
-     return newName
+//      return newName
 
-  })
-    return captName
-}
+//   })
+//     return captName
+// }
 
-console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
+// console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
 
 //What do I want to do? - How do I do this?
@@ -73,58 +73,77 @@ console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // [
 
 
 
-people = [
-  {
-      name: "Angelina Jolie",
-      age: 80
-  },
-  {
-      name: "Eric Jones",
-      age: 2
-  },
-  {
-      name: "Paris Hilton",
-      age: 5
-  },
-  {
-      name: "Kayne West",
-      age: 16
-  },
-  {
-      name: "Bob Ziroll",
-      age: 100
-  }
-]
+// const people = [
+//   {
+//       name: "Angelina Jolie",
+//       age: 80
+//   },
+//   {
+//       name: "Eric Jones",
+//       age: 2
+//   },
+//   {
+//       name: "Paris Hilton",
+//       age: 5
+//   },
+//   {
+//       name: "Kayne West",
+//       age: 16
+//   },
+//   {
+//       name: "Bob Ziroll",
+//       age: 100
+//   }
+// ]
 
 
-let nameStrOnly = function namesOnly(arr){// want to convert each array of objects into an array of strings
-  //want to extract the object's name (string) and push it into an empty array
-  }
+// function namesOnly(arr){
 
-// function namesOnly(arr){// want to convert each array of objects into an array of strings
-//want to extract the object's name (string) and push it into an empty array
+//   const names = arr.map(function(personObj){ //loops through & gives person Object
+//     //tell it what to return from person object
+//     return personObj.name
+//   })
+//     return names
 // }
+// console.log(namesOnly(people))
 
-// console.log(namesOnly([
-//     {
-//         name: "Angelina Jolie",
-//         age: 80
-//     },
-//     {
-//         name: "Eric Jones",
-//         age: 2
-//     },
-//     {
-//         name: "Paris Hilton",
-//         age: 5
-//     },
-//     {
-//         name: "Kayne West",
-//         age: 16
-//     },
-//     {
-//         name: "Bob Ziroll",
-//         age: 100
-//     }
-// ]));
-// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+//5) Make an array of strings of the names saying whether or not they can go to The Matrix (based on age)
+
+function makeStrings(arr){ // similar to arr[i] for each item in array provide me this so I can do smt w/ it
+    const personObjects = arr.map(function(person){
+      if (person.age > 21){
+        return person.name + " can go to Matrix"
+      } else {
+        return person.name + " can NOT go to Matrix"
+      }
+    })
+
+    return personObjects
+
+}
+
+console.log(makeStrings([
+    {
+        name: "Angelina Jolie",
+        age: 80
+    },
+    {
+        name: "Eric Jones",
+        age: 2
+    },
+    {
+        name: "Paris Hilton",
+        age: 5
+    },
+    {
+        name: "Kayne West",
+        age: 16
+    },
+    {
+        name: "Bob Ziroll",
+        age: 100
+    }
+]))
+
+
+

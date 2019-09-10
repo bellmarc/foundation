@@ -2,7 +2,6 @@ const readline = require("readline-sync");
 
 //////////////////////
 ///Global variable////
-// let gameOver = false
 
 let startQuest = true
 let controlDisplay = 0
@@ -39,7 +38,7 @@ Enemy.prototype.attack = function (){
 function generateEnemy(currentEnemy) {
     let number = randomNum(4)
     if (number === 0) {
-        return new Enemy("common subDweller", 260, "sacred jewel", randomNum(60))
+        return new Enemy("common subDweller", 220, "sacred jewel", randomNum(60))
     } else if (number === 1){
         return new Enemy ("native swampMoss", 150,  "swamp water elixir", randomNum(40))
     } else if (number === 2){
