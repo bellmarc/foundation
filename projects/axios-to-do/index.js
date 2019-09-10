@@ -24,20 +24,26 @@ function getTodos(){
 function listTodos(todos) {
     for(let i = 0; i< todos.length; i++) {
         //create Element
-        const h1 = document.createElement("h1")
+        const h2 = document.createElement("h2")
         const todoListContainer = document.createElement("div")
         const detail = document.createElement("p")
         const image = document.createElement("img")
+        const checkBox = document.createElement("input")
+        
         //Edit Element
-        h1.textContent = todos[i].title
+        h2.textContent = todos[i].title
         detail.textContent = todos[i].description
         image.src = todos[i].imgUrl
         //image.setAttribute("src", todos[i].imgUrl)
+
+        checkBox.type = "checkbox"
         todoListContainer.className = "todoListContainer" //for later CSS styling
         //Append Element, order of appendChild matters!
-        todoListContainer.appendChild(h1)
+        todoListContainer.appendChild(h2)
         todoListContainer.appendChild(detail)
         todoListContainer.appendChild(image)
+
+        h2.appendChild(checkBox)
         document.getElementById("todoList").appendChild(todoListContainer)
 
 
