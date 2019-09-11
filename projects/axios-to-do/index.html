@@ -8,8 +8,13 @@
 </head>
 <body>
     <h1>To-Do List</h1>
+    <form name="form">
+        <input type="text" class="newTodo" placeholder="title" name="title"></input>
+        <input type="text" class="newTodo" placeholder="description" name="description"></input>
+        <input type="text" class="newTodo" placeholder="imgURL" name="imgUrl"></input>
+        <button id="submit">Submit</button>
+    </form>
     <div id="todoList"></div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <script src="index.js"></script>

@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#count-btn {
+    width: 100px;
+    height:40px;
+    border-radius: 8%;
+    align-content: center;
+    background-color: dodgerblue;
+}
+
+#count {
+    width: 100px;
+    height:40px;
+    margin-top: 20px;
+}
