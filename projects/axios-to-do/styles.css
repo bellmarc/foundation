@@ -4,25 +4,63 @@
 }
 
 body {
-    background-color: linear-gradient()
+    background-color:whitesmoke;
+}
+
+.img-styles {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.todo-container {
+    border: 1px solid lightseagreen;
+    background:rgb(230, 249, 255); opacity:0.8;
+    opacity: 10;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 250px; /* reddit style */
+    overflow: hidden;
+    grid-gap: 5px;
 }
 
 .addBtn {
     width: 100px;
-    height: 80px;
-    background-color: #4CAF50;
+    height: 60px;
+    border-radius: 8px;
+    background-color:rgb(105, 189, 214);
     border: none;
     color: white;
     padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 2px;
 }
 
 input:focus {
     box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
     border: 1px solid rgb(255, 0 , 0 );
+
 }
 
+input {
+    width: 200px;
+    height: 40px;
+}
+
+.checkbox {
+    width: 90px;
+    height: 25px;
+}
+
+#delBtn {
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: firebrick;
+    color: white;
+}

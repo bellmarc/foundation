@@ -4,18 +4,19 @@
 //get Elements
 const display = document.getElementById("count")
 const btn = document.getElementById("count-btn")
+//Then, using localStorage or sessionStorage, make it so the number of clicks will remain on the screen even after the site is refreshed.
+const countNum = localStorage.getItem("count")
+    console.log(countNum)
+    
 // Edit Elements
-let count = 0
+let count = countNum
 display.textContent = count
 
 //Add Functionality for btn Element
-const btnCount = btn.addEventListener("click", () => {
+
+btn.addEventListener("click", () => {
     count++
     display.textContent = count
+    localStorage.setItem("count", count)
 })
 
-//Then, using localStorage or sessionStorage, make it so the number of clicks will remain on the screen even after the site is refreshed.
-
-const getCountNum = localStorage.setItem("count", btnCount)
-const countNum = localStorage.getItem("count")
-    console.log(countNum)
