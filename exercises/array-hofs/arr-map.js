@@ -1,5 +1,3 @@
-//Array Map Exercises, Higher Order Function
-//.map() returns new array w/ change made to every item from original array
 
 // 1) Make an array of numbers that are doubles of the first array
 

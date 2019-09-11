@@ -43,7 +43,7 @@ form.addEventListener("submit", function (e){
     const newDescription = form.description.value
     const newImage = form.imgUrl.value
 
-    const newTodoObject = {
+    const newTodoObject = { //can de-structure this
         title: newTitle,
         description: newDescription,
         imgUrl: newImage
