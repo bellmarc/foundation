@@ -97,9 +97,11 @@
 function flatten(arr) {
     //concat to merge arrays
     //spread operator
-
+const connectArrays = arr.reduce(function(finalArr, newArr){
+    return  finalArr.concat(newArr)
+})
+    return connectArrays
  }
-
 
  var arrays = [
      ["1", "2", "3"],
