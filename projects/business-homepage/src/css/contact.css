@@ -1,0 +1,7 @@
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: slateblue;
+    border: 1px solid sandybrown;
+  }

@@ -1,0 +1,73 @@
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/aerial-city.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position:relative;
+
+}
+
+.hero h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.hero h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.overlay {
+    position:relative;
+    background-color: rgba(220, 220, 220, 0.582)
+} */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 10px;
+    border:3px solid rgb(202, 116, 116);
+    padding: 1em;
+    margin-top: 165px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: indianred;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 6%;
+}
+
+.company-main {
+    display: flex;
+    flex-direction: column;
+}
+.company-main > p {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+}
+
+.company-main > h1 {
+    text-align: center;
+}
+
+.company-main > p {
+    display:block;
+    background: firebrick;
+}

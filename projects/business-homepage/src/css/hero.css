@@ -1,0 +1,8 @@
+.hero {
+    display: flex;
+    flex-flow: column;
+    color: white;
+    min-height: 100vh;
+    /* background-color: #282c34; */
+    border: 1px solid teal;
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+
+.nav-container > header > img {
+  height: auto;
+  display: block;
+}
+
+.nav-container > p {
+  font-size: 16px;
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  /* z-index: 2; */
+}
+
+.nav-container > .subtext {
+  font-size: 10px;
+  font-family: "Ubuntu", sans-serif;
+  /* z-index:1; */
+}
+
+.nav-container > .icon {
+  width: 6%;
+  display: block;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    background-color:teal;
+    justify-content: space-between;
+    border: 1px solid lightskyblue;
+}
+
+
+
