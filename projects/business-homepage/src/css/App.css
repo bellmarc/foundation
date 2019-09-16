@@ -1,15 +1,18 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
 .app-container {
   box-sizing: border-box;
   font-family: sans-serif;
   margin: 0px;
   padding: 0px;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: #f5f7ec;
   display: flex;
   /* display: grid; */
   flex-direction: column;
+  border: 10px solid red;
   /* align-items: center;
   justify-content:space-around; */
   /* grid-template-columns: 1fr;

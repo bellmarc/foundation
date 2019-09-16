@@ -3,16 +3,14 @@ import MyForm from "./MyForm";
 
 function Contact(){
     return (
-        <>
         <div className="contact-container">
-        <MyForm />
+            <MyForm />
             <p>Our address:
                 159 Broadway
                 Suite 200
                 Salt Lake City, UT 84101
             </p>
         </div>
-        </>
     )
 }
 

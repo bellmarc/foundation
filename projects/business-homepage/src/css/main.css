@@ -53,20 +53,26 @@
 
 .company-main {
     display: flex;
+
     flex-direction: column;
+    border: 10px solid green;
+
 }
 
 main > p:nth-child(1) {
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
 .company-main > p {
-    margin-top: 200px;
+    height:400px;
     display: flex;
     line-height: 1.5;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     /* flex-direction: column; */
+
     align-items: center;
 
 }

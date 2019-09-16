@@ -1,12 +1,15 @@
 .form {
-    padding: 180px;
     background-color: cornflowerblue;
 }
-
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
 .contact-container > form > div > div > p {
     font-size: 30px;
     font-weight: bold;
     margin-top: 100px;
+
 }
 
 .contact-intro {

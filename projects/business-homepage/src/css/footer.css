@@ -1,16 +1,25 @@
 
 .footer {
     display: flex;
+    height: 80px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: whitesmoke;
     margin-top: 40px;
     background: linear-gradient(rgb(3, 17, 34), rgb(36, 78, 117));
 
   }
-
-.footer > p {
-    font-size: 12px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
+.social-media {
+  display: flex;
+  justify-content: space-between;
 }
+
+.rights-reserved {
+  display: flex;
+  margin-top: 20px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
