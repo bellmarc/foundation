@@ -2,9 +2,9 @@
 .footer {
     display: flex;
     justify-content: center;
+    color: whitesmoke;
     margin-top: 40px;
-    border: 1px solid purple;
-    background-color:dodgerblue;
+    background: linear-gradient(rgb(3, 17, 34), rgb(36, 78, 117));
 
   }
 
