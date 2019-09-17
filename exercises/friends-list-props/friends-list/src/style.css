@@ -1,0 +1,18 @@
+.friend-container {
+    border: 1px solid black;
+    /* space out containers */
+    margin: 5px;
+    /* space between txt & borders */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pet-container {
+    border: 1px solid gold;
+    background-color: paleturquoise;
+    /* space out containers */
+    margin: 5px;
+    /* space between txt & borders */
+    padding: 5px;
+    border-radius: 5px;
+}
