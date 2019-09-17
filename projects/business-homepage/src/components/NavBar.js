@@ -6,8 +6,11 @@ function NavBar() {
     return (
         <div className="nav-container">
             <img className="icon" src={icon} alt="venn diagram business logo"/>
-            <p>Bell & Bowen</p>
-            <p className="subtext">Software Development & Design Firm </p>
+            <div>
+               <p className="company-name">Bell & Bowen</p>
+               <p className="subtext">Software Development & Design Firm </p>
+            </div>
+
             <div>About</div>
             <div>Services</div>
             <div>Contact</div>

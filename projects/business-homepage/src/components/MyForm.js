@@ -3,11 +3,17 @@ import React from "react"
 function MyForm() {
     return (
         <form className="form" noValidate>
-            <div className="contact-hero">
-                <div className="contact-hero-inner">
+        <div className="contact-hero-container">
+            <div className="contact-hero-overlay">
+            <div className="contact-hero-inner">
                     <p>Let's get in touch</p>
                 </div>
             </div>
+            <div className="contact-hero-img">
+
+            </div>
+        </div>
+
             <p className="contact-intro">Contact Us:</p>
             <div className="form-input">
                 <input type="text" placeholder="Company/ Organization" required/>

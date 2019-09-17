@@ -7,9 +7,10 @@
     align-items: center;
     color: whitesmoke;
     margin-top: 40px;
-    background: linear-gradient(rgb(3, 17, 34), rgb(36, 78, 117));
+    background: linear-gradient(#173859,#485959);
+    /*Blues from hero: #3267A6 | #112058 | triad; 485959 */
+}
 
-  }
 .social-media {
   display: flex;
   justify-content: space-between;

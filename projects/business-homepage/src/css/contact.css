@@ -1,7 +1,80 @@
 
 .contact-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    background-color: slateblue;
-    border: 1px solid sandybrown;
-  }
+    background-color: #4089BF;
+}
+
+.contact-hero-overlay > div > p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+
+}
+.contact-hero-img {
+    height: 60vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../img/contact-hero.jpg);
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contact-hero-overlay {
+    position: absolute;
+    height: 62%;
+    width: 100%;
+    background-color: rgba(220, 220, 220, 0.582);
+    z-index: 5;
+}
+.contact-container > form > div.contact-hero {
+    width: 100%;
+}
+.contact-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 60px;
+}
+
+.contact-container > p {
+  display: flex;
+  justify-content: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+
+@media only screen and (max-width:768px) {
+    .contact-hero-img {
+        background-size: contain;
+    }
+    .contact-hero-overlay {
+        position: absolute;
+        height: 258px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .contact-hero-img {
+        background-size: contain;
+    }
+    .contact-hero-overlay {
+        position: absolute;
+        height: 305px;
+    }
+}
+

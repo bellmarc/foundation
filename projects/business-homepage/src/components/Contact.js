@@ -5,7 +5,8 @@ function Contact(){
     return (
         <div className="contact-container">
             <MyForm />
-            <p>Our address:
+            <p className="address-title">Our Address:</p>
+            <p>
                 159 Broadway
                 Suite 200
                 Salt Lake City, UT 84101

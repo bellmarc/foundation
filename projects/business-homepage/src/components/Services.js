@@ -10,7 +10,7 @@ function Services() {
         </div>
         <ul className="services-list">
 
-            <p>We Specialize In:</p>
+            <p className="specialize">We Specialize In:</p>
 
             <FontAwesomeIcon icon="desktop"/>
             <li>Website Development/Re-design</li>

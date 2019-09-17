@@ -10,29 +10,25 @@
   font-size: 16px;
   display: flex;
   font-family: "Ubuntu", sans-serif;
-
-  /* z-index: 2; */
 }
 
 main > p:nth-child(2) {
-  margin-left: 40px;
+margin-left: 40px;
   margin-right: 40px;
 }
-
 
 .nav-container > div {
   font-size: 14px;
   font-family: Helvetica, sans-serif;
   margin-right: 10px;
-  /* z-index: 2; */
 }
 
-.nav-container > .subtext {
-  font-size: 10px;
-  margin-right: 40px;
+.nav-container > div > .subtext {
+  font-size: 8px;
+  color: palegoldenrod;
+  margin-right: 60px;
   display:inline-block;
   font-family: "Ubuntu", sans-serif;
-  /* z-index:1; */
 }
 
 .nav-container > .icon {
@@ -42,13 +38,10 @@ main > p:nth-child(2) {
 
 .nav-container {
     display: flex;
-    width: 100%;
     height: 8vh;
     align-items: center;
     color: whitesmoke;
     background-color:#194646;
-    /* background-color:#194646; teal */
     justify-content: space-between;
-    border: 2px solid #194646;
 }
 
