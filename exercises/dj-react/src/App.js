@@ -22,15 +22,31 @@ import './style.css';
         textColor: prevState.textColor[0] === "white"? [ "black", "black", "black", "black"] : ["white", "white", "white", "white"]
       }
     })
-}
+  }
 
-lavenderToggle = () => {
+  lavenderToggle = () => {
+      this.setState(prevState => {
+        return {
+            bgColors:["lavender", "lavender", prevState.bgColors[2],  prevState.bgColors[3]]
+        }
+      })
+  }
+
+  blueLeft = () => {
     this.setState(prevState => {
       return {
-          bgColors:["lavender", "lavender", prevState.bgColors[2],  prevState.bgColors[3]]
+          bgColors: [prevState.bgColors[0], prevState.bgColors[1], "dodgerblue", prevState.bgColors[3] ]
       }
     })
-}
+  }
+
+  blueRight = () => {
+    this.setState(prevState => {
+      return {
+          bgColors: [prevState.bgColors[0], prevState.bgColors[1], prevState.bgColors[2], "dodgerblue" ]
+      }
+    })
+  }
 
 
   render() {
@@ -40,7 +56,8 @@ lavenderToggle = () => {
                       textColor={ this.state.textColor } />
         <Button blackOrWhiteToggle={this.blackOrWhiteToggle}
                 lavenderToggle={this.lavenderToggle}
-
+                blueLeft={this.blueLeft}
+                blueRight={this.blueRight}
         />
       </div>
     )

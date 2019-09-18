@@ -11,6 +11,7 @@ header {
 p {
   font-size: 16px;
 }
+
 .box-container {
   display: grid;
   grid-template-columns: repeat(2, 200px);
@@ -45,6 +46,7 @@ p {
   border-radius: 30px;
   border: 1px solid teal;
 }
+
 .box4 {
   height: 200px;
   width: 200px;
@@ -65,10 +67,23 @@ button {
   border-radius: 40px;
   justify-content: center;
   text-align: center;
-  align-items: center;
-  border: 1px solid teal;
+  /* align-items: center; */
+  border: 1px solid mediumaquamarine;
 }
 
 .lavenderBtn {
+  background-color: lavender;
+  border: 1px solid rgb(201, 190, 222);
+  /* grid-column: 2 / -1; */
+}
 
+.blueLeftBtn {
+  background-color: midnightblue;
+  color: white;
+  border: 1px solid;
+}
+.blueRightBtn {
+  background-color: midnightblue;
+  color: white;
+  border: 1px solid;
 }
