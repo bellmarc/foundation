@@ -12,7 +12,7 @@
   display: flex;
   /* display: grid; */
   flex-direction: column;
-  border: 10px solid red;
+  /* border: 10px solid red; */
   /* align-items: center;
   justify-content:space-around; */
   /* grid-template-columns: 1fr;
@@ -20,6 +20,54 @@
 }
 
 
+
+@media only screen and (max-width:768px) {
+  .contact-hero-img {
+      background-size: contain;
+  }
+  .contact-hero-overlay {
+      position: absolute;
+      height: 258px;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .contact-hero-container {
+      background-size: contain;
+      height: 90%;
+  }
+  .contact-hero-overlay {
+      position: absolute;
+      height: 50%;
+  }
+
+  .contact-hero-overlay > div > p {
+      margin-top: 100px;
+      display: flex;
+  }
+
+}
+
+@media only screen and (max-width:500px) {
+  .contact-hero-img {
+      background-size: contain;
+  }
+  .contact-hero-overlay {
+      position: absolute;
+      height: 305px;
+  }
+  .contact-hero-overlay > div > p {
+    margin-top: 60px;
+    display: flex;
+  }
+  input {
+  margin-left: 46px;
+  }
+  .submit {
+  margin-left: 180px;
+  margin-right: 80px;
+  }
+}
 
 
 

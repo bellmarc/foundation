@@ -9,12 +9,10 @@
 .contact-hero-overlay > div > p {
   font-size: 30px;
   font-weight: bold;
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 180px;
-
 }
 .contact-hero-img {
     height: 60vh;
@@ -57,24 +55,4 @@
   height: 30px;
 }
 
-
-@media only screen and (max-width:768px) {
-    .contact-hero-img {
-        background-size: contain;
-    }
-    .contact-hero-overlay {
-        position: absolute;
-        height: 258px;
-    }
-}
-
-@media only screen and (max-width:500px) {
-    .contact-hero-img {
-        background-size: contain;
-    }
-    .contact-hero-overlay {
-        position: absolute;
-        height: 305px;
-    }
-}
 

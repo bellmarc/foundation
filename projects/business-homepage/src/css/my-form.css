@@ -48,10 +48,10 @@ input:hover {
     margin-top: 20px;
 }
 
-
+/*
 @media only screen and (max-width:500px) {
 
-/* Contact Form spacing between walls and start/end of each input */
+/* Contact Form spacing between walls and start/end of each input 
     input {
         margin-left: 46px;
     }
@@ -59,4 +59,4 @@ input:hover {
         margin-left: 180px;
         margin-right: 80px;
     }
-}
+} */

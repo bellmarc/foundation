@@ -1,0 +1,6 @@
+/* Add BG Image */
+
+div:nth-child(1) > header {
+    font-size: 18px;
+}
+
