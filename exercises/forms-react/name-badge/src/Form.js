@@ -1,58 +1,63 @@
 import React from 'react';
 
 function Form(props) {
-     console.log(props)
+//      console.log(props)
+     const {firstName, lastName, email, birthplace, phone, favFood, message, handleChange, handleSubmit} = props;
     return (
       <div>
           <label>Badge Form Sign-In</label>
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={handleSubmit}>
 
                 <input
                     type="text"
                     name="firstName"
-                    value={props.firstName}
-                    onChange={props.handleChange}
+                    value={firstName}
+                    onChange={handleChange}
                     placeholder="First Name"
                     required/>
             <input
                     type="text"
                     name="lastName"
-                    value={props.lastName}
-                    onChange={props.handleChange}
+                    value={lastName}
+                    onChange={handleChange}
                     placeholder="Last Name"
                     required/>
             <input
                     type="email"
                     name="email"
-                    value={props.email}
-                    onChange={props.handleChange}
+                    value={email}
+                    onChange={handleChange}
                     placeholder="Email address"
+                    required
                     />
             <input
                     type="birthplace"
                     name="birthplace"
-                    value={props.birthplace}
-                    onChange={props.handleChange}
+                    value={birthplace}
+                    onChange={handleChange}
                     placeholder="Place of Birth"
+                    required
                     />
             <input
-                    type="phone"
+                    type="tel"
                     name="phone"
-                    value={props.phone}
-                    onChange={props.handleChange}
-                    placeholder="Contact Number"/>
+                    value={phone}
+                    onChange={handleChange}
+                    placeholder="Contact Number"
+                    required/>
             <input
                     type="favFood"
                     name="favFood"
-                    value={props.favFood}
-                    onChange={props.handleChange}
-                    placeholder="Favorite food"/>
+                    value={favFood}
+                    onChange={handleChange}
+                    placeholder="Favorite food"
+                    required/>
             <input
                     className="textarea"
                     type="textarea"
                     name="message"
-                    value={props.message}
-                    onChange={props.handleChange}
+                    value={message}
+                    onChange={handleChange}
                     placeholder="Tell us about yourself"
                     required/>
             <div>

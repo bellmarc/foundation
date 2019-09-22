@@ -15,7 +15,7 @@ class App extends React.Component {
       phone: "",
       favFood: "",
       message: "",
-      userInput: [] //will be an Arr of objs, each ob represents 1 badge
+      userInput: [] //will be an Arr of objects, each obj represents 1 badge
     }
   }
   //Methods
