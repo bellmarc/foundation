@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Son Goku",
+        "show": "Dragonball Z",
+        "catchPhrase": "I am the hope of the universe....I am the answer to all living things that cry out for peace...I am the protector of the innocent...I am the light in the darkness...I am truth. Ally to good... Nightmare to you!!!",
+        "imageName": "https://imgix.ranker.com/user_node_img/50081/1001612309/original/1-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
+    },
+    {
+        "name": "Uzumaki Naruto",
+        "show": "Naruto",
+        "catchPhrase": "Dattebayo! Believe it!",
+        "imageName": "https://www.nicepng.com/png/full/1-17967_naruto-selo-sam-imgur.png"
+    },
+    {
+        "name": "Saitama",
+        "show": "One Punch Man",
+        "catchPhrase": "I'm just a guy who's a hero for fun.",
+        "imageName": "https://picserio.com/data/out/344/one-punch-man-phone-wallpaper_5521235.jpg"
+    },
+    {
+        "name": "All Might (Toshinori Yagi)",
+        "show": "My Hero Academia",
+        "catchPhrase": "I am here.",
+        "imageName": "https://vignette.wikia.nocookie.net/p__/images/5/55/All_Might_Hero_Form_Full_Body.png/revision/latest?cb=20190530214721&path-prefix=protagonist"
+    },
+    {
+        "name": "Midoriya 'Deku' Izuku ",
+        "show": "My Hero Academia",
+        "catchPhrase": "I have to work harder than anyone else to make it",
+        "imageName": "https://i.etsystatic.com/16230907/r/il/8c5a8c/1694105809/il_794xN.1694105809_s860.jpg"
+    },
+    {
+        "name": "Monkey D. 'StrawHat' Luffy ",
+        "show": "One Piece",
+        "catchPhrase": "I'm Luffy D. Monkey and I am going to be king of the pirates",
+        "imageName": "http://images6.fanpop.com/image/photos/37700000/Luffy-One-Piece-monkey-d-luffy-37712160-740-987.jpg"
+    },
+    {
+        "name": "Himura Kenshin",
+        "show": "Rurouni Kenshin",
+        "catchPhrase": "That you are. De gozaru.",
+        "imageName": "https://rukminim1.flixcart.com/image/832/832/jms25jk0/poster/b/3/j/medium-athah-anime-rurouni-kenshin-kenshin-himura-13-19-inches-original-imaf9he38tw9vfjj.jpeg?q=70"
+    },
+    {
+        "name": "Tsuna",
+        "show": "Katekyo Hitman Reborn",
+        "catchPhrase": "If i were to lose a friend...then i couldn't die in peace!",
+        "imageName": "http://1.bp.blogspot.com/-N8sWDWTkl3A/Ts3tx6r3HYI/AAAAAAAAA8s/k-ZbcdeCIrs/s1600/kk_re_card_brillante2_25.jpg"
+    },
+    {
+        "name": "Sagittarius Seiya",
+        "show": "Saint Seiya",
+        "catchPhrase": "The previous Sagittarius Gold Saint, Aiolos, was more righteous and loyal than anyone. Aiolos, I have personally inherited your will and techniques!",
+        "imageName": "http://i.imgur.com/VyPArTE.jpg"
+    }
+]
