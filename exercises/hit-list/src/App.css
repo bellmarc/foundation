@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.hit-container {
+  grid-template-columns: repeat(3, 12px);
+  grid-template-rows: repeat(3, auto);
+  border: 1px solid black;
+  margin:300px;
+  padding: 100px;
+  border-radius: 5px;
+}
+
+.image {
+  width: 450px;
+  height: 280px;
+}
