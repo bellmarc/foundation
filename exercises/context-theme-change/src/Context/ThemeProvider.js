@@ -6,10 +6,10 @@ class ThemeProvider extends React.Component {
     constructor() {
         super()
         this.state = {
-            theme: ""
+            theme: "light"
         }
     }
-    
+
 //function to be passed to App
    toggleTheme = () => {
     this.setState(prevState => ({
@@ -26,7 +26,7 @@ class ThemeProvider extends React.Component {
                 }}>
                 {this.props.children}
             </ThemeContext.Provider>
-        )
+        )   
     }
 }
 

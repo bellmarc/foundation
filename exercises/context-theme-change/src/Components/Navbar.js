@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { withTheme } from '../Context/ThemeProvider';
 
-
-const Navbar = () => {
+const Navbar = (props) => {
   return(
-    <div className="navbar">
+    <nav className={`nav-${props.theme}`}>
         <div className="link">Home</div>
         <div className="link">About</div>
         <div className="link">Contact</div>
-    </div>
+    </nav>
   )
 }
 
 
 
-export default Navbar
+export default withTheme(Navbar)

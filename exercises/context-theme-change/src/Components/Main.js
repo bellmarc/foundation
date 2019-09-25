@@ -1,13 +1,14 @@
 import React from 'react'
+import {withTheme} from '../Context/ThemeProvider.js';
 
 
-const Main = () => {
+const Main = (props) => {
     return (
-      <div className="main">
-      </div>
+      <main className={`main-${props.theme}`}>
+      </main>
     )
 
 }
 
 
-export default Main
+export default withTheme(Main)

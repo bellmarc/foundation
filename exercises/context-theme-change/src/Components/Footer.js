@@ -1,13 +1,14 @@
 import React from 'react'
+import {withTheme} from '../Context/ThemeProvider';
 
 
-const Footer = () => {
+const Footer = (props) => {
     return (
-        <div className="footer">
+        <footer className={`footer-${props.theme}`}>
             <div className="link">SM1</div>
             <div className="link">SM2</div>
             <div className="link">SM3</div>
-        </div>
+        </footer>
     )
 
 }
@@ -15,4 +16,4 @@ const Footer = () => {
 
 
 
-export default Footer
+export default withTheme(Footer)
