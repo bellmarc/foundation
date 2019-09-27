@@ -1,6 +1,7 @@
 import React from 'react';
-import {Switch} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import Navbar from './Components/Navbar.js';
+import Home from './Components/Home.js';
 import Main from './Components/Main.js';
 import Footer from './Components/Footer.js';
 import {withTheme} from './Context/ThemeProvider.js';
@@ -14,8 +15,8 @@ console.log(props)
         <Navbar />
       </div>
       <Switch>
-        <Route exact path="/" component={home}>Home</Route>
-        <Route exact path="/main" component={main}>Main</Route>
+        <Route exact path="/" component={Home}>Home</Route>
+        <Route exact path="/main" component={Main}>Main</Route>
       </Switch>
       <Main />
       <Footer />

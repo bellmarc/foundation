@@ -1,13 +1,15 @@
 import React from 'react';
+import Navbar from './Navbar.js';
 
 
-const Home = () => {
+const Home = (props) => {
     return (
         <div>
-       {/* can rcv mappedProps */}
+            <Navbar />
         </div>
     )
 }
+
 
 
 export default Home

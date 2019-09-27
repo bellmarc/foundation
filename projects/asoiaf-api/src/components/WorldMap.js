@@ -1,14 +1,14 @@
 import React from 'react';
 
-
-const About =() => {
+const WorldMap = () => {
     return (
         <div>
-            About
+
         </div>
     )
 }
 
 
 
-export default About
+
+export default WorldMap
