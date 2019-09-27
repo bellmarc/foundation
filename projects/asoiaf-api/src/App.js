@@ -6,15 +6,22 @@ import Home from './components/Home.js';
 import WorldMap from './components/WorldMap.js';
 import Footer from './components/Footer.js';
 import Navbar from './components/Navbar.js';
-
+import axios from 'axios';
 
 class App extends React.Component {
   constructor(){
     super()
+    this.state = {
+      characters: []
+    }
   }
-  // componentDidMount(){
-  // fcn
-  // }
+  componentDidMount(){
+    axios.get("https://www.anapioficeandfire.com/api/characters")
+    .then(res => console.log(res))
+    .catch(err => (err))
+  }
+
+
   render(){
      return (
       <div className="App">

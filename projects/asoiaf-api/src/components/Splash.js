@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 import video from '../assets/aerial-sunset-intro.mp4';
 
 
@@ -18,9 +18,11 @@ function Splash() {
                 <h2 className="hero-subtitle">
                     Winter is Coming
                 </h2>
-                <button type="button" className="hero-button" onClick="#">
-                See More &raquo; 
-                </button>
+                <Link to="/">
+                    <button type="button" className="hero-button">
+                    See More &raquo;
+                    </button>
+                </Link>
             </div>
         {/* Add icon for sound */}
         </section>
