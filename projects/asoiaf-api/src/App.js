@@ -6,33 +6,27 @@ import Home from './components/Home.js';
 import WorldMap from './components/WorldMap.js';
 import Footer from './components/Footer.js';
 import Navbar from './components/Navbar.js';
-import axios from 'axios';
+import { withChar } from "./context/CharacterProvider.js";
+
+
 
 class App extends React.Component {
-  constructor(){
-    super()
-    this.state = {
-      characters: []
-    }
+  componentDidMount() {
+    this.props.getHouses()
   }
-  componentDidMount(){
-    axios.get("https://www.anapioficeandfire.com/api/characters")
-    .then(res => console.log(res))
-    .catch(err => (err))
-  }
-
 
   render(){
+    console.log(this.props)
      return (
       <div className="App">
         <div>
           <Navbar />
-          <Splash />
+          {/* <Splash /> */}
         </div>
         <Switch>
-            <Route exact path="/" component={Home}>Home</Route>
-            <Route path="/about" component={About}>About</Route>
-            <Route path="/map" component={WorldMap}>WorldMap</Route>
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/map" component={WorldMap}/>
         </Switch>
         <Footer />
       </div>
@@ -41,4 +35,4 @@ class App extends React.Component {
 }
 
 
-export default App;
+export default withChar(App);
