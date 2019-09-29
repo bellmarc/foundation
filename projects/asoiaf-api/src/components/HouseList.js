@@ -7,7 +7,7 @@ const HouseList = (props) => {
     return (
         <div className="house-container">
        {/* can rcv mappedProps */}
-       <h1>All Houses </h1>
+       <h1 className="house-banner">All Houses </h1>
        <div>
             { props.houses.map(house => <h2>{house.name}</h2>)}
        </div>
