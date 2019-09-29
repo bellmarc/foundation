@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Splash from './components/Splash.js';
 import Characters from './components/Characters.js';
-import Home from './components/HouseList.js';
+import Music from './components/Music';
 import SwornMember from './components/SwornMember.js';
 import WorldMap from './components/WorldMap.js';
 import Footer from './components/Footer.js';
@@ -19,6 +19,7 @@ class App extends React.Component {
 
   render(){
     console.log(this.props)
+    
      return (
       <div className="App">
         <div>
@@ -32,6 +33,7 @@ class App extends React.Component {
             <Route path="/swornmember" component={SwornMember}/>
             <Route path="/map" component={WorldMap}/>
         </Switch>
+        <Music />
         <Footer />
       </div>
       );

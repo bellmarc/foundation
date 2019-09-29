@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import video from '../assets/aerial-sunset-intro.mp4';
 
 
+
 function Splash() {
     return (
         <>
