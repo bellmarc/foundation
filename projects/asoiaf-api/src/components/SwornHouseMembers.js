@@ -1,22 +1,17 @@
 import React from 'react';
-import { withChar } from "./context/CharacterProvider.js";
 
 
+const SwornHouseMembers = () => {
+    return (
+        <div>
+            <h1>Sworn Members of House</h1>
+                <div>
 
-//will load data from house & map out SwornMembers
-class SwornHouseMembers extends React.Component {
-    constructor() {
-        super()
-        this.setState = {
-
-        }
-    }
-    render() {
-        return (
-            <div>Sworn House Members</div>
-        )
-    }
+                </div>
+        </div>
+    )
 }
 
 
-export default withChar(SwornHouseMembers)
+
+export default SwornHouseMembers
