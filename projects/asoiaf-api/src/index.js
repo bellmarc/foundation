@@ -4,7 +4,6 @@ import {BrowserRouter} from 'react-router-dom';
 import './style/App.css';
 import './style/navbar.css';
 import './style/splash.css';
-import './style/house-list.css';
 import './style/house-card.css';
 import './style/characters.css';
 import './style/footer.css';

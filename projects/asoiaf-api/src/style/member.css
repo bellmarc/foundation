@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.member-container {
+    display: grid;
+    font-family: 'Cinzel', serif;
+    color: whitesmoke;
+    grid-gap:2rem 10px;
+    background: #202020;
+}
+
+.member-name {
+
+}
+
+.member-title {
+
+}

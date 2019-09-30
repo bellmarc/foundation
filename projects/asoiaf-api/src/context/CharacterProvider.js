@@ -12,6 +12,7 @@ class CharacterProvider extends React.Component {
         this.state = {
             characters: [],
             houses: [],
+            search: "",
             page: 1
         }
     }
@@ -20,10 +21,22 @@ class CharacterProvider extends React.Component {
         //?page=2
         axios.get(`https://www.anapioficeandfire.com/api/houses?page=${this.state.page}`)
         .then(res => {
-            console.log(res)
-            this.setState({ houses: res.data})})
+            // console.log(res)
+            this.setState({ houses: res.data})
+        })
         .catch(err => (err))
     }
+
+    searchCharacters = () => {
+        axios.get(`https://www.anapioficeandfire.com/api/characters?page=${this.state.page}`)
+        .then(res => {
+            this.setState({ characters: res.data,
+                            search: res.data
+                        })
+        })
+        .catch(err => (err))
+    }
+
     //make next page method, this.setState & update page to be prevState.page + 1, after it calls this .getHouses()
     //then make prev page -1 (create btns for both)
 
@@ -49,7 +62,8 @@ class CharacterProvider extends React.Component {
                         houses: this.state.houses,
                         getHouses: this.getHouses,
                         getNextHousePage: this.getNextHousePage,
-                        getPrevHousePage: this.getPrevHousePage
+                        getPrevHousePage: this.getPrevHousePage,
+                        searchCharacters: this.searchCharacters
                     }}>
                     {this.props.children}
                 </CharContext.Provider>
@@ -65,14 +79,3 @@ export const withChar = C => props => (
     </CharContext.Consumer>
 )
 
-
-//fcn called nextPage, will get data, template literal, hard-code all except pg# { } +1 than currentState
-
-//setup a page with symbols (btns) onclick generates house members
-
-
-// getAllChars = () => {
-//     axios.get("https://www.anapioficeandfire.com/api/characters")
-//     .then(res => console.log(res))
-//     .catch(err => (err))
-// }

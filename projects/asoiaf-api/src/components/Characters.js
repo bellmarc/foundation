@@ -1,8 +1,9 @@
 import React from 'react';
 import video from '../assets/snow-fall.mp4';
+import {withChar} from '../context/CharacterProvider.js';
 
 
-const Characters =() => {
+const Characters =(props) => {
     return (
        <>
         <section className="char-hero">
@@ -16,6 +17,8 @@ const Characters =() => {
                 </h1>
                 <input type="text" className="char-hero-input" placeholder="Search">
                 </input>
+                {/* add button */}
+                <button className="pi pi-search" style={{'fontSize': '2em', 'color':'whitesmoke'}}>{props.searchCharacter}</button>
             </div>
         </section>
         </>
@@ -24,4 +27,4 @@ const Characters =() => {
 
 
 
-export default Characters
+export default withChar(Characters);

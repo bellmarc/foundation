@@ -1,6 +1,7 @@
 * {
     margin: 0;
 }
+
 .char-hero-overlay {
     display: flex;
     flex-direction: column;
@@ -26,6 +27,10 @@ video {
     position: relative;
 }
 
+.char-hero-vid {
+    background-color: #020101;
+}
+
 .char-hero-content {
     grid-row: 2/ 2;
     grid-column: 3/ 2;
@@ -35,15 +40,14 @@ video {
     text-align: center;
     margin: 0.625rem;
 }
-
+/*
 .char-hero-overlay > h1.search-banner {
     background-image: url("../assets/throne.jpg");
     background-repeat: no-repeat;
     background-size: 1800px 400px;
     background-position: center top;
-
     text-indent: -9999px;
-}
+} */
 
 .char-hero-title {
     font-family: 'Cinzel', serif;
@@ -54,6 +58,7 @@ video {
 }
 
 .char-hero-input {
+    display: inline;
     background-color:rgb(198, 218, 228);
     color: #330204;
     border: 1px solid #10192D;
@@ -72,6 +77,36 @@ video {
     grid-template-rows: auto;
     margin-top: 40px;
     text-align: center;
-    border: 2px solid #D4E6E6;
-    background: whitesmoke;
+    color: #265877;
+    background: #E2E9E7;
+    /* border: 2px solid #D4E6E6;
+    background: whitesmoke; */
+}
+
+.pi-search {
+    display: inline-block;
+    color: #E2E9E7;
+    background: #265877;
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #265877;
+}
+
+/* Input & search box highlighting effect */
+input[type=text], textarea, button {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus, button:focus  {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
 }

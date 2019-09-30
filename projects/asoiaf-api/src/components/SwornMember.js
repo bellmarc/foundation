@@ -6,19 +6,32 @@ import axios from 'axios';
 class SwornMember extends React.Component {
     constructor() {
         super()
-        this.setState = {
+        this.state = {
         swornMember: {}
         }
     }
-//map over array of urls
+
     componentDidMount() {
-        axios.get(props.url)
-        console.log(props.url)
+    //need axios get call here to display below
+    axios.get(this.props.url)
+    .then(res =>
+        this.setState({
+            swornMember: res.data
+        }))
+    .catch(err => (err))
     }
 
     render() {
+        //destructuring for shorter syntax
+        const {name, gender, titles} =  this.state.swornMember
         return (
-            <div>Sworn House Members</div>
+            <div>
+                <div className="member-container">
+                    <h1 className="member-name">{name}</h1>
+                     <h3 className="member-title" style={{'fontStyle':'italic'}}>{titles}</h3>
+                    <h3 className="member-gender">{gender}</h3>
+                </div>
+            </div>
         )
     }
 }

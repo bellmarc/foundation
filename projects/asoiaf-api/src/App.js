@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Splash from './components/Splash.js';
+// import Splash from './components/Splash.js';
 import Characters from './components/Characters.js';
 // import Music from './components/Music';
 import SwornMemberList from './components/SwornMemberList.js';
@@ -11,15 +11,13 @@ import { withChar } from "./context/CharacterProvider.js";
 import HouseList from './components/HouseList.js';
 
 
-
 class App extends React.Component {
   componentDidMount() {
     this.props.getHouses()
   }
 
   render(){
-    console.log(this.props)
-
+    // console.log(this.props)
      return (
       <div className="App">
         <div>
@@ -27,7 +25,7 @@ class App extends React.Component {
           {/* <Splash /> */}
         </div>
         <Switch>
-            <Route exact path="/" component={HouseList}/>
+            <Route path="/houses" component={HouseList}/>
             <Route path="/characters" component={Characters}/>
             <Route path="/members" component={SwornMemberList}/>
             <Route path="/map" component={WorldMap}/>

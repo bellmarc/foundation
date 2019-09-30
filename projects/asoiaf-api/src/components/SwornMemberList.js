@@ -1,21 +1,25 @@
 import React from 'react';
-import axios from 'axios';
-
+import SwornMember from './SwornMember.js';
+import {withChar} from '../context/CharacterProvider.js';
 
 const SwornMemberList = (props) => {
-    // componentDidMount() {
-    // axios.get(props.url)
-    // }
+    // const mappedMembers = props.swornMembers.map((member, index) => {
+    //     return <SwornMember
+    //                 key={member.url + index}
+    //                 url={member}
+    //             />
+    //     })
+    // console.log(mappedMembers)
+    // console.log(props.location.state)
     return (
         <div>
-            <h1>Sworn Members of House</h1>
-                <div>
-                { props.location.state.swornmembers.map(swornmember => <h2>{swornmember.url}</h2>)}
-                </div>
+            <h1>Sworn Members of {`Sworn Members List:  ${props.name}`}
+            </h1>
+            {/* {mappedMembers} */}
         </div>
     )
 }
 
 
 
-export default SwornMemberList
+export default withChar(SwornMemberList)
