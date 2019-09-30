@@ -1,0 +1,77 @@
+.play-music-btn {
+    display: flex;
+    padding:8px;
+    background: rgba(43,43,43);
+    z-index: 1;
+    position: absolute;
+}
+
+.hero-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+  /* add h/w to vid in grid */
+video {
+    object-fit: cover;
+    z-index: 0;
+    /* 1 indicates proximity of item to viewer, 0 is bg */
+    width:100%;
+    height: 90vh;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-content {
+    grid-row: 2/ 2;
+    grid-column: 3/ 2;
+    position: absolute;
+    font-family: 'Cinzel', serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+.hero-title {
+    width:498px;
+    height: 75px;
+    background-image: url("../assets/got-logo.png");
+    text-indent: -9999px;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-subtitle {
+    color: whitesmoke;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+.hero-button {
+    background-color: #E7D490;
+    color: #330204;
+    border: 1px solid #B59856;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: 'Cinzel', serif;
+    font-size: 1.25rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+.hero-button:hover {
+    background-color: #B0B9C2;
+    border: 1px solid #330204;
+    /* Consult w/UX Designer if THIS color combo works: background-color: #330204;
+    color:#E7D490; */
+}

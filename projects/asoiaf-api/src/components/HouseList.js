@@ -9,7 +9,7 @@ const HouseList = (props) => {
        {/* can rcv mappedProps */}
        <h1 className="house-banner">All Houses </h1>
        <div>
-            { props.houses.map(house => <h2>{house.name}</h2>)}
+            { props.houses.map(house => <div className="card"><h2>{house.name}</h2></div>)}
        </div>
        {/* FCN to only show PrevPg button on 2nd Pg */}
        <div>

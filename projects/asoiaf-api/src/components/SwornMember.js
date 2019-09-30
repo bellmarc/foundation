@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 
 //will load data from house & map out SwornMembers
@@ -7,12 +8,12 @@ class SwornMember extends React.Component {
         super()
         this.setState = {
         swornMember: {}
-
         }
     }
 //map over array of urls
     componentDidMount() {
-
+        axios.get(props.url)
+        console.log(props.url)
     }
 
     render() {

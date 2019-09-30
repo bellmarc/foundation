@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Splash from './components/Splash.js';
 import Characters from './components/Characters.js';
-import Music from './components/Music';
-import SwornMember from './components/SwornMember.js';
+// import Music from './components/Music';
+import SwornMemberList from './components/SwornMemberList.js';
 import WorldMap from './components/WorldMap.js';
 import Footer from './components/Footer.js';
 import Navbar from './components/Navbar.js';
@@ -25,15 +25,13 @@ class App extends React.Component {
         <div>
           <Navbar />
           {/* <Splash /> */}
-
         </div>
         <Switch>
             <Route exact path="/" component={HouseList}/>
             <Route path="/characters" component={Characters}/>
-            <Route path="/swornmember" component={SwornMember}/>
+            <Route path="/members" component={SwornMemberList}/>
             <Route path="/map" component={WorldMap}/>
         </Switch>
-        <Music />
         <Footer />
       </div>
       );
