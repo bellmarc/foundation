@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 
-
 const CharContext = React.createContext()
 //CharContext.Provider
 //CharContext.Consumer
@@ -54,6 +53,9 @@ class CharacterProvider extends React.Component {
         }), () => this.getHouses()
         )
     }
+    //Return to Houses from SwornMembers Page
+
+
 
     render() {
         return (

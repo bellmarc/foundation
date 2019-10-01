@@ -7,7 +7,8 @@ class SwornMember extends React.Component {
     constructor() {
         super()
         this.state = {
-        swornMember: {}
+        swornMember: {},
+        memberImage: ""
         }
     }
 
@@ -17,9 +18,23 @@ class SwornMember extends React.Component {
     .then(res =>
         this.setState({
             swornMember: res.data
-        })
+        }, this.getImage
+        )
         )
     .catch(err => (err))
+
+
+    }
+
+    getImage = () => {
+        axios.get(`https://vschool-cors.herokuapp.com?url=https://api.got.show/api/show/characters/${this.state.swornMember.name}`)
+        .then (res =>
+            this.setState({
+                memberImage: res.data.image
+            })
+
+
+        )
     }
 
     render() {
@@ -33,11 +48,14 @@ class SwornMember extends React.Component {
                      </h3>
                     <h3 className="member-gender">{gender}
                     </h3>
+                    {/* add ternary statement in image src for placeholder image until page loads all images */}
+                    <img src={this.state.memberImage}
+                    />
                 </div>
             </div>
         )
     }
-}
+}  {/* {this.state.memberImage.length || this.state.memberImage : } */}
 
 
 export default SwornMember

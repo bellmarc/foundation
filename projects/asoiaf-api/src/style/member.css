@@ -19,3 +19,10 @@
 .member-title {
 
 }
+
+.return-btn {
+
+}
+:nth-child(2) > button > a > a.return-tag {
+    text-decoration: none;
+}

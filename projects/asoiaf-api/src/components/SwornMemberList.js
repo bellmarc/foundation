@@ -17,13 +17,18 @@ const SwornMemberList = (props) => {
     })
     }
 
-
-
     return (
         <div>
-            {/* <h1>Sworn Members of {props.houses.name}</h1> */}
-            {mappedMembers}
-        </div>
+            <h1>Sworn Members of {props.location.name}</h1>
+            {mappedMembers.length ? mappedMembers : "No Sworn Members associated with this House"}
+            <div>
+
+       </div>
+            <button className="return-btn">
+                <a className="return-tag" href="/houses">&laquo; Previous    page
+                </a>
+            </button>
+       </div>
     )
 }
 

@@ -1,10 +1,9 @@
 import React from 'react';
 import {withChar} from '../context/CharacterProvider.js';
 import HouseCard from './HouseCard.js';
-import SwornMemberList from './SwornMemberList.js';
+
 
 const HouseList = (props) => {
-
     const mappedCards = props.houses.map((house, index) => {
           return (
                <HouseCard
@@ -16,6 +15,7 @@ const HouseList = (props) => {
           )
      })
 
+     
      return (
         <div className="house-container">
        {/* can rcv mappedProps */}
