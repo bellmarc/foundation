@@ -17,7 +17,8 @@ class SwornMember extends React.Component {
     .then(res =>
         this.setState({
             swornMember: res.data
-        }))
+        })
+        )
     .catch(err => (err))
     }
 
@@ -28,8 +29,10 @@ class SwornMember extends React.Component {
             <div>
                 <div className="member-container">
                     <h1 className="member-name">{name}</h1>
-                     <h3 className="member-title" style={{'fontStyle':'italic'}}>{titles}</h3>
-                    <h3 className="member-gender">{gender}</h3>
+                     <h3 className="member-title" style={{'fontStyle':'italic'}}>{titles}
+                     </h3>
+                    <h3 className="member-gender">{gender}
+                    </h3>
                 </div>
             </div>
         )

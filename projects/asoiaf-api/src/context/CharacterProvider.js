@@ -27,15 +27,15 @@ class CharacterProvider extends React.Component {
         .catch(err => (err))
     }
 
-    searchCharacters = () => {
-        axios.get(`https://www.anapioficeandfire.com/api/characters?page=${this.state.page}`)
-        .then(res => {
-            this.setState({ characters: res.data,
-                            search: res.data
-                        })
-        })
-        .catch(err => (err))
-    }
+    // searchCharacters = () => {
+    //     axios.get(`https://www.anapioficeandfire.com/api/characters?page=${this.state.page}`)
+    //     .then(res => {
+    //         this.setState({ characters: res.data,
+    //                         search: res.data
+    //                     })
+    //     })
+    //     .catch(err => (err))
+    // }
 
     //make next page method, this.setState & update page to be prevState.page + 1, after it calls this .getHouses()
     //then make prev page -1 (create btns for both)
@@ -63,7 +63,8 @@ class CharacterProvider extends React.Component {
                         getHouses: this.getHouses,
                         getNextHousePage: this.getNextHousePage,
                         getPrevHousePage: this.getPrevHousePage,
-                        searchCharacters: this.searchCharacters
+                        ...this.state
+
                     }}>
                     {this.props.children}
                 </CharContext.Provider>
@@ -79,3 +80,4 @@ export const withChar = C => props => (
     </CharContext.Consumer>
 )
 
+  {/* searchCharacters: this.searchCharacters */}

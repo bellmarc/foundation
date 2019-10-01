@@ -2,20 +2,27 @@ import React from 'react';
 import SwornMember from './SwornMember.js';
 import {withChar} from '../context/CharacterProvider.js';
 
+
 const SwornMemberList = (props) => {
-    // const mappedMembers = props.swornMembers.map((member, index) => {
-    //     return <SwornMember
-    //                 key={member.url + index}
-    //                 url={member}
-    //             />
-    //     })
-    // console.log(mappedMembers)
-    // console.log(props.location.state)
+    let mappedMembers
+    if (props.location) {
+        // console.log(props.location.state.swornMembers)
+        mappedMembers =  props.location.state.swornMembers.map((member, index) => {
+            // console.log(member.url)
+        return <SwornMember
+
+                key={member + index}
+                url={member}
+                />
+    })
+    }
+
+
+
     return (
         <div>
-            <h1>Sworn Members of {`Sworn Members List:  ${props.name}`}
-            </h1>
-            {/* {mappedMembers} */}
+            {/* <h1>Sworn Members of {props.houses.name}</h1> */}
+            {mappedMembers}
         </div>
     )
 }

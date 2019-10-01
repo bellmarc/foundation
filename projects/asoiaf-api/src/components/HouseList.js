@@ -4,21 +4,15 @@ import HouseCard from './HouseCard.js';
 import SwornMemberList from './SwornMemberList.js';
 
 const HouseList = (props) => {
-//     console.log(props)
 
-    const mappedCards = props.houses.map(house => {
-
+    const mappedCards = props.houses.map((house, index) => {
           return (
-          <>
                <HouseCard
+                         key={index}
                          name={house.name}
                          region={house.region}
                          swornMembers={house.swornMembers}
                />
-               <SwornMemberList
-                    name={house.name}
-               />
-          </>
           )
      })
 
