@@ -9,13 +9,16 @@ import './style/characters.css';
 import './style/footer.css';
 import App from './App';
 import CharacterProvider from './context/CharacterProvider';
+import MusicProvider from './context/MusicProvider';
 
 
 
 ReactDOM.render(
     <BrowserRouter>
     <CharacterProvider>
-        <App />
+        <MusicProvider>
+          <App />
+        </MusicProvider>
     </CharacterProvider>
     </BrowserRouter>,
  document.getElementById('root'));

@@ -69,7 +69,9 @@ video {
     font-weight: 200;
     cursor: pointer;
 }
-
+.search-con {
+    display: flex;
+}
 .char-list {
     display:grid;
     grid-gap:2rem 10px;
@@ -84,11 +86,10 @@ video {
 }
 
 .pi-search {
-    display: inline-block;
     color: #E2E9E7;
     background: #265877;
     width: 80px;
-    padding: 8px;
+    padding: 5px;
     border: 1px solid #265877;
 }
 

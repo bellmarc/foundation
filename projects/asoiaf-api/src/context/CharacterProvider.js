@@ -6,22 +6,25 @@ const CharContext = React.createContext()
 //CharContext.Consumer
 
 class CharacterProvider extends React.Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             characters: [],
             houses: [],
             search: "",
-            page: 1
+            page: 1,
+
+            // return: { show : false }
         }
     }
 
-    getHouses = () => {
+    getHouses = (pageNum) => {
         //?page=2
-        axios.get(`https://www.anapioficeandfire.com/api/houses?page=${this.state.page}`)
+        axios.get(`https://www.anapioficeandfire.com/api/houses?page=${pageNum}`)
         .then(res => {
             // console.log(res)
-            this.setState({ houses: res.data})
+            this.setState({ houses: res.data
+            })
         })
         .catch(err => (err))
     }
@@ -39,22 +42,28 @@ class CharacterProvider extends React.Component {
     //make next page method, this.setState & update page to be prevState.page + 1, after it calls this .getHouses()
     //then make prev page -1 (create btns for both)
 
-    //Pagination
-    getNextHousePage = () => {
-        this.setState((prevState) => ({
-            page: prevState.page + 1
-        }), () => this.getHouses()
-        )
-    }
+    //toggle prevBtn visibility && display currentPage
 
-    getPrevHousePage = () => {
-        this.setState((prevState) => ({
-            page: prevState.page - 1
-        }), () => this.getHouses()
-        )
+
+    //Pagination, know current page & decrement/increment
+    //history push method
+    getNextHousePage = (obj) => {
+        // console.log(obj.pageNum)
+        obj.history.push(`/houses/${(obj.pageNum + 1)}`)
+        this.getHouses(obj.pageNum + 1)
+    }
+    
+//validate if num is < 1 then page ==> 1
+    getPrevHousePage = (obj) => {
+        obj.history.push(`/houses/${(obj.pageNum - 1)}`)
+        this.getHouses(obj.pageNum - 1)
+
     }
     //Return to Houses from SwornMembers Page
-
+    // getToPrevPage = () => {
+    //     const { show } = this.state.return;
+    //         this.setState({ show: true })
+    // }
 
 
     render() {
@@ -82,4 +91,3 @@ export const withChar = C => props => (
     </CharContext.Consumer>
 )
 
-  {/* searchCharacters: this.searchCharacters */}

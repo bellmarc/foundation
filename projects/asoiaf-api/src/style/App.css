@@ -6,7 +6,9 @@
 
 .App {
   display: grid;
+  position: relative;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  min-width: 100vw;
+  /* min-width: 100vw; */
+  padding-bottom: 2.5rem;
 }

@@ -9,6 +9,8 @@
   font-family: 'Cinzel', serif;
   grid-gap:2rem 10px;
   background: #C3BDB6;
+  padding-top: 30px;
+
 }
 
 .house-banner {
@@ -31,7 +33,7 @@
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  margin-top: 40px;
+  margin: 40px;
   text-align: center;
   font-family: 'Cinzel', serif;
   background: #C3BDB6;
@@ -50,7 +52,7 @@
   display:grid;
   grid-gap:3rem 20px;
   padding: 40px;
-  margin-top: 40px;
+  margin: 30px;
   min-height: 171px;
   text-align: center;
   border: 1px solid #265877;
@@ -67,9 +69,18 @@
 
 button {
   display: flex;
-  margin-top: 30px;
+  margin-top: 40px;
   color: #E2E9E7;
   background: #265877;
+}
+.page-btns {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.hidden {
+  display: none;
 }
 
 .house-container > div:nth-child(3) > button {

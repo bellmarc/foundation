@@ -12,16 +12,16 @@
     background: #202020;
 }
 
-.member-name {
+/* .member-name {
 
 }
 
 .member-title {
 
-}
+} */
 
-.return-btn {
-
+button {
+    padding-top: 10px;
 }
 :nth-child(2) > button > a > a.return-tag {
     text-decoration: none;

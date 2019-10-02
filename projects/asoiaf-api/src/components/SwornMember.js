@@ -49,13 +49,14 @@ class SwornMember extends React.Component {
                     <h3 className="member-gender">{gender}
                     </h3>
                     {/* add ternary statement in image src for placeholder image until page loads all images */}
-                    <img src={this.state.memberImage}
+                    <img src={this.state.memberImage} alt={name}
                     />
                 </div>
             </div>
         )
     }
-}  {/* {this.state.memberImage.length || this.state.memberImage : } */}
+}
+/* {this.state.memberImage.length || this.state.memberImage : } */
 
 
 export default SwornMember
