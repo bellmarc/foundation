@@ -1,11 +1,17 @@
 import React from 'react';
 import video from '../assets/snow-fall.mp4';
 import {withChar} from '../context/CharacterProvider.js';
+import Navbar from './Navbar.js';
+
 
 
 const Characters =(props) => {
     return (
        <>
+       <Navbar
+                    history={props.history}
+                    pathname={`/characters/`}
+       />
         <section className="char-hero">
             <div className="char-hero-vid">
                <video autoPlay="autoplay" loop muted="muted" playsInline><source src={video}type="video/mp4"/>Your browser does not support the video.</video>

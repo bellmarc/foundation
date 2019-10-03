@@ -1,12 +1,26 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Switch, Route} from 'react-router-dom';
+import {withChar} from '../context/CharacterProvider.js';
 
-const Navbar = () => {
+
+const Navbar = (props) => {
+    // console.log("Navbar", props.history.location)
+    // console.log(`/houses/${props.pageNum}`)
+    console.log(props)
+
+//     let currentTab
+//     if (props.history.location.pathname === `/houses/`){
+//         currentTab = "currentTab"
+//    } else {
+//         currentTab = "nav-highlight"
+//    }
+
+
     return (
-        <nav>
-           <Link to ="/houses/1">Houses</Link>
-           <Link to="members"> Sworn Members</Link>
-           <Link to="/characters">Characters</Link>
+        <nav className="currentTab">
+           <Link className={props.pathname==='/houses/' &&"nav-highlight"} to ="/houses/">Houses</Link>
+           <Link className={props.pathname==='/members' &&"nav-highlight"} to="/members"> Sworn Members</Link>
+           <Link className={props.pathname==='/characters/' &&"nav-highlight"} to="/characters">Characters</Link>
            {/* <Link to="/map">Map</Link> */}
         </nav>
     )
@@ -14,4 +28,6 @@ const Navbar = () => {
 
 
 
-export default Navbar
+
+
+export default withChar(Navbar)

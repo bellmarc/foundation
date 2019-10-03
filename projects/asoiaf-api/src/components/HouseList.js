@@ -5,7 +5,7 @@ import HouseCard from './HouseCard.js';
 
 
 const HouseList = (props) => {
-     console.log(props.history.location.pathname)
+     // console.log(props.history)
     const mappedCards = props.houses.map((house, index) => {
           return (
                <HouseCard
@@ -23,13 +23,18 @@ const HouseList = (props) => {
           className = "prev-page"
      }
 
-     // let highlightCurrentTab
-
-     // if ()
 
      return (
         <>
-             <Navbar />
+             <Navbar
+                    history={props.history}
+                    pathname={`/houses/`}
+             />
+
+             {/* {Navbar({
+                  history: props.history,
+                  pathname: "/houses/"
+             })} */}
 
         <div className="house-container">
        {/* can rcv mappedProps */}

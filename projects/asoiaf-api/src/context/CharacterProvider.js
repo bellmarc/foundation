@@ -52,7 +52,7 @@ class CharacterProvider extends React.Component {
         obj.history.push(`/houses/${(obj.pageNum + 1)}`)
         this.getHouses(obj.pageNum + 1)
     }
-    
+
 //validate if num is < 1 then page ==> 1
     getPrevHousePage = (obj) => {
         obj.history.push(`/houses/${(obj.pageNum - 1)}`)
