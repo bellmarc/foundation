@@ -23,6 +23,10 @@ video {
     height: 100vh;
 }
 
+.char-display {
+        
+}
+
 .char-hero {
     position: relative;
 }

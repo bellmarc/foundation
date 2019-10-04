@@ -46,7 +46,7 @@ video {
     position: relative;
 }
 
-.hero-title {
+h1.hero-title {
     width:498px;
     height: 75px;
     background-image: url("../assets/got-logo.png");

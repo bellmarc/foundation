@@ -16,6 +16,7 @@ const HouseList = (props) => {
                />
           )
      })
+
      let className
      if (props.history.location.pathname === '/houses/1'){
           className = "hidden"
@@ -23,14 +24,13 @@ const HouseList = (props) => {
           className = "prev-page"
      }
 
-
+     console.log(props)
      return (
         <>
              <Navbar
                     history={props.history}
                     pathname={`/houses/`}
              />
-
              {/* {Navbar({
                   history: props.history,
                   pathname: "/houses/"
@@ -44,24 +44,23 @@ const HouseList = (props) => {
        </div>
        {/* FCN to only show PrevPg button on 2nd Pg */}
        <div className="page-btns">
+
             <button className={className} onClick={ ()=> {
 
                const obj = {
                     history: props.history,
-                    pageNum: props.match.params._id
+                    id: props.match.params._id ? props.match.params._id : 1
                     }
 
                props.getPrevHousePage(obj)
            }}>
-
                  &laquo; Previous page </button>
 
             <button className="next-page" onClick={ ()=> {
 
                  const obj = {
                       history: props.history,
-                      pageNum: typeof Number(props.match.params._id) === 'NaN' ? 1
-                      : Number(props.match.params._id)
+                      id: props.match.params._id
                  }
                       props.getNextHousePage(obj)
                }}> Next page &raquo; </button>

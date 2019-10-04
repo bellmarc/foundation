@@ -6,7 +6,7 @@ import Characters from './components/Characters.js';
 import SwornMemberList from './components/SwornMemberList.js';
 import WorldMap from './components/WorldMap.js';
 import Footer from './components/Footer.js';
-import Navbar from './components/Navbar.js';
+// import Navbar from './components/Navbar.js';
 import { withChar } from './context/CharacterProvider.js';
 import HouseList from './components/HouseList.js';
 

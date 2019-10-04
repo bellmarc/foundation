@@ -1,6 +1,5 @@
 import React from 'react';
 import soundFile2 from '../assets/got-melodic.mp3';
-import Music from '../components/Music';
 
 
 

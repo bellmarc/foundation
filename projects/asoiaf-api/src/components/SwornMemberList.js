@@ -6,7 +6,7 @@ import {withChar} from '../context/CharacterProvider.js';
 const SwornMemberList = (props) => {
     let mappedMembers
     if (props.location) {
-        // console.log(props.location.state.swornMembers)
+        //Urls display:  console.log(props.location.state.swornMembers)
         mappedMembers =  props.location.state.swornMembers.map((member, index) => {
             // console.log(member.url)
         return <SwornMember
@@ -19,13 +19,13 @@ const SwornMemberList = (props) => {
 
     return (
         <div>
-            <h1>Sworn Members of {props.location.name}</h1>
+            <h1>Sworn Members </h1>
             {mappedMembers.length ? mappedMembers : "No Sworn Members associated with this House"}
             <div>
        </div>
             <button className="return-btn" onClick={props.history.goBack}>
                 &laquo; Previous    page
-            
+
             </button>
        </div>
     )

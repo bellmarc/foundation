@@ -1,6 +1,4 @@
 import React from 'react';
-// import soundFile from '../assets/got-theme.mp3';
-
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
