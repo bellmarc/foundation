@@ -1,25 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
-import './style/App.css';
-import './style/navbar.css';
-import './style/splash.css';
-import './style/house-card.css';
-import './style/characters.css';
-import './style/footer.css';
-import App from './App';
-import CharacterProvider from './context/CharacterProvider';
-import MusicProvider from './context/MusicProvider';
-
-
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import "./style/App.css";
+import "./style/navbar.css";
+import "./style/splash.css";
+import "./style/house-card.css";
+import "./style/characters.css";
+import "./style/footer.css";
+import App from "./App";
+import CharacterProvider from "./context/CharacterProvider";
+import MusicProvider from "./context/MusicProvider";
 
 ReactDOM.render(
-    <BrowserRouter>
+  <BrowserRouter>
     <CharacterProvider>
-        <MusicProvider>
-          <App />
-        </MusicProvider>
+      <MusicProvider>
+        <App />
+      </MusicProvider>
     </CharacterProvider>
-    </BrowserRouter>,
- document.getElementById('root'));
-
+  </BrowserRouter>,
+  document.getElementById("root")
+);
