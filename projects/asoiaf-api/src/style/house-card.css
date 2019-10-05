@@ -99,3 +99,11 @@ button {
   border-radius: 4px;
   border: 2px solid #265877;
 }
+
+@media only screen and (max-width:500px) {
+  .page-btns {
+    display: inline;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}

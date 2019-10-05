@@ -1,15 +1,19 @@
 import React from 'react';
 import Navbar from './Navbar.js';
+import {withChar} from '../context/CharacterProvider.js';
 
 
-const WorldMap = () => {
+const WorldMap = (props) => {
     return (
         <div>
-            <Navbar />
+        <Navbar
+            history={props.history}
+            pathname={`/map/`}
+       />
         </div>
     )
 }
 
 
 
-export default WorldMap
+export default withChar(WorldMap)

@@ -24,7 +24,7 @@ video {
 }
 
 .char-display {
-        
+
 }
 
 .char-hero {
@@ -44,15 +44,36 @@ video {
     text-align: center;
     margin: 0.625rem;
 }
-/*
-.char-hero-overlay > h1.search-banner {
-    background-image: url("../assets/throne.jpg");
-    background-repeat: no-repeat;
-    background-size: 1800px 400px;
-    background-position: center top;
-    text-indent: -9999px;
-} */
 
+.card-shadow {
+    background-color: #ffffff;
+    color: #333333;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.char-card-display {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    margin: 30px;
+    min-height: 600px;
+    min-width: 800px;
+    text-align: center;
+    border: 1px solid #265877;
+    border-radius: 10px;
+    /* color: #5D5F5F; gray*/
+    color: #265877;
+    background:rgba(226, 233, 231, 0.8);
+}
+.return-to-search {
+    color: #E2E9E7;
+    background: #265877;
+    width: 110px;
+    padding: 8px;
+    border: 1px solid #265877;
+}
 .char-hero-title {
     font-family: 'Cinzel', serif;
     color: whitesmoke;

@@ -40,7 +40,6 @@ class CharacterProvider extends React.Component {
 //getting data
     handleSubmit = (e) => {
         e.preventDefault()
-        // console.log(this.state.search) change first ltr of of each word toUpperCase
             const formatted = this.formattedSearch()
             axios.get(`https://api.got.show/api/show/characters/${formatted}`)
             .then(res => {
@@ -72,6 +71,10 @@ class CharacterProvider extends React.Component {
             this.getHouses(1)
         }
     }
+
+    getPrevSearchPage = (obj) => {
+        obj.history.push(`/characters/`)
+    }
 //if next page has results show value if it doesn't no nextPage| assign className hidden
 
     // hideNextPage = () => {
@@ -98,6 +101,7 @@ class CharacterProvider extends React.Component {
                         getPrevHousePage: this.getPrevHousePage,
                         handleSubmit: this.handleSubmit,
                         handleChange: this.handleChange,
+                        getPrevSearchPage: this.getPrevSearchPage,
                         ...this.state
 
                     }}>
