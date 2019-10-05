@@ -10,12 +10,19 @@ class CharacterProvider extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            searchResult: {},
+            searchResult: null,
             houses: [],
             search: "",
+            show: false,
             page: 1
             // filtered: []
         }
+    }
+
+    showModal = e => {
+        this.setState({
+          show: true
+        });
     }
 
     getHouses = (pageNum) => {
@@ -96,6 +103,7 @@ class CharacterProvider extends React.Component {
                     value={{
                         search: this.state.search,
                         houses: this.state.houses,
+                        showModal: this.showModal,
                         getHouses: this.getHouses,
                         getNextHousePage: this.getNextHousePage,
                         getPrevHousePage: this.getPrevHousePage,

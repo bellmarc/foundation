@@ -1,58 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {withChar} from '../context/CharacterProvider.js';
+import { useSpring, animated as a } from 'react-spring'
 
+const CardModal = (props)=> {
+    console.log(props)
 
-
-class CardModal extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-        show: false
-      };
-    }
-    showModal = e => {
-        this.setState({
-          show: true
-        });
-      };
-
-    render(props) {
-        const header = (
-            {/* <img alt="Card" src={img}/> */}
-        );
-        const footer = (
-            <span>
-                <button label="Save" icon="pi pi-check"/>
-                <button label="Cancel" icon="pi pi-times" className="p-button-secondary"/>
-            </span>
-        );
-
+//     const [flipped, set] = useState(false)
+//     const { transform, opacity } = useSpring({
+//     opacity: flipped ? 1 : 0,
+//     transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+//     config: { mass: 5, tension: 500, friction: 80 }
+//   })
     return (
         <>
-        <div class="card" style={{width: '360px'}}>
-            <div class="p-card-header">
-                {/* <img alt="Card" >
-                </img> */}
+        <div className="card"  style={{width: '360px'}}>
+            {/* onClick={() => set(state => !state)} */}
+        {/* <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
+        <a.div class="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} /> */}
+            <div className="card-header">
+            {/* <img alt="character" className="search-img" src={props.searchResult.image}/> */}
             </div>
-                <div class="p-card-body">
-                    <div class="p-card-title">Advanced Card</div>
-                        <div class="p-card-subtitle">Subtitle</div>
-                            <div class="p-card-content">
+                <div className="card-body">
+                    <div className="p-card-title">Name: { props.searchResult.actor}</div>
+                    <h3> { props.searchResult.house }</h3>
+                        <div className="p-card-subtitle">Actor: { props.searchResult.actor}</div>
+                        <div className="p-card-subtitle">Age: { props.searchResult.culture}</div>
+                        <div className="p-card-subtitle">Culture: { props.searchResult.culture}</div>
+                            <div className="p-card-content">
                                 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
                                 </div>
                             </div>
-                                <div class="p-card-footer">
+                                <div className="p-card-footer">
                                     <span>
-                                        <button class="p-button p-component p-button-text-icon-left" style={{'margin-right': '0.25em'}}>
-                                            <span class="pi pi-check p-c p-button-icon-left">
+                                        <button className="p-button p-component p-button-text-icon-left" style={{'marginRight': '0.25em'}}>
+                                            <span className="pi pi-check p-c p-button-icon-left">
                                             </span>
-                                            <span class="p-button-text p-c">Save
+                                            <span className="p-button-text p-c">Save
                                             </span>
                                         </button>
-                                        <button class="p-button p-component p-button-secondary p-button-text-icon-left">
-                                            <span class="pi pi-times p-c p-button-icon-left">
+                                        <button className="p-button p-component p-button-secondary p-button-text-icon-left">
+                                            <span className="pi pi-times p-c p-button-icon-left">
                                             </span>
-                                            <span class="p-button-text p-c">Cancel</span>
+                                            <span className="-button-text">Cancel
+                                            </span>
                                         </button>
                                             </span>
                                 </div>
@@ -60,9 +50,7 @@ class CardModal extends React.Component {
             </div>
         </>
     )
-
-}}
-
+}
 
 
 export default withChar(CardModal)

@@ -67,6 +67,9 @@ video {
     color: #265877;
     background:rgba(226, 233, 231, 0.8);
 }
+.card-header {
+    /* img resize/constrain size */
+}
 .return-to-search {
     color: #E2E9E7;
     background: #265877;
