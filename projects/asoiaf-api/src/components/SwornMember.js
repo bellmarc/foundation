@@ -42,7 +42,7 @@ class SwornMember extends React.Component {
     //destructuring for shorter syntax
     const { name, gender, titles } = this.state.swornMember;
     return (
-      <div>
+      <div className="member-page">
         <div className="member-container">
           <h1 className="member-name">{name}</h1>
           <h3 className="member-title" style={{ fontStyle: "italic" }}>
@@ -50,12 +50,11 @@ class SwornMember extends React.Component {
           </h3>
           <h3 className="member-gender">{gender}</h3>
           {/* add ternary statement in image src for placeholder image until page loads all images */}
-          <img src={this.state.memberImage} alt={name} />
+          <img className="member-img" src={this.state.memberImage} alt={name} />
         </div>
       </div>
     );
   }
 }
-/* {this.state.memberImage.length || this.state.memberImage : } */
 
 export default SwornMember;

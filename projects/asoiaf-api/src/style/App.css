@@ -3,14 +3,47 @@
   margin: 0;
   padding: 0;
 }
-html {
+/* html {
   background: #181818;
-}
+} */
+
 .App {
   display: flex;
   position: relative;
   flex-direction: column;
   min-height: 100vh;
   /* min-width: 100vw; */
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
+  background: #181818;
+}
+
+.member-name {
+  font-size: 24px;
+}
+
+.member-title {
+  font-size: 16px;
+}
+
+.member-img {
+  height: 100%;
+}
+
+button.return-btn {
+  padding: 10px;
+}
+
+.member-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 84px;
+  margin-bottom: 60px;
+  min-width: 360px;
+  font-family: 'Cinzel', serif;
+  color: #0B1B1E;
+  margin: auto;
+  background: #87847D;
+  border: 1px solid;
+  /* box-shadow: 5px 5px 5px whitesmoke; */
 }
