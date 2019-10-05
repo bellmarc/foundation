@@ -18,8 +18,7 @@ const Characters = props => {
           </video>
         </div>
         <div className="char-hero-overlay">
-          <h1 className="search-banner"> </h1>
-          <h1 className="char-hero-title">Find A Character</h1>
+          {props.searchResult === null && <h1 className="char-hero-title">Find A Character</h1>}
           <form onSubmit={props.handleSubmit}>
             <div className="search-con">
               {props.searchResult === null && (

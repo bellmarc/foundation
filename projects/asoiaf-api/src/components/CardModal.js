@@ -13,21 +13,21 @@ const CardModal = props => {
   //   })
   return (
     <>
-      <div className="card" style={{ width: "360px" }}>
+      <div className="char-card-display" style={{ width: "auto" }}>
         {/* onClick={() => set(state => !state)} */}
         {/* <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
         <a.div class="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} /> */}
         <div className="card-header">
-          {/* <img alt="character" className="search-img" src={props.searchResult.image}/> */}
+          <img alt="character" className="search-img" src={props.searchResult.image}/>
         </div>
         <div className="card-body">
-          <div className="p-card-title">Name: {props.searchResult.actor}</div>
+          <div className="p-card-title">{props.searchResult.age.name}</div>
           <h3> {props.searchResult.house}</h3>
           <div className="p-card-subtitle">
             Actor: {props.searchResult.actor}
           </div>
           <div className="p-card-subtitle">
-            Age: {props.searchResult.culture}
+            Age: {props.searchResult.age.age}
           </div>
           <div className="p-card-subtitle">
             Culture: {props.searchResult.culture}
@@ -49,7 +49,7 @@ const CardModal = props => {
                 <span className="pi pi-check p-c p-button-icon-left"></span>
                 <span className="p-button-text p-c">Save</span>
               </button>
-              <button className="p-button p-component p-button-secondary p-button-text-icon-left">
+              <button onClick={props.goBackSearch} className="p-button p-component p-button-secondary p-button-text-icon-left">
                 <span className="pi pi-times p-c p-button-icon-left"></span>
                 <span className="-button-text">Cancel</span>
               </button>

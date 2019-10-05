@@ -24,6 +24,16 @@ class CharacterProvider extends React.Component {
     });
   };
 
+  goBackSearch = () => {
+    // searchResult !== null ?
+    this.setState(
+      {
+        searchResult: null,
+        search: ""
+      })
+
+  }
+
   getHouses = pageNum => {
     //?page=2
     axios
@@ -117,6 +127,7 @@ class CharacterProvider extends React.Component {
           handleSubmit: this.handleSubmit,
           handleChange: this.handleChange,
           getPrevSearchPage: this.getPrevSearchPage,
+          goBackSearch: this.goBackSearch,
           ...this.state
         }}
       >

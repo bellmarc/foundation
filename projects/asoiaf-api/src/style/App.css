@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  background: #181818;
+}
 .App {
-  display: grid;
+  display: flex;
   position: relative;
-  grid-template-rows: auto 1fr auto;
+  flex-direction: column;
   min-height: 100vh;
   /* min-width: 100vw; */
   padding-bottom: 2.5rem;
