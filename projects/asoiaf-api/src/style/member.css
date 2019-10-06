@@ -4,7 +4,37 @@
     box-sizing: border-box;
 }
 
+.member-name {
+    font-size: 24px;
+}
 
+.member-title {
+    font-size: 16px;
+}
+
+.member-img {
+    height: 100%;
+    width: 200px;
+}
+
+button.return-btn {
+    padding: 10px;
+}
+
+.member-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 84px;
+    margin-bottom: 60px;
+    min-width: 360px;
+    font-family: 'Cinzel', serif;
+    color: #0B1B1E;
+    margin: auto;
+    background: #87847D;
+    border: 1px solid;
+/* box-shadow: 5px 5px 5px whitesmoke; */
+}
 
 
 

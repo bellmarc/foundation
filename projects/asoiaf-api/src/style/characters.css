@@ -96,7 +96,8 @@ h3 {
   font-size: 20px;
 }
 
-.canx-button, .save-btn {
+.canx-button,
+.save-btn {
   color: #e2e9e7;
   background: #265877;
   width: 100px;
@@ -138,7 +139,7 @@ h3 {
     background: whitesmoke; */
 }
 .card-footer {
- padding-top: 80px;
+  padding-top: 80px;
 }
 
 .search-con {
@@ -168,8 +169,7 @@ button {
 
 input[type="text"]:focus,
 textarea:focus,
-button:focus
-{
+button:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;

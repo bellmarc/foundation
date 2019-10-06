@@ -6,42 +6,40 @@
 
 .house-container {
   display: grid;
-  font-family: 'Cinzel', serif;
-  grid-gap:2rem 10px;
-  background: #C3BDB6;
+  font-family: "Cinzel", serif;
+  grid-gap: 2rem 10px;
+  background: #c3bdb6;
   padding-top: 30px;
-
 }
 
 .house-banner {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   text-align: center;
   /* border: 1px solid #2b2b2b; */
   padding: 20px;
-  background-image:
-      linear-gradient(
-        to right,
-        #141414,
-        #7c7c81,
-        #798487,
-        #575c5d,
-        #141414
-      );
+  background-image: linear-gradient(
+    to right,
+    #141414,
+    #7c7c81,
+    #798487,
+    #575c5d,
+    #141414
+  );
 }
 
 .house-card-container {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   margin: 40px;
   text-align: center;
-  font-family: 'Cinzel', serif;
-  background: #C3BDB6;
+  font-family: "Cinzel", serif;
+  background: #c3bdb6;
   /* color: #265877; */
   /* background: #E2E9E7; */
 }
 .house-container > div:nth-child(2) {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   margin-top: 40px;
@@ -49,28 +47,28 @@
 }
 
 .card {
-  display:grid;
-  grid-gap:3rem 20px;
+  display: grid;
+  grid-gap: 3rem 20px;
   padding: 40px;
   margin: 30px;
   min-height: 171px;
   text-align: center;
   border: 1px solid #265877;
   border-radius: 10px;
-  /* color: #5D5F5F; gray*/
   color: #265877;
-  background: #E2E9E7;
+  background: #e2e9e7;
 }
-.house-name:hover, .card:hover {
-  color: #E7D490;
-  background: rgb(43,43,43);
-  background-color: rgba(43,43,43, 0.1) transparent;
+.house-name:hover,
+.card:hover {
+  color: #e7d490;
+  background: rgb(43, 43, 43);
+  background-color: rgba(43, 43, 43, 0.1) transparent;
 }
 
 button {
   display: flex;
   margin-top: 40px;
-  color: #E2E9E7;
+  color: #e2e9e7;
   background: #265877;
 }
 .page-btns {
@@ -100,7 +98,7 @@ button {
   border: 2px solid #265877;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
   .page-btns {
     display: inline;
     justify-content: center;
