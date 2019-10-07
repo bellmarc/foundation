@@ -17,7 +17,8 @@ const SwornMemberList = props => {
       <h1>Sworn Members </h1>
       {mappedMembers.length
         ? mappedMembers
-        : "No Sworn Members associated with this House"}
+        : "No Sworn Members associated with this House"
+        }
       <div></div>
       <button className="return-btn" onClick={props.history.goBack}>
         &laquo; Previous page
