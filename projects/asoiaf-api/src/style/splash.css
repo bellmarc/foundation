@@ -23,10 +23,13 @@
     align-items: center;
     background-color: rgba(0,0,0,.4);
     z-index: 1;
-    height: 100vh;
+    height: 111vh;
     width: 100%;
     position: absolute;
-    /* top: 0; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+
 }
 
   /* add h/w to vid in grid */
@@ -87,4 +90,14 @@ h1.hero-title {
     border: 1px solid #330204;
     /* Consult w/UX Designer if THIS color combo works: background-color: #330204;
     color:#E7D490; */
+}
+
+@media only screen and (max-width: 500px) {
+    h1.hero-title {
+        width:480px;
+        height: 70px;
+    }
+    .hero-overlay {
+        height: 105vh;
+  }
 }

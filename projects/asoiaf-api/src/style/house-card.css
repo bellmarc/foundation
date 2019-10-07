@@ -98,10 +98,155 @@ button {
   border: 2px solid #265877;
 }
 
-@media only screen and (max-width: 500px) {
-  .page-btns {
-    display: inline;
+@media all and (max-width: 550px) and (min-width: 500px) {
+  .house-banner {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 30px;
+    width: 600px;
+  }
+  .house-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .house-card-container {
+    display: flex;
+  }
+  .house-container > div:nth-child(2) {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .card {
+    display: flex;
+    min-height: 201px;
+    width: 333px;
+  }
+
+  .page-btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 100px;
+  }
+}
+
+@media all and (max-width: 600px) and (min-width: 550px) {
+  .house-banner {
+    width: 700px;
+  }
+
+  .house-container > div:nth-child(2) {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .card {
+    min-height: 200px;
+    width: 400px;
+  }
+
+  .page-btns {
+    margin-left: -200px;
+    margin-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 630px) and (min-width: 600px) {
+  .house-banner {
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .house-container > div:nth-child(2) {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .card {
+    min-height: 200px;
+    width: 440px;
+  }
+
+  .page-btns {
+    margin-left: -200px;
+    margin-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 640px) and (min-width: 600px) {
+  .house-banner {
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .house-container > div:nth-child(2) {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .card {
+    min-height: 200px;
+    width: 440px;
+  }
+
+  .page-btns {
+    margin-left: -200px;
+    margin-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 730px) and (min-width: 640px) {
+  .house-banner {
+    width: 740px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .house-container > div:nth-child(2) {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .card {
+    min-height: 200px;
+    width: 520px;
+    margin-left: 40px;
+  }
+
+  .page-btns {
+    margin-left: -100px;
+    margin-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 780px) and (min-width: 730px) {
+  .house-banner {
+    width: 740px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .house-container > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    min-height: 200px;
+    width: 280px;
+    margin-left: 40px;
+  }
+
+  .page-btns {
+    margin-left: -100px;
+    margin-bottom: 60px;
   }
 }

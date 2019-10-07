@@ -44,7 +44,7 @@ class SwornMember extends React.Component {
     return (
       <div className="member-page">
         <div className="member-container">
-          <h1 className="member-name">{name}</h1>
+          <h2 className="member-name">{name}</h2>
           <h3 className="member-title" style={{ fontStyle: "italic" }}>
             {titles}
           </h3>

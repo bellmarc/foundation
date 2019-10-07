@@ -1,5 +1,5 @@
 import React from "react";
-import soundFile2 from "../assets/got-melodic.mp3";
+import soundFile from "../assets/got-theme.mp3";
 
 const MusicContext = React.createContext();
 
@@ -10,7 +10,7 @@ class MusicProvider extends React.Component {
       play: false
     };
   }
-  audio = new Audio(soundFile2);
+  audio = new Audio(soundFile);
 
   togglePlay = () => {
     this.setState({ play: !this.state.play }, () => {
