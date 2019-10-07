@@ -59,6 +59,29 @@ section {
     padding-bottom: 0px;
   }
 }
+.redirect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 40px;
+  border: 2px solid;
+  background: #E7D490;
+  border-radius: 4px;
+  color: #265877;
+  height: 40px;
+  width: 100px;
+}
+.redirect:hover {
+  background-color: #265877;
+  color: #E7D490;
+}
+
+button:focus {
+  margin: auto;
+  margin-bottom: 40px;
+}
 
 /* fix here padding ontop
 @media only screen and (max-width: 760px) {

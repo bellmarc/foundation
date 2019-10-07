@@ -15,6 +15,11 @@ const WorldMap = props => {
       <section>
         <div className="westeros-map" alt="westeros" />
       </section>
+      <div>
+        <a href="https://atlasofthrones.com/" className="redirect"  >Explore </a>
+      </div>
+
+
     </>
   );
 };
