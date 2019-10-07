@@ -1,5 +1,4 @@
 import React from "react";
-import placeholder from "../assets/cross-swords.png";
 import axios from "axios";
 
 //will load data from house & map out SwornMembers
@@ -8,7 +7,7 @@ class SwornMember extends React.Component {
     super();
     this.state = {
       swornMember: {},
-      memberImage: ""
+      memberImage: "./cross-swords.png"
     };
   }
 
@@ -33,7 +32,7 @@ class SwornMember extends React.Component {
         `https://vschool-cors.herokuapp.com?url=https://api.got.show/api/show/characters/${this.state.swornMember.name}`
       )
       .then(res => {
-        let image = placeholder;
+        let image = "./cross-swords.png";
         if (res.data.image) {
           image = res.data.image;
           this.setState({
