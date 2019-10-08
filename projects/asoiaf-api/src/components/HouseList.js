@@ -16,11 +16,13 @@ const HouseList = props => {
     );
   });
 
-  let className;
-  if (props.history.location.pathname === "/houses/1") {
-    className = "hidden";
+  let newClassName;
+  if (props.history.location.pathname === "/houses/1" || props.history.location.pathname === "/houses/") {
+    newClassName = "hidden";
+  }else if (props.history.location.pathname === "/houses/45" ){
+    newClassName = "next-page";
   } else {
-    className = "prev-page";
+    newClassName = "prev-page";
   }
 
   console.log(props);
@@ -36,10 +38,9 @@ const HouseList = props => {
         {/* can rcv mappedProps */}
         <h1 className="house-banner">All Houses </h1>
         <div style={{ margin: 40 }}>{mappedCards}</div>
-        {/* FCN to only show PrevPg button on 2nd Pg */}
         <div className="page-btns">
           <button
-            className={className}
+            className={newClassName}
             onClick={() => {
               const obj = {
                 history: props.history,
@@ -62,7 +63,7 @@ const HouseList = props => {
               props.getNextHousePage(obj);
             }}
           >
-            {" "}
+        
             Next page &raquo;{" "}
           </button>
         </div>

@@ -47,16 +47,7 @@ video {
   margin: 0.625rem;
 }
 
-.card-shadow {
-  background-color: #ffffff;
-  color: #333333;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
-    0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
-    0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 2px 1px -1px rgba(0, 0, 0, 0.12);
-}
+
 
 .char-card-display {
   display: flex;
@@ -152,6 +143,13 @@ h3 {
   padding: 5px;
   border: 1px solid #265877;
 }
+
+/* button:active {
+  transform: scale(0.99);
+  width: 100%;
+} */
+
+
 
 /* Input & search box highlighting effect */
 input[type="text"],

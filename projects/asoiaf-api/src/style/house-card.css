@@ -66,37 +66,42 @@
 }
 
 button {
-  display: flex;
-  margin-top: 40px;
+  /* display: flex; */
+  /* margin-top: 40px; */
   color: #e2e9e7;
   background: #265877;
-}
-.page-btns {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
+  font-size: 1em;
+  padding: 12px;
+  border: 2px solid #265877;
+  height: 40px;
 }
 
+/*
+button:focus {
+  margin: auto;
+  margin-bottom: 40px;
+  outline: none;
+} */
+
+.page-btns {
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 0 360px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+
+}
+/* page 45 for nextBtn = limit */
 .hidden {
   display: none;
 }
 
-.house-container > div:nth-child(3) > button {
-  margin-left: 40px;
-  font-size: 1em;
-  padding: 12px;
-  border-radius: 4px;
-  border: 2px solid #265877;
+.page-btns > button {
+border-radius: 4px;
 }
 
-.house-container > div:nth-child(4) > button {
-  margin-left: 40px;
-  margin-bottom: 40px;
-  font-size: 1em;
-  padding: 12px;
-  border-radius: 4px;
-  border: 2px solid #265877;
-}
 
 @media all and (max-width: 550px) and (min-width: 500px) {
   .house-banner {
@@ -127,7 +132,7 @@ button {
   .page-btns {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 40px;
+    margin-left: 20px;
     align-items: center;
     justify-content: center;
     margin-top: 20px;

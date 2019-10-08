@@ -8,7 +8,7 @@ const Navbar = props => {
   return (
     <nav className="currentTab">
       <Link
-        className={props.pathname === "/houses/" && "nav-highlight"}
+        className={props.pathname === "/houses/" ? "nav-highlight" : ""}
         to="/houses/"
       >
         Houses

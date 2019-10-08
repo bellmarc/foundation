@@ -53,7 +53,6 @@ button.return-btn {
     background: #87847D;
     border: 1px solid;
     border-radius: 8px;
-/* box-shadow: 5px 5px 5px whitesmoke; */
 }
 
 :nth-child(2) > button > a > a.return-tag {
