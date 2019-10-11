@@ -20,12 +20,12 @@ let todos = [
     "_id": ""
     },
     {
-    "title": "Ryouka Osusume",
+    "title": "Japan Osusume",
     description: "Refine Japan Travel Recommendation Document",
     "imageURL": "",
     "completed": false,
     "_id": ""
-    },
+    }
 ]
 
 
@@ -76,7 +76,7 @@ app.delete("/todos/:_id", (req, res)=> {
 
 })
 
-//UPDATE ONE TODO
+//UPDATE ONE TODO 
 
 //res.object what's coming in through the request in JSON
 // Use middleware to parse through object
