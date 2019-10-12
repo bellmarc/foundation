@@ -1,7 +1,6 @@
 const express = require('express');
 const bountyRouter = express.Router(); //Router does what app would do
-const uuidv4 = require('uuid/v4');
-
+const Bounty = require('../models/bounty.js')
 
 bounties = [
     {
@@ -30,22 +29,37 @@ bounties = [
     }
 ]
 
+bountyRouter.get('/', (req, res) => {
+    res.send(bounties)
+})
+// for(let i = 0; i < bounties.length; i++){
+//     newBountyID = uuidv4()
+//     bounties[i]._id = newBountyID
+// }
 
-for(let i = 0; i < bounties.length; i++){
-    newBountyID = uuidv4()
-    bounties[i]._id = newBountyID
-}
-//MODULARIZING
-bountyRouter.route("/")
-    .get((req, res) => {
-        res.send(bounties)
+bountyRouter.get("/", (req, res) => {
+    Bounty.find((err, bounties) => {
+        if (err) {
+            res.status(500)
+            return res.send(err)
+        }
+        return res.status(200).send(bounties)
     })
-    .post((req, res) => {
-        const newBounty = req.body
-        newBounty._id = uuidv4()
-        bounties.push(newBounty)
-        res.send(newBounty)
-    })
+})
+
+
+bountyRouter.get("/:_id", (req,res)=> {
+    //req.params has access to the _id key & value
+    //findById is mongoose Method takes 2 args
+    //Arg1: Id | Arg2: call back function handles the err & todo
+    Bounty.findById()
+})
+    // .post((req, res) => {
+    //     const newBounty = req.body
+    //     // newBounty._id = uuidv4()
+    //     bounties.push(newBounty)
+    //     res.send(newBounty)
+    // })
 
 bountyRouter.route("/:_id")
     .get((req, res) => {
