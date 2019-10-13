@@ -12,15 +12,15 @@ class App extends React.Component {
 
   componentDidMount(){
     axios.get('/bounties')
-      .then(res => this.setState({bounties: res.data}))
+      .then(res => this.setState({ bounties: res.data }))
       .catch(err => err)
   }
 
   render(){
-    const mappedBounties = this.state.bounties.map(bounty => <div>{bounty.title}</div>)
+    const mappedBounties = this.state.bounties.map(bounty => <div>{bounty.firstName}</div>)
      return (
     <div>
-        {mappedBounties}
+        { mappedBounties }
     </div>
   );
   }

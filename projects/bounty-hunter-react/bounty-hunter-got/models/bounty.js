@@ -14,7 +14,7 @@ const bountySchema = new Schema ({
         default: "Jinn"
     },
     isAlive: Boolean,
-    bounty: Number,
+    bountyPrice: Number,
     type: String,
     imgURL: String
 

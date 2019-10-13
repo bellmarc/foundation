@@ -13,15 +13,13 @@ mongoose.connect("mongodb://localhost:27017/bountydb",
 {
   useNewUrlParser: true,
   useFindAndModify: true,
-  useCreateIndex: false
+  useCreateIndex: false,
+  useUnifiedTopology: true
 }, ()=> console.log(`Connected to DB!`)
 )
 
-//Routes, param1: Mount path (only fire this if url request is /bounties) |
-//param2: what file to use when the request hits this endpoint
+//Routes
 app.use("/bounties", require("./routes/bountyRouter.js"));
-//could add more routes relating to data. Ex:
-// app.use("/users", require('./routes/userRouter.js'))
 
 
 
