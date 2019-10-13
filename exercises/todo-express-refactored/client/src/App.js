@@ -12,7 +12,7 @@ class App extends React.Component {
 
   componentDidMount() {
     axios.get('/todos')
-      .then (res => this.setState({ todos: res.data}))
+      .then (res => this.setState({ todos: res.data }))
       .catch(err => err)
 
   }

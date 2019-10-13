@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 
-//DB Connection, when developing locally, 2nd arg configuration
+//Mongo Compass DB Connection, when developing locally, 2nd arg configuration
 mongoose.connect("mongodb://localhost:27017/tododb",
 {
     useNewUrlParser: true,
@@ -19,9 +19,11 @@ mongoose.connect("mongodb://localhost:27017/tododb",
     useCreateIndex: false
 }, ()=> console.log(`Connected to the DB!`))
 
-//Routes
+//Routes, param1: Mount path (only fire this if url request is /bounties) |
+//param2: what file to use when the request hits this endpoint
 app.use("/todos", require('./routes/todoRouter.js'))
-
+//could add more routes relating to data. Ex:
+// app.use("/users", require('./routes/userRouter.js'))
 
 
 app.listen(9000, () => {
