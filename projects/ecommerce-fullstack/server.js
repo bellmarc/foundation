@@ -5,7 +5,6 @@ const morgan = require('morgan');
 PORT = 9001;
 
 
-
 //Middleware
 app.use(express.json())
 app.use(morgan('dev'))
@@ -15,7 +14,8 @@ mongoose.connect("mongodb://localhost:27017/inventorydb",
 {
     useNewUrlParser: true,
     useFindAndModify: true,
-    useCreateIndex: false
+    useCreateIndex: false,
+    useUnifiedTopology: true
 }, ()=> console.log(`Connected to DB`))
 
 //Routes
