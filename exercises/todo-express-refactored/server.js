@@ -16,7 +16,8 @@ mongoose.connect("mongodb://localhost:27017/tododb",
 {
     useNewUrlParser: true,
     useFindAndModify: true,
-    useCreateIndex: false
+    useCreateIndex: false,
+    useUnifiedTopology: true
 }, ()=> console.log(`Connected to the DB!`))
 
 //Routes, param1: Mount path (only fire this if url request is /bounties) |
