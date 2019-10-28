@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
+.nav-container {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    color: whitesmoke;
+    background-color:#054547;
+    justify-content: space-between;
+}
 
 .nav-container > header > img {
   height: auto;
+  position: fixed;
+  width: 100%;
   display: flex;
 }
 
@@ -36,12 +46,4 @@ margin-left: 40px;
   display: block;
 }
 
-.nav-container {
-    display: flex;
-    height: 8vh;
-    align-items: center;
-    color: whitesmoke;
-    background-color:#194646;
-    justify-content: space-between;
-}
 

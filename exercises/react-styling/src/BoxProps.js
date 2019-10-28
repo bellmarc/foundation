@@ -14,9 +14,7 @@ const BoxProps = ({boxId, title, subtitle, info, imgURL}) => {
 
     }
     // const style2 { //to change 1 part of boxDeco
-
     // }
-
 
     return (
         <div style={style} className={boxId}>
