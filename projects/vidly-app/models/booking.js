@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+
 const bookingSchema = new Schema({
   location: {
     type: String,
@@ -28,7 +29,8 @@ const bookingSchema = new Schema({
   clientId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
-    required: true
+    required: true,
+    // unique: true
   }
 });
 

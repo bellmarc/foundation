@@ -3,15 +3,15 @@ const Schema = mongoose.Schema;
 const bcrypt = require("bcrypt");
 
 const userSchema = new Schema({
-  username: {
+  name: {
     type: String,
-    unique: true,
-    lowercase: true,
     required: true
   },
   email: {
     type: String,
-    required: true
+    required: true,
+    unique: true,
+    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
   password: {
     type: String,
@@ -45,17 +45,15 @@ userSchema.pre("save", function(next) {
 
 userSchema.methods.checkPassword = function(passwordAttempt, callback) {
   bcrypt.compare(passwordAttempt, this.password, (err, isMatch) => {
-    if(err) return callback(err)
-    callback(null, isMatch)
-  })
-}
+    if (err) return callback(err);
+    callback(null, isMatch);
+  });
+};
 
 userSchema.methods.withoutPassword = function() {
-  const user = this.toObject()
-  delete user.password
-  return user
-}
-
-
+  const user = this.toObject();
+  delete user.password;
+  return user;
+};
 
 module.exports = mongoose.model("User", userSchema);

@@ -1,31 +1,23 @@
-import React, { useContext } from 'react';
-import Auth from 'components/Auth.js'
-import PublicPosts from './components/PublicPosts.js';
-import Profile from './components/Profile.js';
-import Navbar from './components/Navbar.js';
-import './App.css';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { UserContext } from './context/UserProvider';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Landing from './components/Landing.js';
+import Home from './components/Home.js';
 
-function App() {
-  const { token, logout } = useContext(UserContext)
-  return (
-    <div>
-      <Switch>
-        {token && <Navbar logout={logout}/> }
-        <Route exact path="/"
-               render={rProps => token ?
-                              <Redirect to ="/public"/>
-                              : <Auth {...rProps}/> }/>
-        <Route path="/public"
-               render={rProps =>                           <PublicPosts {...rProps}/> }/>
-        <Route path="/profile"
-               render={rProps =>                           <Profile {...rProps}/> }/>
-      </Switch>
+class App extends React.Component {
 
-    </div>
-  )
+  render() {
+    return (
+      <div>
+        <Switch>
+          <Route exact path="/" render={rProps => <Landing {...rProps}/>}/>
+          <Route exact path="/home" render={rProps => <Home {...rProps}/>}/>
+        </Switch>
+      </div>
+    )
+  }
 }
+
+
 
 
 
