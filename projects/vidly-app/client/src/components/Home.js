@@ -4,14 +4,13 @@ class Home extends Component {
 
     render() {
         return(
-            <div>
+            <div className="home-route-container">
                 HOME
+
             </div>
         )
     }
 }
-
-
 
 
 export default Home

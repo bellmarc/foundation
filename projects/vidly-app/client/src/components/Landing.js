@@ -1,10 +1,14 @@
 import React from 'react';
+import '../style/Landing.css';
+import { Link } from "react-router-dom";
 
-
-function Landing() {
+function Landing(props) {
     return (
-        <div>
-        <button>Get Started</button>
+        <div className="landing-container">
+            LANDING
+            <Link to={"/registration"}>
+                <button className="register-page-link-btn">Get Started</button>
+            </Link>
         </div>
     )
 }
