@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Landing(props) {
     return (
         <div className="landing-container">
-            LANDING
+            LANDING SPLASH
             <Link to={"/registration"}>
                 <button className="register-page-link-btn">Get Started</button>
             </Link>

@@ -21,17 +21,17 @@ class NormalLoginForm extends React.Component {
       <Form onSubmit={this.handleSubmit} className="login-form">
         <Form.Item>
           {getFieldDecorator('username', {
-            rules: [{ required: true, message: 'Please input your username!' }],
+            rules: [{ required: true, message: 'Please type your email address!' }],
           })(
             <Input
               prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-              placeholder="Username"
+              placeholder="Email Address"
             />
           )}
         </Form.Item>
         <Form.Item>
           {getFieldDecorator('password', {
-            rules: [{ required: true, message: 'Please input your Password!' }],
+            rules: [{ required: true, message: 'Please type your Password!' }],
           })(
             <Input
               prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
@@ -52,7 +52,7 @@ class NormalLoginForm extends React.Component {
             Login
           </Button>
           <div>
-          New User? <Link to={"/registration"}>Register Here</Link>
+          New User? <Link to={"/register"}>Register Here</Link>
           </div>
         </Form.Item>
       </Form>
