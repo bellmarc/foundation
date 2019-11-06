@@ -1,12 +1,14 @@
 import React from 'react';
-import Login from './Login.js';
+import "../style/Registration.css";
+import SignUp from './SignUp.js';
 
 
 function Register() {
     return (
         <div className="registration-container">
-            Register
-            <Login />
+            <SignUp />
+            {/* Toggle Between Sign-Up/Login Forms */}
+            {/* <Login /> */}
         </div>
     )
 }
