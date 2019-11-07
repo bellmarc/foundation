@@ -54,7 +54,7 @@ class LoginForm extends React.Component {
             Login
           </Button>
           <div>
-          New User? <Link to={"/register"}>Register Here</Link>
+          New User? <Link to={"/signup"}>SignUp Here</Link>
           </div>
         </Form.Item>
       </Form>
