@@ -21,13 +21,15 @@ class UserProvider extends React.Component {
     }
 
     userLogin = (user) => {
+        console.log(user)
         axios.post("/auth/login", user)
         .then(res => {
-            this.setState({
-                users: res.data
+            const {user, token} = res.data
+            localStorage.setItem("user", JSON.stringify(user))
+            localStorage.setItem("token", token)
+            this.setState({ user,token })
         })
         .catch(err => console.log(err))
-        })
     }
 
     userSignUp = (user) => {
@@ -45,6 +47,7 @@ class UserProvider extends React.Component {
         return (
             <UserContext.Provider
                 value={{
+                    ...this.state,
                     users: this.state.users,
                     getUsers: this.getUsers,
                     userLogin: this.userLogin,

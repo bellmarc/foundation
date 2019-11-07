@@ -17,19 +17,19 @@ class SignUpForm extends React.Component {
     };
 
     handleSignUpSubmit = e => {
-        e.preventDefault();
-        this.props.form.validateFieldsAndScroll((err, values) => {
-        if (!err) {
-          if (values.agreement) {
-             values = {...values, userType: "professional"}
-          } else {
-            values = {...values, userType: "customer"}
-          }
-          delete values.agreement
-            console.log('Received values of form: ', values);
-            this.props.userSignUp(values)
+      e.preventDefault();
+      this.props.form.validateFieldsAndScroll((err, values) => {
+      if (!err) {
+        if (values.agreement) {
+           values = {...values, userType: "professional"}
+        } else {
+          values = {...values, userType: "customer"}
         }
-        });
+        delete values.agreement
+          console.log('Received values of form: ', values);
+          this.props.userSignUp(values)
+      }
+      });
     };
 
     render() {

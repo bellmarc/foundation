@@ -5,7 +5,7 @@ import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import {withUsers} from '../context/UserProvider.js';
 
 class LoginForm extends React.Component {
-  handleSubmit = (e) => {
+  handleLoginSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
@@ -20,8 +20,8 @@ class LoginForm extends React.Component {
     const { getFieldDecorator } = this.props.form;
     return (
     <div className="login-form-container">
-    <article class="mw5 center bg-white shadow-5 br3 pa3 pa4-ns mv3 ba b--black-10">
-      <Form onSubmit={this.handleSubmit} className="login-form">
+    <article className="mw5 center bg-white shadow-5 br3 pa3 pa4-ns mv3 ba b--black-10">
+      <Form onSubmit={this.handleLoginSubmit} className="login-form">
         <Form.Item>
           {getFieldDecorator('email', {
             rules: [{ required: true, message: 'Please type your email address!' }],
