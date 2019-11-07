@@ -1,0 +1,1 @@
+//go to postman create 8 locations & limit user locations in dropdown menu on signup & change getLocation fcn to get location endpts & map out to get name & image then when click lead to bookingPage

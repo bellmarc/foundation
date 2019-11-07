@@ -9,7 +9,9 @@ userRouter.get("/", (req, res, next) => {
       res.status(500);
       return next(err);
     }
-    return res.status(200).send(users);
+    const locations = users.map(user => user.location)
+    return res.status(200).send(locations);
+
   });
 });
 

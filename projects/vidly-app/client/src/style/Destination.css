@@ -2,3 +2,17 @@
   background-color: rgba(254, 167, 101, 0.12);
   min-height: 100vh;
 }
+.destination-header-text {
+  font-size: 28px;
+  font-family: 'Jomolhari', sans-serif;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.location-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Jomolhari', sans-serif;
+}

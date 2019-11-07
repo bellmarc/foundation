@@ -1,10 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Jomolhari|Lato&display=swap");
+
 .about-container {
-    background: rgba(0, 20, 40, 0.96);
+    background: rgba(118, 145, 172, 0.96);
     min-height: 100vh;
 }
+.about-vid-banner {
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+}
+.about-vid-overlay {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
 .about-header {
+    font-size: 18px;
+    font-family: "Jomolhari", serif;
+    font-weight: bold;
+    padding: 10px;
     color: whitesmoke;
 }
 .about-text {
+    padding: 20px;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.about-header-two {
+    font-size: 18px;
+    font-family: "Jomolhari", serif;
+    font-weight: bold;
+    padding: 10px;
+    color: whitesmoke;
+}
+.about-text-two {
+    padding: 20px;
+    font-size: 14px;
     color: whitesmoke;
 }
