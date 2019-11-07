@@ -1,16 +1,20 @@
 import React from 'react';
 import "../style/Registration.css";
-import SignUp from './SignUp.js';
+import SignUpForm from './SignUpForm.js';
 
 
-function Register() {
-    return (
-        <div className="registration-container">
-            <SignUp />
-            {/* Toggle Between Sign-Up/Login Forms */}
-            {/* <Login /> */}
-        </div>
-    )
+class Register extends React.Component {
+
+    render() {
+        return (
+            <div className="registration-container">
+                <SignUpForm
+                   />
+                {/* Toggle Between Sign-Up/Login Forms */}
+                {/* <Login /> */}
+            </div>
+        )
+    }
 }
 
 

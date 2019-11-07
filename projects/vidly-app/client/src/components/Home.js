@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
+import { withUsers } from '../context/UserProvider.js';
+
 
 class Home extends Component {
 
+    componentDidMount(){
+        this.props.getUsers()
+    }
+    
     render() {
         return(
             <div className="home-route-container">
-                HOME
-
+                <h1>{this.props.name}</h1>
             </div>
         )
     }
 }
 
 
-export default Home
+export default withUsers(Home)

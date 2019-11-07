@@ -2,14 +2,16 @@ import React from 'react';
 import '../style/Login.css';
 import { Link } from 'react-router-dom';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
+import {withUsers} from '../context/UserProvider.js';
 
-
-class NormalLoginForm extends React.Component {
+class LoginForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+        // value of user
+        this.props.userLogin(values)
       }
     });
   };
@@ -17,10 +19,11 @@ class NormalLoginForm extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
+    <div className="login-form-container">
     <article class="mw5 center bg-white shadow-5 br3 pa3 pa4-ns mv3 ba b--black-10">
       <Form onSubmit={this.handleSubmit} className="login-form">
         <Form.Item>
-          {getFieldDecorator('username', {
+          {getFieldDecorator('email', {
             rules: [{ required: true, message: 'Please type your email address!' }],
           })(
             <Input
@@ -47,7 +50,6 @@ class NormalLoginForm extends React.Component {
           })(
             <Checkbox>Remember me</Checkbox>
             )}
-          {/* <Link to={"/"} className="login-form-forgot"> Forgot password </Link> */}
           <Button type="primary" htmlType="submit" className="login-form-button">
             Login
           </Button>
@@ -57,12 +59,13 @@ class NormalLoginForm extends React.Component {
         </Form.Item>
       </Form>
     </article>
+    </div>
     );
   }
 }
 
-const Login = Form.create({ name: 'normal_login' })(NormalLoginForm);
+const Login = Form.create({ name: 'normal_login' })(LoginForm);
 
 
 
-export default Login
+export default withUsers(Login)

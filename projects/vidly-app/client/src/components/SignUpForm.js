@@ -7,20 +7,27 @@ import {
     Checkbox,
     Button
   } from 'antd';
-import "../style/SignUp.css";
+import "../style/SignUpForm.css";
+import { withUsers } from '../context/UserProvider.js';
 
 
-class RegistrationForm extends React.Component {
+class SignUpForm extends React.Component {
     state = {
         confirmDirty: false
-
     };
 
-    handleSubmit = e => {
+    handleSignUpSubmit = e => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {
         if (!err) {
+          if (values.agreement) {
+             values = {...values, userType: "professional"}
+          } else {
+            values = {...values, userType: "customer"}
+          }
+          delete values.agreement
             console.log('Received values of form: ', values);
+            this.props.userSignUp(values)
         }
         });
     };
@@ -53,7 +60,8 @@ class RegistrationForm extends React.Component {
 
     return (
         <div className="signup-form-container">
-            <Form {...formItemLayout} className="signup-form" onSubmit={this.handleSubmit}>
+          <h2 className="signup-header">Sign Up</h2>
+            <Form {...formItemLayout} className="signup-form" onSubmit={this.handleSignUpSubmit}>
                   <Form.Item
                     label={
                       <span>
@@ -64,7 +72,7 @@ class RegistrationForm extends React.Component {
                       </span>
                     }
                   >
-                    {getFieldDecorator('nickname', {
+                    {getFieldDecorator('name', {
                       rules: [{ required: true, message: 'Please enter your name', whitespace: true }],
                     })(<Input />)}
                   </Form.Item>
@@ -92,37 +100,32 @@ class RegistrationForm extends React.Component {
                       ],
                     })(<Input.Password />)}
                   </Form.Item>
-                  <Form.Item label="Confirm Password" hasFeedback>
-                    {getFieldDecorator('confirm', {
-                      rules: [
-                        {
-                          required: true,
-                          message: 'Please confirm your password!',
-                        }
-                      ],
-                    })(<Input.Password />)}
-                  </Form.Item>
-                  <Form.Item label="Work Residence">
-                    {getFieldDecorator('residence', {
-
-                      rules: [
-                        { required: true, message: 'Please select your work location' },
-                      ],
-                    }(<Input />))
+                  <Form.Item
+                    label={
+                      <span>
+                        Location&nbsp;
+                        <Tooltip title="Please type your work location. ">
+                          <Icon type="question-circle-o" />
+                        </Tooltip>
+                      </span>
                     }
+                  >
+                    {getFieldDecorator('location', {
+                      rules: [{ required: true, message: 'Please enter your location', whitespace: true }],
+                    })(<Input />)}
                   </Form.Item>
                   <Form.Item {...tailFormItemLayout}>
                     {getFieldDecorator('agreement', {
                       valuePropName: 'checked',
                     })(
                       <Checkbox>
-                        I agree to the <a href="">Terms Of Condition</a>
+                        I am a Professional Videographer
                       </Checkbox>,
                     )}
                   </Form.Item>
                   <Form.Item {...tailFormItemLayout}>
                     <Button type="primary" htmlType="submit">
-                      Register
+                      Sign Up
                     </Button>
                   </Form.Item>
                 </Form>
@@ -131,7 +134,7 @@ class RegistrationForm extends React.Component {
     }
 }
 
-const SignUp = Form.create({ name: 'register' })(RegistrationForm);
+const SignUp = Form.create({ name: 'register' })(SignUpForm);
 
 
-export default SignUp
+export default withUsers(SignUp)
