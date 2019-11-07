@@ -12,6 +12,7 @@ class LoginForm extends React.Component {
         console.log('Received values of form: ', values);
         // value of user
         this.props.userLogin(values)
+        this.props.form.resetFields()
       }
     });
   };

@@ -41,7 +41,6 @@
 .vidly-ani span {
   font-family: "Jomolhari", serif;
   padding: 6px;
-  font-size: 36px;
   font-weight: bold;
   animation: animate 1s infinite alternate;
   color: white;
@@ -102,7 +101,7 @@
 @media only screen and (min-height: 500px) {
   .vidly-ani span {
     padding: 10px;
-    font-size: 62px;
+    font-size: 40px;
   }
 }
 

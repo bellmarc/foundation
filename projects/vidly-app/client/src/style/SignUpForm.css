@@ -6,6 +6,8 @@
     align-items: center;
     align-content: center;
     width: 100%;
+    /* background:rgba(0, 162, 174, 0.17); */
+    background-color: rgba(254, 167, 101, 0.12);
 }
 .signup-header {
     padding-bottom: 5px;

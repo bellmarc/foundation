@@ -28,6 +28,7 @@ class SignUpForm extends React.Component {
         delete values.agreement
           console.log('Received values of form: ', values);
           this.props.userSignUp(values)
+          this.props.form.resetFields()
       }
       });
     };

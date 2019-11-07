@@ -1,0 +1,10 @@
+.about-container {
+    background: rgba(0, 20, 40, 0.96);
+    min-height: 100vh;
+}
+.about-header {
+    color: whitesmoke;
+}
+.about-text {
+    color: whitesmoke;
+}

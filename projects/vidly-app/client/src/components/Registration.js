@@ -11,7 +11,6 @@ class Register extends React.Component {
             <div className="registration-container">
                 <SignUpForm
                    />
-                {/* Toggle Between Sign-Up/Login Forms */}
                 {/* <LoginForm /> */}
             </div>
         )
