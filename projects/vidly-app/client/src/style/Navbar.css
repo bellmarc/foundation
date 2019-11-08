@@ -36,12 +36,12 @@
   padding: 5px;
 }
 
-a:hover {
+/* a:hover {
   color: #4683E9;
   background: whitesmoke;
   border-radius: 8px;
   padding: 5px;
-}
+} */
 .navbar-links {
   display: inline-block;
   font-size: 8px;

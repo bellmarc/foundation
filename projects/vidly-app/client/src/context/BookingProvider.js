@@ -32,12 +32,15 @@ class BookingProvider extends React.Component {
 //getPros fcn, rcvs location requested as a param, does get req to users, BE: Users.find all users where user type & location is req.params.location
 
         getProfessionals = (location) => {
-            userAxios.get(`/api/users/location/${location}`)
+            console.log(location)
+            userAxios.get(`/api/user/location/${location}`)
             .then( res => {
+                console.log(res.data)
                 this.setState({
                     pros:[...res.data]
                 })
             })
+            .catch(err => console.log(err))
         }
 
     render() {

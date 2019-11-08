@@ -17,6 +17,7 @@ userRouter.get("/", (req, res, next) => {
 
 //getLocations of Users
 userRouter.get("/location/:location", (req, res, next) => {
+  console.log("hi")
   User.find({ userType: "professional", location: req.params.location}, (err, users) => {
     if (err) {
       res.status(500);

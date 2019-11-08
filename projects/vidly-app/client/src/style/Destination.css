@@ -5,20 +5,20 @@
 .destination-header-text {
   font-size: 28px;
   font-family: 'Jomolhari', sans-serif;
-  display: flex;
   font-weight: bold;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .location-text {
   font-family: 'Jomolhari', sans-serif;
-  margin: 25px;
+  margin: 20px;
 }
 .location-text img {
   border-radius: 8px;
-  margin: 25px;
-  width: 230px;
-  height: 160px;
+  margin:10px;
+  width: 260px;
+  height: 210px;
 }
 
 .location-text img:active {
@@ -27,7 +27,28 @@
 
 @media only screen and (min-width: 500px) {
   .location-text img {
+    margin: 40px;
     width: 375px;
     height:300px;
+  }
+}
+
+@media only screen and (min-width: 750) {
+  .location-text {
+    margin: 60px;
+  }
+  .location-text img {
+    margin: 80px;
+    width: 575px;
+    height: 500px;
+  }
+}
+@media only screen and (min-height: 750) {
+  .location-text {
+    margin: 70px;
+  }
+  .location-text img {
+    width: 575px;
+    height: 500px;
   }
 }
