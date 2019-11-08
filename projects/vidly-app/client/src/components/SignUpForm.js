@@ -5,11 +5,30 @@ import {
     Tooltip,
     Icon,
     Checkbox,
+    Select,
     Button
   } from 'antd';
+import 'antd/dist/antd.css';
 import "../style/SignUpForm.css";
 import { withUsers } from '../context/UserProvider.js';
 
+const { Option } = Select;
+
+function onChange(value) {
+  console.log(`selected ${value}`);
+}
+
+function onBlur() {
+  console.log('blur');
+}
+
+function onFocus() {
+  console.log('focus');
+}
+
+function onSearch(val) {
+  console.log('search:', val);
+}
 
 class SignUpForm extends React.Component {
     state = {
@@ -32,6 +51,7 @@ class SignUpForm extends React.Component {
       }
       });
     };
+
 
     render() {
         const { getFieldDecorator } = this.props.form;
@@ -101,20 +121,25 @@ class SignUpForm extends React.Component {
                       ],
                     })(<Input.Password />)}
                   </Form.Item>
-                  <Form.Item
-                    label={
-                      <span>
-                        Location&nbsp;
-                        <Tooltip title="Please type your work location. ">
-                          <Icon type="question-circle-o" />
-                        </Tooltip>
-                      </span>
-                    }
-                  >
-                    {getFieldDecorator('location', {
-                      rules: [{ required: true, message: 'Please enter your location', whitespace: true }],
-                    })(<Input />)}
-                  </Form.Item>
+
+                    <Select
+                        showSearch
+                        style={{ width: 200 }}
+                        placeholder="Select a location"
+                        optionFilterProp="children"
+                        onChange={onChange}
+                        onFocus={onFocus}
+                        onBlur={onBlur}
+                        onSearch={onSearch}
+                        filterOption={(input, option) =>
+                          option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                        }
+                      >
+                      <Option value="Barcelona, Spain">Barcelona, Spain</Option>
+                      <Option value="New York City, New York">New York City, New York</Option>
+                      <Option value="Tokyo, Japan">Tokyo, Japan</Option>
+                      <Option value="London, England">London, England</Option>
+                    </Select>,
                   <Form.Item {...tailFormItemLayout}>
                     {getFieldDecorator('agreement', {
                       valuePropName: 'checked',
