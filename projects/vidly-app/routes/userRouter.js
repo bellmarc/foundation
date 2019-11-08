@@ -15,6 +15,19 @@ userRouter.get("/", (req, res, next) => {
   });
 });
 
+//getLocations of Users
+userRouter.get("/location/:location", (req, res, next) => {
+  User.find({ userType: "professional", location: req.params.location}, (err, users) => {
+    if (err) {
+      res.status(500);
+      return next(err);
+    }
+    return res.status(200).send(users);
+
+  });
+});
+
+
 //getAllCustomers
 userRouter.get("/customer", (req, res, next) => {
   User.find({ userType: "customer" }, (err, users) => {
@@ -25,6 +38,8 @@ userRouter.get("/customer", (req, res, next) => {
     return res.status(200).send(users);
   });
 });
+
+
 
 
 module.exports = userRouter;

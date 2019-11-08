@@ -139,6 +139,9 @@ class SignUpForm extends React.Component {
                       <Option value="New York City, New York">New York City, New York</Option>
                       <Option value="Tokyo, Japan">Tokyo, Japan</Option>
                       <Option value="London, England">London, England</Option>
+                      <Option value="Santorini, Greece">Santorini, Greece</Option>
+                      <Option value="Rome, Italy">Rome, Italy</Option>
+                      <Option value="Paris, France">Paris, France</Option>
                     </Select>,
                   <Form.Item {...tailFormItemLayout}>
                     {getFieldDecorator('agreement', {

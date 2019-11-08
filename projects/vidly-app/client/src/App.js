@@ -26,7 +26,7 @@ class App extends React.Component {
           <Route exact path="/signup" render={rProps => <SignUpForm {...rProps}/>}/>
           <Route exact path="/about" render={rProps => <About {...rProps}/>}/>
           <Route exact path="/destination" render={rProps => <Destination {...rProps}/>}/>
-          <Route exact path="/booking/:_location" render={rProps => <Booking {...rProps}/>}/>
+          <Route exact path="/booking/:location" render={rProps => <Booking {...rProps}/>}/>
         </Switch>
       </div>
     )

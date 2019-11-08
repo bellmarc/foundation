@@ -1,8 +1,13 @@
 import React from 'react';
 import '../style/Booking.css';
-
+import { withBooking } from '../context/BookingProvider.js';
 
 class Booking extends React.Component {
+
+    componentDidMount() {
+        this.props.getProfessionals(this.props.match.params.location)
+    }
+
     render() {
         return (
             <div>
@@ -15,4 +20,4 @@ class Booking extends React.Component {
 
 
 
-export default Booking
+export default withBooking(Booking)

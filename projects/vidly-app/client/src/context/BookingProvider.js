@@ -15,6 +15,7 @@ class BookingProvider extends React.Component {
         super()
         this.state = {
             users: [],
+            pros: [],
             locations: [],
         }
     }
@@ -28,13 +29,25 @@ class BookingProvider extends React.Component {
         })
         .catch(err => console.log(err))
     }
+//getPros fcn, rcvs location requested as a param, does get req to users, BE: Users.find all users where user type & location is req.params.location
+
+        getProfessionals = (location) => {
+            userAxios.get(`/api/users/location/${location}`)
+            .then( res => {
+                this.setState({
+                    pros:[...res.data]
+                })
+            })
+        }
+
 
     render() {
         return (
             <BookingContext.Provider
                 value={{
                     ...this.state,
-                    getLocations: this.getLocations
+                    getLocations: this.getLocations,
+                    getProfessionals: this.getProfessionals
                 }}>
                 { this.props.children }
             </BookingContext.Provider>

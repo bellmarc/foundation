@@ -22,7 +22,7 @@ class Destination extends React.Component {
             <div className="destination-container">
                 <h2 className="destination-header-text">Destinations</h2>
                 {this.props.locations.map(location =>
-                <Link to="/booking/:/"><div className="location-text"><h3>{location.name}</h3><img src={location.imgURL}/></div>
+                <Link to={`/booking/${location.name}`}><div className="location-text" key={location.id + "-" + location}><h3>{location.name}</h3><img src={location.imgURL}/></div>
                 </Link>
                 )}
 
