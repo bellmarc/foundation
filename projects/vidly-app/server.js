@@ -25,6 +25,7 @@ app.use("/auth", require("./routes/authRouter.js"));
 app.use("/api", expressJwt({ secret: process.env.SECRET }));
 app.use("/api/user", require("./routes/userRouter.js"));
 app.use("/api/booking", require("./routes/bookingRouter.js"));
+app.use("/location", require("./routes/locationRouter.js"))
 
 //Error Handler
 app.use((err, req, res, next) => {
