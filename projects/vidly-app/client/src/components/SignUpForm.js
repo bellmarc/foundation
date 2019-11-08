@@ -2,8 +2,6 @@ import React from 'react';
 import {
     Form,
     Input,
-    Tooltip,
-    Icon,
     Checkbox,
     Select,
     Button
@@ -83,16 +81,7 @@ class SignUpForm extends React.Component {
         <div className="signup-form-container">
           <h2 className="signup-header">Sign Up</h2>
             <Form {...formItemLayout} className="signup-form" onSubmit={this.handleSignUpSubmit}>
-                  <Form.Item
-                    label={
-                      <span>
-                        Name&nbsp;
-                        <Tooltip title="Please type your first name. ">
-                          <Icon type="question-circle-o" />
-                        </Tooltip>
-                      </span>
-                    }
-                  >
+                  <Form.Item label="Name">
                     {getFieldDecorator('name', {
                       rules: [{ required: true, message: 'Please enter your name', whitespace: true }],
                     })(<Input />)}
@@ -123,8 +112,9 @@ class SignUpForm extends React.Component {
                   </Form.Item>
 
                     <Select
+                        className="select-location"
                         showSearch
-                        style={{ width: 200 }}
+                        style={{ width: 225 }}
                         placeholder="Select a location"
                         optionFilterProp="children"
                         onChange={onChange}
@@ -134,6 +124,7 @@ class SignUpForm extends React.Component {
                         filterOption={(input, option) =>
                           option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
                         }
+
                       >
                       <Option value="Barcelona, Spain">Barcelona, Spain</Option>
                       <Option value="New York City, New York">New York City, New York</Option>
@@ -142,7 +133,8 @@ class SignUpForm extends React.Component {
                       <Option value="Santorini, Greece">Santorini, Greece</Option>
                       <Option value="Rome, Italy">Rome, Italy</Option>
                       <Option value="Paris, France">Paris, France</Option>
-                    </Select>,
+                      <Option value="Oslo, Norway">Oslo, Norway</Option>
+                    </Select>
                   <Form.Item {...tailFormItemLayout}>
                     {getFieldDecorator('agreement', {
                       valuePropName: 'checked',
@@ -153,7 +145,7 @@ class SignUpForm extends React.Component {
                     )}
                   </Form.Item>
                   <Form.Item {...tailFormItemLayout}>
-                    <Button type="primary" htmlType="submit">
+                    <Button className="signup-btn" type="primary" htmlType="submit">
                       Sign Up
                     </Button>
                   </Form.Item>

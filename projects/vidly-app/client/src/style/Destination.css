@@ -11,8 +11,23 @@
   align-items: center;
 }
 .location-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Jomolhari', sans-serif;
+  margin: 25px;
+}
+.location-text img {
+  border-radius: 8px;
+  margin: 25px;
+  width: 230px;
+  height: 160px;
+}
+
+.location-text img:active {
+  background-color: bisque;
+}
+
+@media only screen and (min-width: 500px) {
+  .location-text img {
+    width: 375px;
+    height:300px;
+  }
 }

@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 // }]
 
 class Destination extends React.Component {
-    constructor(props) {
-        super(props)
-        // this.state = {
-        // }
-    }
+    // constructor(props) {
+    //     super(props)
+    //     // this.state = {
+    //     // }
+    // }
     componentDidMount() {
     //Add fcn that booking provider will have
         this.props.getLocations()
@@ -22,7 +22,7 @@ class Destination extends React.Component {
             <div className="destination-container">
                 <h2 className="destination-header-text">Destinations</h2>
                 {this.props.locations.map(location =>
-                <Link to={`/booking/${location.name}`}><div className="location-text" key={location.id + "-" + location}><h3>{location.name}</h3><img src={location.imgURL}/></div>
+                <Link to={`/booking/${location.name}`}><div className="location-text" key={location.id + "-" + location}><h3>{location.name}</h3><img src={location.imgURL} alt="famous tourist shots of various countries" width={400}/></div>
                 </Link>
                 )}
 

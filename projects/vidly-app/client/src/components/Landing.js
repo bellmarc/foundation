@@ -4,7 +4,8 @@ import '../style/Landing.css';
 import { Link } from "react-router-dom";
 import HeroImg from "../assets/beach-couple-hero.jpg";
 
-const Landing = ()=> {
+
+const Landing = (props)=> {
 
     return (
         <div className="landing-container">
@@ -21,8 +22,9 @@ const Landing = ()=> {
                     <span>Y</span>
                 </div>
                 </section>
+
                 <Link to={"/registration"}>
-                    <button className="register-page-link-btn">Get Started</button>
+                    <button className="register-page-link-btn ripple">Get Started</button>
                 </Link>
                 </div>
             </div>

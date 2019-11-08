@@ -40,7 +40,6 @@ class BookingProvider extends React.Component {
             })
         }
 
-
     render() {
         return (
             <BookingContext.Provider

@@ -8,6 +8,7 @@
   padding: 8px;
 }
 .logo {
+  margin: 2px;
   width: 20px;
   height: auto;
 }
@@ -18,19 +19,33 @@
   position: sticky;
   top: 0;
   font-family: "Jomolhari", serif;
-  width: 100%;
+  min-width: 100vw;
   background: rgba(0, 20, 40, 0.96);
   overflow-y: scroll;
   z-index: 2;
 }
+.nav-highlight, a {
+  color: whitesmoke;
+  border-radius: 8px;
+  padding: 5px;
+}
 .navbar a {
   color: whitesmoke;
   padding: 10px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+a:hover {
+  color: #4683E9;
+  background: whitesmoke;
+  border-radius: 8px;
+  padding: 5px;
 }
 .navbar-links {
   display: inline-block;
   font-size: 8px;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   padding: 8px;
 }
 .vidly-intro {

@@ -28,7 +28,7 @@
 }
 .register-page-link-btn {
   padding: 6px;
-  border-radius: 4px;
+  border-radius: 24px;
   background: none;
   border: 2px solid #001428;
   color: #0077aa;
@@ -37,7 +37,32 @@
   border: 2px solid white;
   color: #001428;
 }
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple .rippleContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.ripple .rippleContainer span {
+  transform: scale(0);
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0.75;
+  background-color: #ffffff;
+  animation: ripple 850ms;
+}
 
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
 .vidly-ani span {
   font-family: "Jomolhari", serif;
   padding: 6px;
