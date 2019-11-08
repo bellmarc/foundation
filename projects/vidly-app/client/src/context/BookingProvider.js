@@ -20,7 +20,7 @@ class BookingProvider extends React.Component {
     }
 
     getLocations = () => {
-        userAxios.get("/api/user")//find pro userType
+        userAxios.get("/location")//find pro userType
         .then (res =>{
             this.setState({
                 locations:[...res.data]
