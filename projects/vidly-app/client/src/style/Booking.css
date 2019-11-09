@@ -3,6 +3,7 @@
   min-height: 100vh;
 }
 .booking-header-options {
+  padding-top: 10px;
   font-family: "Jomolhari", sans-serif;
   font-weight: bold;
   display: flex;

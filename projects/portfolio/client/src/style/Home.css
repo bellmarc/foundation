@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+
+html,
+body,
+section {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-header,
+.right-header {
+  font-family: "Muli", sans-serif;
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.left-text,
+.right-text {
+  line-height: 150%;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+/* Pattern styles */
+.container {
+  display: flex;
+  flex-flow: wrap;
+  text-align: center;
+}
+
+.left-half {
+  background-color: #c6e8e9;
+  flex: 1 100%;
+  padding: 1rem;
+}
+
+.right-half {
+  background-color: #a9c5c6;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .left-half {
+    background-color: #c6e8e9;
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .right-half {
+    background-color: #a9c5c6;
+    flex: 1;
+    padding: 1rem;
+  }
+}

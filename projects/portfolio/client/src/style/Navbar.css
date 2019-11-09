@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-links {
+  display: inline-block;
+  font-size: 14px;
+  color: #2c4361;
+  background-color: #f2ffff;
+  padding: 8px;
+}
+
+.navbar a {
+    color: #2c4361;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+}
