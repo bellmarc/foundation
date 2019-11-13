@@ -1,0 +1,25 @@
+.single-study-container {
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #050038;
+}
+.app-name {
+  padding: 20px;
+}
+.app-description {
+  padding: 20px;
+}
+.feature-app-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: none;
+}
+.app-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}

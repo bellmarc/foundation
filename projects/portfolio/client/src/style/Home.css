@@ -39,10 +39,24 @@ div {
   flex: 1 100%;
   padding: 1rem;
 }
-
 .right-half {
   background-color: #a9c5c6;
   padding: 1rem;
+}
+.image-cropper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.profile-photo {
+  margin:20px;
+  width: 100px;
+  height: 125px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 500px) {
@@ -51,7 +65,6 @@ div {
     flex: 1;
     padding: 1rem;
   }
-
   .right-half {
     background-color: #a9c5c6;
     flex: 1;

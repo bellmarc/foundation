@@ -1,25 +1,28 @@
 import React from 'react';
 import '../style/Home.css';
+import profilePhoto from '../assets/profilePic.jpg';
+
 
 const Home = () => {
     return (
-        <div>
-        <section class="container">
-  <div class="left-half">
-    <article>
-      <h1 className="left-header">Welcome</h1>
-      <p className="left-text">Happiness is not something you postpone for the future; it is something you design for the present.</p>
-    </article>
-  </div>
-  <div class="right-half">
-    <article>
-      <h1 className="right-header">Right Half</h1>
-      <p className="right-text">If you are not willing to risk the unusual, you will have to settle for the ordinary.</p>
-    </article>
-  </div>
-</section>
-
-        </div>
+        <section className="container">
+          <div className="left-half">
+            <article>
+              <h1 className="left-header">Welcome</h1>
+              <p className="left-text">Happiness is not something you postpone for the future; it is something you design for the present.</p>
+            </article>
+          </div>
+          <div class="right-half">
+            <article>
+              <h1 className="right-header">Meet Marc</h1>
+              <div className="image-cropper">
+                <img className="profile-photo" src={profilePhoto} alt="marc circular profile shot"
+                />
+              </div>
+              <p className="right-text">Developer and Military Veteran with an interest in innovation and latest technologies. </p>
+            </article>
+          </div>
+        </section>
     )
 }
 
