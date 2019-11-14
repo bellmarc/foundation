@@ -1,0 +1,32 @@
+.icon {
+  margin: 80px;
+}
+
+.icons {
+  height: 500px;
+}
+
+.contact-links .contact-icon {
+    float: left;
+    margin-right: 5px;
+  /* width: 200px;
+  height: 200px; */
+}
+
+.contact-icon svg {
+  /* display: flex; */
+  /* width: 200px;
+  height: 200px; */
+}
+
+a:hover .icon {
+  fill: #050038;
+}
+
+.thank-you {
+    padding: 220px;
+}
+
+/* .contact-links .contact-icon {
+    float: left;
+} */

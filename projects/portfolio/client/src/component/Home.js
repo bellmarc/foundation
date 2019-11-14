@@ -12,7 +12,7 @@ const Home = () => {
               <p className="left-text">Happiness is not something you postpone for the future; it is something you design for the present.</p>
             </article>
           </div>
-          <div class="right-half">
+          <div className="right-half">
             <article>
               <h1 className="right-header">Meet Marc</h1>
               <div className="image-cropper">
