@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e3c296e5.chunk.css",
+    "main.js": "/static/js/main.73b2638c.chunk.js",
+    "main.js.map": "/static/js/main.73b2638c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.67a84473.js",
+    "runtime-main.js.map": "/static/js/runtime-main.67a84473.js.map",
+    "static/js/2.351db192.chunk.js": "/static/js/2.351db192.chunk.js",
+    "static/js/2.351db192.chunk.js.map": "/static/js/2.351db192.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.faf3e2914b238786e7b8c256ccaae2e0.js": "/precache-manifest.faf3e2914b238786e7b8c256ccaae2e0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e3c296e5.chunk.css.map": "/static/css/main.e3c296e5.chunk.css.map",
+    "static/media/asoiaf.png": "/static/media/asoiaf.f195afed.png",
+    "static/media/lgb-products.png": "/static/media/lgb-products.5ac8eef9.png",
+    "static/media/moxie.png": "/static/media/moxie.9577a63e.png",
+    "static/media/profilePic.jpg": "/static/media/profilePic.d6960f96.jpg",
+    "static/media/scatterbrain.png": "/static/media/scatterbrain.420bf3b7.png",
+    "static/media/vidly.png": "/static/media/vidly.0479efaa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67a84473.js",
+    "static/js/2.351db192.chunk.js",
+    "static/css/main.e3c296e5.chunk.css",
+    "static/js/main.73b2638c.chunk.js"
+  ]
+}

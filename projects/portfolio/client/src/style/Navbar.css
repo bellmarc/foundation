@@ -1,3 +1,9 @@
+.navbar-logo {
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -11,8 +17,8 @@
 }
 
 .navbar a {
-    color: #2c4361;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 8px;
+  color: #2c4361;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
 }

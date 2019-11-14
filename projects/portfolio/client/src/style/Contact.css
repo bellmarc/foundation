@@ -1,32 +1,26 @@
-.icon {
-  margin: 80px;
-}
-
-.icons {
-  height: 500px;
-}
-
-.contact-links .contact-icon {
-    float: left;
-    margin-right: 5px;
-  /* width: 200px;
-  height: 200px; */
+.contact-heading {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .contact-icon svg {
-  /* display: flex; */
-  /* width: 200px;
-  height: 200px; */
+    margin: 20px;
 }
 
-a:hover .icon {
-  fill: #050038;
+.contact-links svg {
+  display: flex;
+  justify-content: space-between;
 }
 
-.thank-you {
-    padding: 220px;
+svg:hover svg-inline--fa {
+  fill: #2c4361;
 }
-
-/* .contact-links .contact-icon {
-    float: left;
-} */
+.thank-you div {
+    margin-top:40px;
+    padding: 80px;
+}
+.thank-you-text {
+    margin: 80px;
+}
