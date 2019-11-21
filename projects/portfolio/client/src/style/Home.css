@@ -7,11 +7,11 @@ section {
   min-width: 100vw;
 }
 
-div {
+/* div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .left-header,
 .right-header {

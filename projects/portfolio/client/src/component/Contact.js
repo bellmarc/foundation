@@ -8,7 +8,8 @@ const Contact = () => {
          <section className="bg-contact">
             <div className="container text-center">
                 <h2 className="contact-heading">Let's get in Contact</h2>
-                <div className="flex-container contact-links">
+            </div>
+            <div className="flex-container contact-links">
                 <a className="contact-icon" href="mailto:marcielobell@gmail.com">
                 <FontAwesomeIcon          icon="envelope"
                     color="#050038"
@@ -51,13 +52,11 @@ const Contact = () => {
             />
             </a>
             </div>
-    </div>
-
             <div className="thank-you">
                 <h4 className="thank-you-text">Thank you for your time and consideration to work with me.
                 </h4>
             </div>
-    </section>
+        </section>
     )
 }
 

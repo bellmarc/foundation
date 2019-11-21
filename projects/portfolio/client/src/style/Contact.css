@@ -3,24 +3,28 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding: 100px;
 }
 
 .contact-icon svg {
-    margin: 20px;
+  margin: 20px;
 }
 
-.contact-links svg {
-  display: flex;
-  justify-content: space-between;
+div.flex-container.contact-links {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding-top: 50px;
 }
 
 svg:hover svg-inline--fa {
   fill: #2c4361;
 }
 .thank-you div {
-    margin-top:40px;
-    padding: 80px;
+  margin-top: 40px;
+  padding: 180px;
 }
 .thank-you-text {
-    margin: 80px;
+  margin: 80px;
 }
