@@ -7,7 +7,8 @@ const Contact = () => {
     return (
          <section className="bg-contact">
             <div className="container text-center">
-                <h2 className="contact-heading">Let's get in Contact</h2>
+                <h2 className="contact-heading">Let's get in Contact
+                </h2>
             </div>
             <div className="flex-container contact-links">
                 <a className="contact-icon" href="mailto:marcielobell@gmail.com">
@@ -41,7 +42,7 @@ const Contact = () => {
               role="img"
             />
           </a>
-            <a className="contact-icon" href="assets/resume.pdf">
+            <a className="contact-icon" href="../assets/resume.pdf">
             <FontAwesomeIcon icon="file"
               color="#050038"
               size="3x"

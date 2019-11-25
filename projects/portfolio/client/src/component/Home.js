@@ -1,11 +1,15 @@
 import React from 'react';
 import '../style/Home.css';
 import profilePhoto from '../assets/profilePic.jpg';
-
+import banner from '../assets/welcome-banner.jpg';
 
 const Home = () => {
     return (
         <section className="container">
+          <div className="home-img-banner">
+            <img src={banner} className="img-home" alt="computer screen with react code as a banner"
+            />
+          </div>
           <div className="left-half">
             <article>
               <h1 className="left-header">Welcome</h1>
