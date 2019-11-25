@@ -1,24 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
-
+/*
 html,
 body,
 section {
   min-height: 100vh;
   min-width: 100vw;
-}
+} */
 
-.home-img-banner {
+.home-hero-banner {
   flex: 1 100%;
+  position: relative;
+  margin: 64px 0 0 0;
+  padding: 160 48px 160px 48px;
+  background: #f2ffff;
+  background-image: url("../assets/welcome-banner.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
-.img-home {
-  background-size: contain;
-  position: relative;
-  overflow: hidden;
+.hero-home {
   width: 100%;
+  overflow: hidden;
   height: auto;
 }
-
+.intro {
+  font-family: "Muli", sans-serif;
+}
+.intro-text {
+  font-family: "Muli", sans-serif;
+  margin: 1.5em 0 1.5em 0;
+}
 .left-header,
 .right-header {
   font-family: "Muli", sans-serif;
@@ -64,6 +76,16 @@ section {
   background-position: center center;
   background-size: cover;
 }
+.contact-me-btn {
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  background: #c6e8e9;
+  color: #2c4361;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  border-radius: 50px;
+  border: none;
+}
 
 @media only screen and (min-width: 500px) {
   .left-half {
@@ -75,5 +97,23 @@ section {
     background-color: #a9c5c6;
     flex: 1;
     padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  h1 {
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+  }
+  h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.25;
   }
 }

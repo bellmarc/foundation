@@ -1,15 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Content from './Content.js';
 import '../style/Home.css';
 import profilePhoto from '../assets/profilePic.jpg';
-import banner from '../assets/welcome-banner.jpg';
+import hero from '../assets/welcome-banner.jpg';
 
 const Home = () => {
     return (
         <section className="container">
-          <div className="home-img-banner">
-            <img src={banner} className="img-home" alt="computer screen with react code as a banner"
-            />
-          </div>
+          <section className="home-hero-banner">
+            {/* <img src={hero} className="hero-home" alt="computer screen with react code as a hero banner"
+            /> */}
+            <h2 className="intro">
+              Marc Bell
+            </h2>
+            <p className="intro-text">I'm a Software Engineer interested in full stack web development, mobile applications, interaction design and foreign languages.
+            </p>
+            <Link to="/contact"><button className="contact-me-btn">Contact Me</button></Link>
+          </section>
           <div className="left-half">
             <article>
               <h1 className="left-header">Welcome</h1>
@@ -26,6 +34,7 @@ const Home = () => {
               <p className="right-text">Developer and Military Veteran with an interest in innovation and latest technologies. </p>
             </article>
           </div>
+          <Content />
         </section>
     )
 }
