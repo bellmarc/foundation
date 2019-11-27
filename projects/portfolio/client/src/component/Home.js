@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Content from './Content.js';
 import '../style/Home.css';
 import profilePhoto from '../assets/profilePic.jpg';
-import hero from '../assets/welcome-banner.jpg';
+// import hero from '../assets/welcome-banner.jpg';
 
 const Home = () => {
     return (

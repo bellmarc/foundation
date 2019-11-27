@@ -7,7 +7,7 @@ const Content = () => {
     return (
         <section className="content-container">
             <div className="portfolio-sample-img">
-                <img src={ sample } className="sample-one" alt="sample of my website work"/>
+                <img src={ sample } className="sample-one" srcSet={sample + '2x'} alt="sample of my website work"/>
             </div>
             <div className="content-text-one">
                 <h3>
@@ -18,7 +18,7 @@ const Content = () => {
                 </p>
             </div>
             <div className="portfolio-sample-img">
-                <img src={ sampleTwo } className="sample-two" alt="sample of my website work"/>
+                <img src={ sampleTwo } className="sample-two"  srcSet={sampleTwo + '2x'} alt="sample of my website work"/>
             </div>
             <div className="content-text-two">
                 <h3>

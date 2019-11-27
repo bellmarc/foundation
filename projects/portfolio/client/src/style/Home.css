@@ -13,7 +13,11 @@ section {
   margin: 64px 0 0 0;
   padding: 160 48px 160px 48px;
   background: #f2ffff;
-  background-image: url("../assets/welcome-banner.jpg");
+  background-image: linear-gradient(
+      rgba(44, 67, 97, 0.5),
+      rgba(44, 67, 97, 0.5)
+    ),
+    url("../assets/welcome-banner.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -25,11 +29,13 @@ section {
   height: auto;
 }
 .intro {
+  color: whitesmoke;
   font-family: "Muli", sans-serif;
 }
 .intro-text {
+  color: whitesmoke;
   font-family: "Muli", sans-serif;
-  margin: 1.5em 0 1.5em 0;
+  margin: 1.2em 0 1.2em 0;
 }
 .left-header,
 .right-header {
