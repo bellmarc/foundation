@@ -13,21 +13,25 @@ const CaseStudyModel = () => {
         {
             name: "Vidly",
             description: "Vidly aims to be the platform connecting videographers and customers who are capturing their special moments while traveling.",
+            projectLink: "https://scatterbrainstudytool.herokuapp.com/",
             imgURL: vidly,
         },
         {
             name: "Scatterbrain Study Tool",
             description: "Collaborative project ",
+            projectLink: "https://scatterbrainstudytool.herokuapp.com/",
             imgURL: scatterbrain,
         },
         {
             name: "Game of Throne's Fanpage",
             description: "Technologies included: React.js,axios, JSX, and CSS3. Utilized two APIs to create a fanpage.",
+            projectLink: "https://gameofthrones.herokuapp.com/",
             imgURL: asoiaf,
         },
         {
             name: "Moxie",
             description: "As an AT&T Hackathon Entry, Moxie seeks a new way to discover content in a social platform where users can share/teach skills through videos to other users. It's main focus is on being a learning platform rather than entertainment. This application also incorporated social messaging features such as Twilio chat, AT&T SMS, and user blog post options.",
+            projectLink: "https://angel.co/projects/585851-moxie?src=user_profile",
             imgURL: moxie,
         },
         {

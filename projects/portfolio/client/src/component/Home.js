@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Content from './Content.js';
+// import Content from './Content.js';
 import '../style/Home.css';
 import profilePhoto from '../assets/profilePic.jpg';
+import Portfolio from './Portfolio.js';
 // import hero from '../assets/welcome-banner.jpg';
 
 const Home = () => {
@@ -34,7 +35,8 @@ const Home = () => {
               <p className="right-text">Developer and Military Veteran with an interest in innovation and latest technologies. </p>
             </article>
           </div>
-          <Content />
+          {/* <Content /> */}
+          <Portfolio />
         </section>
     )
 }
