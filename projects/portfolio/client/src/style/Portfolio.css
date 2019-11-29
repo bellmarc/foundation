@@ -1,12 +1,10 @@
 .portfolio-card-container {
-  /* margin: 0 auto;
-  max-width: 1000px; */
   position: relative;
   display: block;
   min-height: 100%;
   max-width: 100%;
   overflow: hidden;
-  /* opacity: 0.8; */
+
 }
 
 .sample-item-one {
