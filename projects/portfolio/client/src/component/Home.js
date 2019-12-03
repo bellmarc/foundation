@@ -21,8 +21,9 @@ const Home = () => {
           </section>
           <div className="left-half">
             <article>
-              <h1 className="left-header">Welcome</h1>
-              <p className="left-text">Happiness is not something you postpone for the future; it is something you design for the present.</p>
+              {/* <h1 className="left-header">Welcome</h1> */}
+              <p className="left-text-quote">“If you can design one thing, you can design everything.”</p>
+                <p className="left-text-author">― Massimo Vignelli</p>
             </article>
           </div>
           <div className="right-half">
