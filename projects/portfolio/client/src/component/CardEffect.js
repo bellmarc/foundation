@@ -12,7 +12,9 @@ const CardEffect = () => {
 
     return (
         <div ref={hoverInfo} >
-            {isHovered ? 'true' : 'false'}
+            {isHovered ? 'true',
+            "dodgerblue" : "white",
+             : 'false'}
             <h1>{ cardInfoToggler }</h1>
         </div>
     )

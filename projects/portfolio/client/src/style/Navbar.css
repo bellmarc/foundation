@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap");
+
 .navbar {
   position: fixed;
   top: 0;
@@ -13,7 +15,8 @@
   padding: 16px 16px;
 }
 .navbar-logo {
-  font-size: 16px;
+  font-family: "Major Mono Display", monospace;
+  font-size: 18px;
   font-weight: bold;
 }
 .navbar-links {
