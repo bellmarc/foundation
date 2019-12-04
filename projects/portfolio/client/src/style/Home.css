@@ -62,7 +62,7 @@ section {
   font-weight: bold;
 }
 .right-text {
-  padding: 30px;
+  padding-bottom: 40px;
 }
 
 /* Pattern styles */
@@ -82,19 +82,25 @@ section {
   padding: 1rem;
 }
 .image-cropper {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
 .profile-photo {
-  margin: 20px;
+  /* margin: 20px;
   width: 100px;
-  height: 125px;
+  height: 125px; */
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   border-radius: 50%;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  /* background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
 }
 .contact-me-btn {
   font-family: "Muli", sans-serif;

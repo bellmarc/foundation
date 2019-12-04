@@ -27,11 +27,11 @@ const Portfolio = () => {
 						<img src={ moxiesample }  className="sample-item-two" alt="moxiesample"/>
 						<figcaption>
 							<h2>Moxie <span>App</span></h2>
-							<p className="icon-links">
+							{/* <p className="icon-links">
 								<Link to="/"><span className="icon-heart"></span></Link>
 								<Link to="/"><span className="icon-eye"></span></Link>
 								<Link to="/"><span className="icon-paper-clip"></span></Link>
-							</p>
+							</p> */}
 							<p className="description">As an AT&T Hackathon Entry, Moxie seeks a new way to discover content in a social platform where users can share/teach skills through videos to other users. It's main focus is on being a learning platform rather than entertainment. This application also incorporated social messaging features such as Twilio chat, AT&T SMS, and user blog post options.
                             </p>
 						</figcaption>
