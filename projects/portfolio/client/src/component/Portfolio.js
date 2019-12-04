@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import '../style/Normalize.css';
 import '../style/Portfolio.css';
 import lgcsample from '../assets/lgc-social.png';
@@ -14,11 +14,11 @@ const Portfolio = () => {
 						<img src={ lgcsample } className="sample-item-one" alt="lgcsample"/>
 						<figcaption>
 							<h2>Lash Girl <span>Club Inc.</span></h2>
-							<p className="icon-links">
+							{/* <p className="icon-links">
 								<Link to="/"><span className="icon-heart"></span></Link>
 								<Link to="/"><span className="icon-eye"></span></Link>
 								<Link to="/"><span className="icon-paper-clip"></span></Link>
-							</p>
+							</p> */}
 							<p className="description">A hybrid e-commerce and social media platform seeking to promote brand products through cosmetic social media influencers.</p>
 						</figcaption>
 					</figure>
