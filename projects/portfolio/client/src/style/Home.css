@@ -127,11 +127,15 @@ section {
   }
 
   .home-hero-banner {
+    background-size: cover;
     padding-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 750px) {
+  .left-half {
+    flex: 1 100%;
+  }
   h1 {
     font-size: 24px;
     font-weight: 900;

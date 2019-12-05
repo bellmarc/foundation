@@ -10,6 +10,7 @@ const Portfolio = () => {
     return (
         <section className="portfolio-card-container">
         <div className="grid">
+			<h2 className="project-title">Projects</h2>
 					<figure className="effect-zoe item-one-card">
 						<img src={ lgcsample } className="sample-item-one" alt="lgcsample"/>
 						<figcaption>

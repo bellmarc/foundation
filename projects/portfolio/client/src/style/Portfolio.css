@@ -22,7 +22,11 @@
 .item-two-card {
   padding-top: 40px;
 } */
-
+.project-title {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding: 40px;
+}
 .grid {
   position: relative;
   margin: 0 auto;
@@ -158,4 +162,8 @@ figure.effect-sadie:hover figcaption::before,
 figure.effect-sadie:hover p {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+@media only screen and (min-width: 750px) {
+
 }
