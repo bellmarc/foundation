@@ -10,6 +10,7 @@
   position: relative;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
@@ -32,19 +33,43 @@
 .static {
   background: #2c4361;
   padding: 42px;
-  height: 40vh;
+  height: 60vh;
 }
 .static-link {
   background: #2c4361;
   padding: 42px;
   height: 20vh;
 }
-
-/* Sets the actual background images to adorable kitties. This part is crucial. */
+.macbook-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 380px;
+  height: auto;
+  padding: 20px;
+}
 .bg1::after {
-  background-image: url("../assets/vidly.png");
+  background-image: url("../assets/lt-blue-bg.jpg");
+  background-repeat: no-repeat;
 }
 
 .bg2::after {
+  background-image: url("../assets/vidly.png");
+  background-repeat: no-repeat;
+}
+.bg3::after {
   background-image: url("../assets/vidly-peek.png");
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 750px) {
+  .macbook-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 800px;
+    height: auto;
+  }
 }
