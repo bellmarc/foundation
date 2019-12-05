@@ -1,20 +1,37 @@
-.contact-heading {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding: 100px;
+.bg-contact {
+  background-color: #f5f5f5;
 }
 
+.contact-heading {
+  margin-top: 590px 0 0 0;
+  padding: 160px 48px 160px 48px;
+  background-color: royalblue;
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; */
+  color: #2c4361;
+  font-size: 72px;
+  line-height: 52px;
+  font-weight: 700;
+}
+.contact-text {
+  display: flex;
+  padding: 30px;
+
+  font-size: 18px;
+  line-height: 28px;
+}
 .contact-icon svg {
   margin: 20px;
 }
 
 div.flex-container.contact-links {
-  /* display: flex; */
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
-  justify-content: center;
   align-self: center;
+  align-content: center;
   padding-top: 50px;
 }
 
@@ -26,5 +43,9 @@ svg:hover svg-inline--fa {
   padding: 180px;
 }
 .thank-you-text {
-  margin: 80px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 80px;
 }

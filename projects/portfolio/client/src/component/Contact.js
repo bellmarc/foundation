@@ -7,8 +7,10 @@ const Contact = () => {
     return (
          <section className="bg-contact">
             <div className="container text-center">
-                <h2 className="contact-heading">Let's get in Contact
+                <h2 className="contact-heading">Interested In Working With Me?
                 </h2>
+                <p className="contact-text">I work with organizations with a growth mindset for both business and employees, offering creative freedom, and are ready to build innovative products and/or services.
+                </p>
             </div>
             <div className="flex-container contact-links">
                 <a className="contact-icon" href="mailto:marcielobell@gmail.com">
@@ -52,10 +54,6 @@ const Contact = () => {
               title="My Resume"
             />
             </a>
-            </div>
-            <div className="thank-you">
-                <h4 className="thank-you-text">Thank you for your time and consideration to work with me.
-                </h4>
             </div>
         </section>
     )
