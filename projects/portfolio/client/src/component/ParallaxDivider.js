@@ -1,6 +1,8 @@
 import React from 'react';
 import '../style/ParallaxDivider.css';
 import gotMacbook from '../assets/got-macbook-view.png';
+import mobileVidly from '../assets/mobile-vidly.png';
+
 
 const ParallaxDivider = () => {
     return (
@@ -17,8 +19,9 @@ const ParallaxDivider = () => {
                 <h2>ReactJS, Express, Postman, Node, MongoDB</h2>
             </section>
             <section className="section parallax bg2">
-                <h1>Featured Destinations in Vidly Web App</h1>
             </section>
+                <img src={ mobileVidly } className="vidly-mobile" alt="mobile view of Vidly app"
+                />
             <section className="section static-link">
                 <h1> View Vidly Live  </h1>
             </section>

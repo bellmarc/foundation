@@ -49,6 +49,16 @@
   height: auto;
   padding: 20px;
 }
+.vidly-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 380px;
+  height: auto;
+  border: none;
+}
 .bg1::after {
   background-image: url("../assets/lt-blue-bg.jpg");
   background-repeat: no-repeat;
@@ -60,6 +70,13 @@
 }
 .bg3::after {
   background-image: url("../assets/vidly-peek.png");
+  background-repeat: no-repeat;
+}
+.bg:hover {
+  opacity: 0.3;
+}
+.bg4::after {
+  background-image: url("../assets/scatterbrain.png");
   background-repeat: no-repeat;
 }
 
