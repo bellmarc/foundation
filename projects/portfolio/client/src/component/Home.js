@@ -2,16 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import Content from './Content.js';
 import '../style/Home.css';
-import profilePhoto from '../assets/author-profile.jpg';
+import ParallaxDivider from '../component/ParallaxDivider.js';
 import Portfolio from './Portfolio.js';
-// import hero from '../assets/welcome-banner.jpg';
+import profilePhoto from '../assets/author-profile.jpg';
 
 const Home = () => {
     return (
         <section className="container">
           <section className="home-hero-banner">
-            {/* <img src={hero} className="hero-home" alt="computer screen with react code as a hero banner"
-            /> */}
             <h2 className="intro">
               Marc Bell
             </h2>
@@ -21,7 +19,6 @@ const Home = () => {
           </section>
           <div className="left-half">
             <article>
-              {/* <h1 className="left-header">Welcome</h1> */}
               <p className="left-text-quote">“If you can design one thing, you can design everything.”</p>
                 <p className="left-text-author">― Massimo Vignelli</p>
             </article>
@@ -38,6 +35,7 @@ const Home = () => {
           </div>
           {/* <Content /> */}
           <Portfolio />
+          <ParallaxDivider />
         </section>
     )
 }
