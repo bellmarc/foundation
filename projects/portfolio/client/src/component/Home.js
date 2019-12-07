@@ -27,11 +27,14 @@ const Home = () => {
             <article>
               <h1 className="right-header">Meet Marc</h1>
               <div className="image-cropper">
-                <img className="profile-photo" src={profilePhoto} alt="marc circular profile shot"
+                <img className="profile-photo" src={ profilePhoto } alt="marc circular profile shot"
                 />
               </div>
               <p className="right-text">Developer and Military Veteran with an interest in innovation and latest technologies. </p>
             </article>
+          </div>
+          <div className="project-header-container">
+            <h2 className="project-header-text">Projects</h2>
           </div>
           {/* <Content /> */}
           {/* <Portfolio /> */}

@@ -33,7 +33,7 @@
 .static {
   background: #2c4361;
   padding: 42px;
-  height: 60vh;
+  height: 50vh;
 }
 .static-link {
   background: #2c4361;
@@ -61,9 +61,21 @@
 }
 .lashgirl-ecomm {
   width: 320px;
+  font-size: 0px;
 }
+.lashgirl-ecomm2 {
+  width: 320px;
+}
+
+.text-overlay {
+  background-image: linear-gradient(
+    rgba(44, 67, 97, 0.2),
+    rgba(44, 67, 97, 0.2)
+  );
+}
+
 .bg1::after {
-  background-image: url("../assets/lt-blue-bg.jpg");
+  background-image: url("https://images.unsplash.com/photo-1548777123-e216912df7d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2475&q=80");
   background-repeat: no-repeat;
 }
 
@@ -79,7 +91,8 @@
   opacity: 0.3;
 }
 .bg4::after {
-  background-image: url("../assets/lgc-social.png");
+  background-image: url("https://images.unsplash.com/photo-1570475735025-6cd1cd5c779d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
+  background: cover;
   background-repeat: no-repeat;
 }
 

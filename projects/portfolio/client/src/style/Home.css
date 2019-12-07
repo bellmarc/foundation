@@ -88,9 +88,6 @@ section {
   align-items: center;
 }
 .profile-photo {
-  /* margin: 20px;
-  width: 100px;
-  height: 125px; */
   position: relative;
   width: 150px;
   height: 150px;
@@ -98,9 +95,6 @@ section {
   margin-bottom: 30px;
   border-radius: 50%;
   overflow: hidden;
-  /* background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; */
 }
 .contact-me-btn {
   font-family: "Muli", sans-serif;
@@ -111,6 +105,15 @@ section {
   padding: 0.5em 1.5em 0.5em 1.5em;
   border-radius: 50px;
   border: none;
+}
+.project-header-container {
+  flex: 1 100%;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 
 @media only screen and (min-width: 500px) {
