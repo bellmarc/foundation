@@ -59,6 +59,9 @@
   height: auto;
   border: none;
 }
+.lashgirl-ecomm {
+  width: 320px;
+}
 .bg1::after {
   background-image: url("../assets/lt-blue-bg.jpg");
   background-repeat: no-repeat;
@@ -76,7 +79,7 @@
   opacity: 0.3;
 }
 .bg4::after {
-  background-image: url("../assets/scatterbrain.png");
+  background-image: url("../assets/lgc-social.png");
   background-repeat: no-repeat;
 }
 

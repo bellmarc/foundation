@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // import Content from './Content.js';
 import '../style/Home.css';
 import ParallaxDivider from '../component/ParallaxDivider.js';
-import Portfolio from './Portfolio.js';
+// import Portfolio from './Portfolio.js';
 import profilePhoto from '../assets/author-profile.jpg';
 
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
             </article>
           </div>
           {/* <Content /> */}
-          <Portfolio />
+          {/* <Portfolio /> */}
           <ParallaxDivider />
         </section>
     )
