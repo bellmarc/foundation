@@ -9,8 +9,8 @@ const Contact = () => {
             <div className="container text-center">
                 <h2 className="contact-heading">Interested In Working With Me?
                 </h2>
-                <p className="contact-text">I work with organizations with a growth mindset for both business and employees, offering creative freedom, and are ready to build innovative products and/or services.
-                </p>
+                {/* <p className="contact-text">I work with organizations with a growth mindset for both business and team members, offering creative freedom, and are ready to build innovative products and/or services.
+                </p> */}
             </div>
             <div className="flex-container contact-links">
                 <a className="contact-icon" href="mailto:marcielobell@gmail.com">

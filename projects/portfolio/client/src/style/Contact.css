@@ -8,24 +8,23 @@
 .contact-heading {
   margin-top: 590px 0 0 0;
   padding: 160px 48px 160px 48px;
-  background-color: royalblue;
   /* display: flex;
   justify-content: center;
   align-content: center;
   align-items: center; */
   color: #2c4361;
-  font-size: 72px;
   line-height: 52px;
   font-weight: 700;
 }
 .contact-text {
   display: flex;
-  padding: 30px;
+  padding: 60px;
   font-size: 18px;
   line-height: 28px;
 }
 .contact-icon svg {
   margin: 20px;
+  color: #f2ffff;
 }
 
 div.flex-container.contact-links {
@@ -34,11 +33,14 @@ div.flex-container.contact-links {
   flex-direction: column;
   align-self: center;
   align-content: center;
-  padding-top: 50px;
+  padding: 40px;
 }
 
-svg:hover svg-inline--fa {
-  fill: #2c4361;
+/* .svg-inline--fa {
+  fill: #f2ffff;
+} */
+svg:hover .svg-inline--fa.fa-github-alt.fa-w-15.fa-3x.icon {
+  fill: #f2ffff;
 }
 .thank-you div {
   margin-top: 40px;

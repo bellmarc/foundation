@@ -18,7 +18,7 @@ const Navbar = () => {
                 About
                 </Link> */}
                 <Link to="/casestudy">
-                Case Studies
+                Projects
                 </Link>
                 <Link to="/contact">
                 Contact

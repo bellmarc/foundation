@@ -1,7 +1,8 @@
 import React from 'react';
 import '../style/ParallaxDivider.css';
+import Contact from '../component/Contact.js';
 import gotMacbook from '../assets/got-macbook-view.png';
-import mobileVidly from '../assets/mobile-vidly.png';
+import mobileVidly from '../assets/vidly-mobile-demo.png';
 import lashgirlecomm from '../assets/lgb-products.png';
 import lashgirlecomm2 from '../assets/lgc-social.png';
 
@@ -11,7 +12,7 @@ const ParallaxDivider = () => {
         <div className="text-overlay">
             <section className="section parallax bg1">
                 <h2>Game Of Thrones Fanpage </h2>
-                <a href="https://gameofthrones.herokuapp.com/">
+                <a href="https://gameofthrones.herokuapp.com">
                 <img src={ gotMacbook } className="macbook-img" alt="macbook view of GOT themed app"
                 />
                 </a>
@@ -49,10 +50,12 @@ const ParallaxDivider = () => {
                     </div>
             {/* </section> */}
             <section className="section parallax bg4">
-            </section>
-                <section className="section static">
+                <h2>Lash Girl Club is </h2>
                     <p className="description">A hybrid e-commerce and social media platform seeking to promote brand products through cosmetic social media influencers.
                     </p>
+            </section>
+                <section className="section static">
+                    <Contact />
                 </section>
 
 
