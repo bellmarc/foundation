@@ -177,4 +177,8 @@ section {
   .section-static {
     flex: 1 100%;
   }
+  .contact-me-btn {
+    font-weight: bold;
+    font-size: 22px;
+  }
 }

@@ -22,8 +22,8 @@ const ParallaxDivider = () => {
             </section>
         </div>
             <section className="section static">
-                <h2> Technologies: </h2>
-                <h1>ReactJS, Express, Postman, Node, MongoDB</h1>
+                <h2> Vidly Travel  </h2>
+                <h1>C2C Service for Travellers and Videographers</h1>
             </section>
             <section className="section parallax bg2">
             </section>
@@ -39,7 +39,7 @@ const ParallaxDivider = () => {
             </section>
             {/* <section className="section static-link"> */}
                 <section className="section static">
-                    <h2> Lash Girl Club  </h2>
+                    <h2> Lash Girl Club Inc. </h2>
                 <h1>E-commerce/Social Media Hybrid</h1>
                 </section>
                     <img src={ lashgirlecomm } className="lashgirl-ecomm" alt=" screenshot of LashGirl app ecommerce products"
