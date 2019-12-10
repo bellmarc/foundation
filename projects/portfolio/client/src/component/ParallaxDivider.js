@@ -22,7 +22,7 @@ const ParallaxDivider = () => {
             </section>
         </div>
             <section className="section static">
-                <h2> Vidly Travel  </h2>
+                <h2> Vidly  </h2>
                 <h1>C2C Service for Travellers and Videographers</h1>
             </section>
             <section className="section parallax bg2">
@@ -55,10 +55,9 @@ const ParallaxDivider = () => {
                     </p>
             </section>
                 <section className="section static">
-                    <Contact />
+                    <h2> Interested in Working With Me?</h2>
                 </section>
-
-
+                    <Contact />
         </main>
     )
 }

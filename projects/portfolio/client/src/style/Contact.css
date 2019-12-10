@@ -27,12 +27,14 @@
   color: #f2ffff;
 }
 
-div.flex-container.contact-links {
+div.flex-container,
+.contact-links {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-self: center;
   align-content: center;
+  margin: 40px;
   padding: 40px;
 }
 

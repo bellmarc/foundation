@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/CaseStudy.css';
+import '../style/Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -7,8 +7,7 @@ const Contact = () => {
     return (
          <section className="bg-contact">
             <div className="container text-center">
-                <h2 className="contact-heading">Interested In Working With Me?
-                </h2>
+
                 {/* <p className="contact-text">I work with organizations with a growth mindset for both business and team members, offering creative freedom, and are ready to build innovative products and/or services.
                 </p> */}
             </div>
