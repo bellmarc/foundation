@@ -31,7 +31,7 @@ const About = () => {
                 <div className="about-header-two">Founder</div>
                 <div className="user one" alt="founder profile picture"/>
                     <p className="about-text-two">
-                        As a videographer, I noticed there were a lack of trustworthy online platforms to market your video services. I wanted to create a credible site for travellers who like to document their journeys, save, and share timeless moments.
+                        As a part-time videographer, Marc (The Founder) noticed there was a lack of trustworthy online platforms to market your video services. I wanted to create a credible site for travellers who like to document their journeys, save, and share timeless moments.
                     </p>
             </div>
 
