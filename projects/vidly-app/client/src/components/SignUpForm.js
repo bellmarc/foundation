@@ -111,6 +111,7 @@ class SignUpForm extends React.Component {
                     })(<Input.Password />)}
                   </Form.Item>
 
+                  <Form.Item label="Select a location">
                     <Select
                         className="select-location"
                         showSearch
@@ -135,6 +136,8 @@ class SignUpForm extends React.Component {
                       <Option value="Paris, France">Paris, France</Option>
                       <Option value="Oslo, Norway">Oslo, Norway</Option>
                     </Select>
+
+                  </Form.Item>
                   <Form.Item {...tailFormItemLayout}>
                     {getFieldDecorator('agreement', {
                       valuePropName: 'checked',

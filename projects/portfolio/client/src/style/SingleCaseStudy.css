@@ -1,8 +1,12 @@
 .single-study-container {
   background-color: whitesmoke;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
   margin: 20px;
   padding: 20px;
+  width: 600px;
   border-radius: 8px;
   border-color: rgba(0, 0, 0, 0.1);
 }
@@ -10,13 +14,14 @@
   padding: 20px;
 }
 .app-description {
-  padding: 20px;
+  /* padding: 40px; */
 }
 .feature-app-container {
   display: flex;
-  justify-content: center;
+  flex: 0 1 calc(50% - 1em);
+  /* justify-content: center;
   align-content: center;
-  align-items: center;
+  align-items: center; */
   margin: none;
 }
 .app-photo {
