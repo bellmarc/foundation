@@ -21,7 +21,9 @@ class LoginForm extends React.Component {
     const { getFieldDecorator } = this.props.form;
     return (
     <div className="login-form-container">
+
     <article className="mw5 center bg-white shadow-5 br3 pa3 pa4-ns mv3 ba b--black-10">
+      <h2 className="login-header">Log in to Vidly</h2>
       <Form onSubmit={this.handleLoginSubmit} className="login-form">
         <Form.Item>
           {getFieldDecorator('email', {
