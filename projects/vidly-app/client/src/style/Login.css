@@ -31,11 +31,14 @@
 @media only screen and (min-width: 750px) {
   .login-form {
     margin-top: 60px;
-    height: 40vh;
+    height: 20vh;
+  }
+  .login-header {
+    font-size: 28px;
   }
   .mw5 {
-    margin-top: 50px;
-    min-width: 60vw;
+    margin-top: 40px;
+    min-width: 40vw;
   }
   .login-form-button {
     margin: 30px;
@@ -51,7 +54,10 @@
     margin-top: 60px;
     height: 40vh;
   }
+  .login-header {
+    font-size: 28px;
+  }
   .mw5 {
-    min-width: 60vw;
+    min-width: 40vw;
   }
 }
