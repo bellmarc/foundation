@@ -4,19 +4,19 @@
 }
 .destination-header-text {
   font-size: 28px;
-  font-family: 'Jomolhari', sans-serif;
+  font-family: "Jomolhari", sans-serif;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .location-text {
-  font-family: 'Jomolhari', sans-serif;
+  font-family: "Jomolhari", sans-serif;
   margin: 20px;
 }
 .location-text img {
   border-radius: 8px;
-  margin:10px;
+  margin: 10px;
   width: 260px;
   height: 210px;
 }
@@ -26,29 +26,41 @@
 }
 
 @media only screen and (min-width: 500px) {
+  .destination-header-text {
+    font-size: 40px;
+  }
+  .location-text {
+    display: inline-block;
+  }
   .location-text img {
-    margin: 40px;
-    width: 375px;
-    height:300px;
+    margin: 20px;
+    width: 280px;
+    height: auto;
   }
 }
 
 @media only screen and (min-width: 750) {
+  .destination-header-text {
+    font-size: 48px;
+  }
   .location-text {
-    margin: 60px;
+    margin-left: 60px;
   }
   .location-text img {
-    margin: 80px;
-    width: 575px;
-    height: 500px;
+    margin: 40px;
+    width: 600px;
+    height: 520px;
   }
 }
 @media only screen and (min-height: 750) {
+  .destination-header-text {
+    font-size: 48px;
+  }
   .location-text {
-    margin: 70px;
+    margin-left: 60px;
   }
   .location-text img {
-    width: 575px;
-    height: 500px;
+    width: 600px;
+    height: 520px;
   }
 }
