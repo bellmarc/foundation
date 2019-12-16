@@ -1,8 +1,98 @@
-.sample-one, .sample-two {
-    width:150px;
-    height:230px;
+.portfolio-item-one-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 80px;
+  width: 320px;
 }
-.sample-two {
-    width:220px;
-    height:140px;
+.content-card {
+  background-image: linear-gradient(
+      rgba(44, 67, 97, 0.3),
+      rgba(44, 67, 97, 0.3)
+    ),
+    url("../assets/got-forest-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding-bottom: 135px;
+}
+.header-one {
+  font-size: 32px;
+  padding-top: 50px;
+  color: whitesmoke;
+}
+.tech-text-one {
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+.tech-icons {
+  padding-top: 20px;
+  fill: #1572b6;
+  display: inline-block;
+  width: 80px;
+  height: auto;
+  margin: 20px;
+}
+.tech-icons:hover {
+}
+
+.img-one {
+  width: 275px;
+  height: auto;
+}
+.content-text-one {
+  display: inline-block;
+}
+.item-two {
+  width: 220px;
+  height: 140px;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .portfolio-item-one-card {
+    width: 780px;
+  }
+  .img-one {
+    width: 675px;
+    height: auto;
+  }
+  .header-one {
+    font-size: 46px;
+    padding-top: 54px;
+  }
+  .tech-text-one {
+    color: #2c4361;
+    margin: 20px;
+    font-size: 38px;
+  }
+  .tech-icons {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .portfolio-item-one-card {
+    width: 1025px;
+  }
+  .header-one {
+    font-size: 62px;
+    padding-top: 54px;
+  }
+  .tech-icons {
+    margin: none;
+  }
+  .tech-text-one {
+    font-size: 54px;
+  }
 }

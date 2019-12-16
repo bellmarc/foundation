@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Content from './Content.js';
+import Content from './Content.js';
 import '../style/Home.css';
-import ParallaxDivider from '../component/ParallaxDivider.js';
 // import Portfolio from './Portfolio.js';
-import profilePhoto from '../assets/author-profile.jpg';
 
 const Home = () => {
     return (
@@ -17,28 +15,19 @@ const Home = () => {
             </p>
             <Link to="/contact"><button className="contact-me-btn">Contact Me</button></Link>
           </section>
-          <div className="left-half">
+          <div className="quote-container">
             <article>
-              <p className="left-text-quote">“If you can design one thing, you can design everything.”</p>
-                <p className="left-text-author">― Massimo Vignelli</p>
+              <p className="text-quote">“If you can design one thing, you can design everything.”</p>
+                <p className="text-author">― Massimo Vignelli</p>
             </article>
           </div>
-          <div className="right-half">
-            <article>
-              <h1 className="right-header">Meet Marc</h1>
-              <div className="image-cropper">
-                <img className="profile-photo" src={ profilePhoto } alt="marc circular profile shot"
-                />
-              </div>
-              <p className="right-text">Developer and Military Veteran with an interest in innovation and latest technologies. </p>
-            </article>
-          </div>
+
           <div className="project-header-container">
             <h2 className="project-header-text">Projects</h2>
           </div>
-          {/* <Content /> */}
+          <Content />
           {/* <Portfolio /> */}
-          <ParallaxDivider />
+
         </section>
     )
 }

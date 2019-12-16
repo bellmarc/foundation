@@ -20,7 +20,7 @@ section {
       rgba(44, 67, 97, 0.5)
     ),
     url("../assets/welcome-banner.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
@@ -42,27 +42,18 @@ section {
   padding: 20px;
   margin: 1.2em 0 1.2em 0;
 }
-.left-header,
-.right-header {
-  padding: 20px;
-  font-family: "Muli", sans-serif;
-  font-size: 1.75rem;
-  margin: 0 0 0.75rem 0;
-}
 
-.left-text-quote,
-.right-text {
+.text-quote {
+  color: #2c4361;
   padding: 10px;
   line-height: 150%;
   font-size: 1rem;
 }
-.left-text-author {
+.text-author {
+  color: #2c4361;
   padding: 10px;
   font-size: 0.8rem;
   font-weight: bold;
-}
-.right-text {
-  padding-bottom: 40px;
 }
 
 /* Pattern styles */
@@ -73,15 +64,12 @@ section {
   padding: 0 !important;
 }
 
-.left-half {
-  background-color: #c6e8e9;
+.quote-container {
+  background-color: #f2ffff;
   flex: 1 100%;
   padding: 1rem;
 }
-.right-half {
-  background-color: #c6e8e9;
-  padding: 1rem;
-}
+
 .image-cropper {
   display: inline-block;
   justify-content: center;
@@ -119,6 +107,8 @@ section {
   transition: all 0.4s ease 0s;
 }
 .project-header-container {
+  background-color: #2c4361;
+  color: whitesmoke;
   flex: 1 100%;
   font-family: "Muli", sans-serif;
   display: flex;
@@ -129,14 +119,8 @@ section {
 }
 
 @media only screen and (min-width: 500px) {
-  .left-half {
+  .quote-container {
     background-color: #c6e8e9;
-    flex: 1;
-    padding: 1rem;
-  }
-  .right-half {
-    background-color: #2c4361;
-    color: white;
     flex: 1;
     padding: 1rem;
   }
@@ -152,8 +136,7 @@ section {
     font-size: 4rem;
     padding-top: 50px;
   }
-  .left-half,
-  .right-half {
+  .quote-container {
     flex: 1 100%;
   }
   h1 {

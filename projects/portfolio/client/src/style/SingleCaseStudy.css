@@ -29,6 +29,10 @@
   height: auto;
   border-radius: 8px;
 }
-
+@media only screen and (min-width: 500px) {
+  .single-study-container {
+    display: inline-block;
+  }
+}
 @media only screen and (min-width: 750px) {
 }
