@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Content from './Content.js';
+import Contact from './Contact.js';
 import '../style/Home.css';
 // import Portfolio from './Portfolio.js';
 
@@ -27,7 +28,7 @@ const Home = () => {
           </div>
           <Content />
           {/* <Portfolio /> */}
-
+          <Contact />
         </section>
     )
 }
