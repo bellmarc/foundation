@@ -1,12 +1,15 @@
-.portfolio-item-one-card {
+.portfolio-item-one-card,
+.portfolio-item-two-card {
   display: flex;
+  flex: 1 1 100%;
   justify-content: center;
   align-items: center;
   align-content: center;
   padding-top: 80px;
-  width: 320px;
 }
 .content-card {
+  flex: 1 1 100%;
+  position: relative;
   background-image: linear-gradient(
       rgba(44, 67, 97, 0.3),
       rgba(44, 67, 97, 0.3)
@@ -22,58 +25,94 @@
   padding-top: 50px;
   color: whitesmoke;
 }
-.tech-text-one {
+.tech-text-one,
+.tech-text-two {
+  color: whitesmoke;
   font-family: "Muli", sans-serif;
   font-weight: bold;
   font-size: 26px;
 }
+.content-card-two {
+  flex: 1 1 100%;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(205, 0, 130, 0.3),
+      rgba(205, 0, 130, 0.3)
+    ),
+    url("https://images.unsplash.com/photo-1548504778-b14db6c34b04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding-bottom: 135px;
+}
+.header-two {
+  font-size: 32px;
+  padding-top: 50px;
+  color: whitesmoke;
+}
+.subtext-two {
+  font-family: "Muli", sans-serif;
+}
+.tech-text-two {
+  color: whitesmoke;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+
 .tech-icons {
   padding-top: 20px;
-  fill: #1572b6;
   display: inline-block;
   width: 80px;
   height: auto;
   margin: 20px;
 }
-.tech-icons:hover {
+
+svg:hover,
+svg:focus {
+  fill: #1572b6;
 }
 
 .img-one {
-  width: 275px;
+  width: 305px;
   height: auto;
 }
 .content-text-one {
   display: inline-block;
 }
-.item-two {
-  width: 220px;
-  height: 140px;
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.img-two {
+  width: 310px;
+  height: auto;
+  padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 500px) {
-  .portfolio-item-one-card {
-    width: 780px;
+  .portfolio-item-one-card,
+  .portfolio-item-two-card {
+    flex: 1 1 100%;
   }
-  .img-one {
-    width: 675px;
-    height: auto;
+
+  .img-one,
+  .img-two {
+    width: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 20px;
   }
-  .header-one {
+  .header-one,
+  .header-two {
     font-size: 46px;
     padding-top: 54px;
   }
-  .tech-text-one {
-    color: #2c4361;
+  .tech-text-one,
+  .tech-text-two {
     margin: 20px;
     font-size: 38px;
+  }
+  .subtext-two {
+    font-size: 24px;
   }
   .tech-icons {
     width: 120px;
