@@ -1,58 +1,39 @@
 .bg-contact {
+  display: flex;
+  flex: 1 1 100%;
   background-color: #2c4361;
   /* height: 100vh; */
 }
-.container {
-  padding-top: 40px;
-  padding: 60px;
-}
-.contact-heading {
-  margin-top: 590px 0 0 0;
-  padding: 160px 48px 160px 48px;
-  /* display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center; */
-  color: #2c4361;
-  line-height: 52px;
-  font-weight: 700;
-}
-.contact-text {
-  display: flex;
-  padding: 60px;
-  font-size: 18px;
-  line-height: 28px;
-}
+
 .contact-icon svg {
-  margin: 20px;
+  margin: 8px;
   color: #f2ffff;
 }
 
 div.flex-container,
 .contact-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   align-self: center;
   align-content: center;
-  margin: 40px;
-  padding: 40px;
+  margin: 20px;
+  padding: 20px;
 }
 
-/* .svg-inline--fa {
-  fill: #f2ffff;
-} */
-svg:hover .svg-inline--fa.fa-github-alt.fa-w-15.fa-3x.icon {
-  fill: #f2ffff;
+@media screen and (min-width: 360px) {
+  div.flex-container {
+    padding-left: 52px;
+  }
 }
-.thank-you div {
-  margin-top: 40px;
-  padding: 180px;
+@media all and (max-width: 850px) and (min-width: 500px) {
+  div.flex-container {
+    padding-left: 240px;
+  }
 }
-.thank-you-text {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding: 80px;
+
+@media all and (max-width: 1030px) and (min-width: 850px) {
+  div.flex-container {
+    padding-left: 380px;
+  }
 }

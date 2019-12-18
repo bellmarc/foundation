@@ -3,7 +3,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Navbar from './component/Navbar.js';
 import Home from './component/Home.js';
-import CaseStudy from './component/CaseStudy.js';
+import Content from './component/Content.js';
 import Resume from './component/Resume.js';
 import Contact from './component/Contact.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -20,7 +20,7 @@ function App() {
       <Navbar />
         <Switch>
           <Route exact path="/" component={ Home } />
-          <Route path="/casestudy/" component={ CaseStudy }/>
+          <Route path="/projects/" component={ Content }/>
           <Route path="/resume/" component={ Resume } />
           <Route path="/contact/" component={ Contact }/>
         </Switch>
