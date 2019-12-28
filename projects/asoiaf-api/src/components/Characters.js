@@ -29,7 +29,7 @@ const Characters = props => {
                     value={props.search}
                     name="search"
                     className="char-hero-input"
-                    placeholder="Search..."
+                    placeholder="Type First Name and Last Name..."
                   ></input>
                   <button
                     className="pi pi-search"
