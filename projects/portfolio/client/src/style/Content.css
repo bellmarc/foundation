@@ -32,7 +32,8 @@
   font-weight: bold;
   font-size: 26px;
 }
-.tech-icons-container {
+.content-tech-one,
+.content-tech-two {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,19 +69,15 @@
   font-size: 26px;
 }
 
-.tech-icons-container,
-.content-text-one {
+.tech-icons-container {
   padding-top: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  display: flex;
   align-items: center;
-  width: 200px;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+  width: 100px;
   height: auto;
-  margin: 20px;
-}
-
-.tech-icons {
 }
 
 svg:hover,
@@ -89,7 +86,7 @@ svg:focus {
 }
 
 .img-one {
-  width: 305px;
+  width: 320px;
   height: auto;
 }
 /* .content-text-one {
@@ -134,10 +131,6 @@ svg:focus {
   }
   .subtext-two {
     font-size: 24px;
-  }
-  .tech-icons {
-    width: 120px;
-    height: auto;
   }
 }
 
