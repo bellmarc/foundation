@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Content from './Content.js';
-import PortfolioList from '../component/PortfolioList.js';
+import Content from './Content.js';
+// import PortfolioList from '../component/PortfolioList.js';
 import Contact from './Contact.js';
 import '../style/Home.css';
 
@@ -23,12 +23,11 @@ const Home = () => {
                 <p className="text-author">― Massimo Vignelli</p>
             </article>
           </div>
-
           <div className="project-header-container">
             <h2 className="project-header-text">Projects</h2>
           </div>
-            <PortfolioList />
-          {/* <Content /> */}
+            {/* <PortfolioList /> */}
+          <Content />
           <Contact />
         </section>
     )

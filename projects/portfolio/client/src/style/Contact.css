@@ -10,15 +10,12 @@
   color: #f2ffff;
 }
 
-div.flex-container,
-.contact-links {
+div.flex-container {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  align-self: center;
+  justify-content: center;
   align-content: center;
-  margin: 20px;
-  padding: 20px;
+  padding: 42px;
 }
 
 @media screen and (min-width: 360px) {
@@ -26,7 +23,17 @@ div.flex-container,
     padding-left: 52px;
   }
 }
-@media all and (max-width: 850px) and (min-width: 500px) {
+
+@media screen and (min-width: 500px) {
+  div.flex-container {
+    padding-left: 120px;
+  }
+}
+
+@media (min-width: 750px) {
+  /* div.contact-links {
+    align-content: flex-end;
+  } */
   div.flex-container {
     padding-left: 240px;
   }

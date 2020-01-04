@@ -32,6 +32,14 @@
   font-weight: bold;
   font-size: 26px;
 }
+.tech-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
 .content-card-two {
   flex: 1 1 100%;
   position: relative;
@@ -60,12 +68,19 @@
   font-size: 26px;
 }
 
-.tech-icons {
+.tech-icons-container,
+.content-text-one {
   padding-top: 20px;
-  display: inline-block;
-  width: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 200px;
   height: auto;
   margin: 20px;
+}
+
+.tech-icons {
 }
 
 svg:hover,
@@ -77,9 +92,9 @@ svg:focus {
   width: 305px;
   height: auto;
 }
-.content-text-one {
+/* .content-text-one {
   display: inline-block;
-}
+} */
 .img-two {
   width: 310px;
   height: auto;

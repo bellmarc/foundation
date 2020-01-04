@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/PortfolioList.css';
 import sample from '../assets/asoiaf.png';
-import sampleTwo from '../assets/lgc-social.png';
+// import sampleTwo from '../assets/lgc-social.png';
 
 
 const PortfolioList = () => {
