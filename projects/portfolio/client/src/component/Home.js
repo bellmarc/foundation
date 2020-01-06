@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Content from './Content.js';
 // import PortfolioList from '../component/PortfolioList.js';
-import Contact from './Contact.js';
+import Footer from './Footer.js';
 import '../style/Home.css';
 
 
@@ -28,7 +28,7 @@ const Home = () => {
           </div>
             {/* <PortfolioList /> */}
           <Content />
-          <Contact />
+          <Footer />
         </section>
     )
 }

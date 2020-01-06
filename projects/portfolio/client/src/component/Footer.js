@@ -1,11 +1,11 @@
 import React from 'react';
-import '../style/Contact.css';
+import '../style/Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-const Contact = () => {
+const Footer = () => {
     return (
-         <section className="bg-contact">
+         <section id="contact" className="bg-contact">
             <div className="container text-center">
 
                 {/* <p className="contact-text">I work with organizations with a growth mindset for both business and team members, offering creative freedom, and are ready to build innovative products and/or services.
@@ -60,4 +60,4 @@ const Contact = () => {
 
 
 
-export default Contact
+export default Footer
