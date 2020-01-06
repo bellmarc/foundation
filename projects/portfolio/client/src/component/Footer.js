@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
     return (
-         <section id="contact" className="bg-contact">
+         <section id="contact"  className="bg-contact">
             <div className="container text-center">
 
                 {/* <p className="contact-text">I work with organizations with a growth mindset for both business and team members, offering creative freedom, and are ready to build innovative products and/or services.

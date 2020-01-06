@@ -2,7 +2,7 @@
 .portfolio-item-two-card,
 .portfolio-item-three-card {
   display: flex;
-  padding-top: 80px;
+  padding-top: 42px;
 }
 .card {
   /* flex: 1 0 100%;
@@ -50,7 +50,8 @@
   font-size: 26px;
 } */
 .content-tech-one,
-.content-tech-two {
+.content-tech-two,
+.content-tech-three {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +59,7 @@
   flex-wrap: wrap;
   flex-flow: row wrap;
   align-content: flex-end;
-  padding-bottom: 54px;
+  padding-bottom: 42px;
 }
 .tech-icons-container {
   display: flex;
@@ -71,11 +72,21 @@
   padding-top: 50px;
   color: whitesmoke;
 }
-.subtext-two {
+.subtext {
   font-family: "Muli", sans-serif;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+.subtext-two {
+  color: #241f1c;
+}
+.subtext-three {
+  color: #33002f;
 }
 .svg-icon {
-  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-right: 8px;
   height: 100%;
 }
@@ -134,9 +145,6 @@ svg:focus {
   .tech-text-three {
     margin: 20px;
     font-size: 38px;
-  }
-  .subtext-two {
-    font-size: 24px;
   }
 }
 

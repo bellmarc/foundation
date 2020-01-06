@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Content from './Content.js';
 // import PortfolioList from '../component/PortfolioList.js';
 import Footer from './Footer.js';
@@ -8,14 +8,16 @@ import '../style/Home.css';
 
 const Home = () => {
     return (
-        <section className="container">
+        <section id="home" className="container">
           <section className="home-hero-banner">
             <h2 className="intro">
               Marc Bell
             </h2>
             <p className="intro-text">I'm a Software Engineer interested in full stack web development, mobile applications, interaction design and foreign languages.
             </p>
-            <Link to="/contact"><button className="contact-me-btn">Contact Me</button></Link>
+              <a href="#contact">
+                <button  className="contact-me-btn">Contact Me</button>
+              </a>
           </section>
           <div className="quote-container">
             <article>

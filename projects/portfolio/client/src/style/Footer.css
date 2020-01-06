@@ -7,6 +7,7 @@
 
 .contact-icon svg {
   margin: 8px;
+  height: 32px;
   color: #f2ffff;
 }
 /* .tech-icons-container {
@@ -34,9 +35,6 @@ div.flex-container {
 }
 
 @media (min-width: 750px) {
-  /* div.contact-links {
-    align-content: flex-end;
-  } */
   div.flex-container {
     padding-left: 240px;
   }
