@@ -2,7 +2,6 @@
 .portfolio-item-two-card,
 .portfolio-item-three-card {
   display: flex;
-  padding-top: 42px;
 }
 .card {
   /* flex: 1 0 100%;
@@ -68,7 +67,7 @@
 }
 .header-two,
 .header-three {
-  font-size: 36px;
+  font-size: 40px;
   padding-top: 50px;
   color: whitesmoke;
 }
@@ -76,9 +75,11 @@
   font-family: "Muli", sans-serif;
   color: whitesmoke;
   font-size: 16px;
+  padding: 8px;
 }
 
 .subtext-two {
+  line-height: 0.5em;
   color: #241f1c;
 }
 .subtext-three {
@@ -106,27 +107,37 @@ svg:focus {
   height: auto;
 }
 
-@media (min-width: 375px) and (max-width: 414px) {
+@media (min-width: 375px) and (max-width: 499px) {
   .img-one {
-    width: 340px;
-    margin-right: 60px;
+    width: 360px;
+    /* margin-right: 60px; */
   }
 }
-@media all and (max-width: 749px) and (min-width: 415px) {
+@media all and (max-width: 749px) and (min-width: 500px) {
+  .subtext {
+    font-size: 16px;
+    margin: 32px;
+  }
+  .subtext-one {
+    line-height: 1.5em;
+  }
+  .subtext-two {
+    margin: 8px;
+  }
   .img-one {
-    width: 300px;
+    width: 64%;
+    margin-left: 88px;
     border-radius: 8px;
     border: 18px solid rgb(38, 37, 37);
-    height: auto;
     content: url("../assets/vidly.png");
   }
-  .grid-list {
+  /* .grid-list {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     transition: opacity 0.3s ease-out;
-  }
-  .img-two,
+  } */
+
   .img-three {
     width: 520px;
     display: flex;
@@ -135,10 +146,10 @@ svg:focus {
     align-content: center;
     padding-top: 20px;
   }
+
   .header-one,
   .header-two {
-    font-size: 52px;
-    padding-top: 54px;
+    font-size: 56px;
   }
   .tech-text-one,
   .tech-text-two,
@@ -149,30 +160,35 @@ svg:focus {
 }
 
 @media (min-width: 750px) {
-  .img-two {
-    width: 405px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding-top: 20px;
+  .subtext {
+    font-size: 32px;
+    margin: 8px;
+  }
+  .subtext-one {
+    line-height: 1.5em;
+  }
+  .subtext-two {
+    margin: 8px;
   }
   .img-one {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    margin-top: 8px;
+    width: 64%;
+    margin-left: 120px;
     border-radius: 8px;
     border: 18px solid rgb(38, 37, 37);
     content: url("../assets/vidly.png");
-    width: 400px;
+  }
+  .img-two {
+    margin-top: 8px;
   }
   .img-three {
-    min-width: 980px;
-    height: auto;
+    width: 576px;
+    margin-left: 88px;
   }
-  .header-one {
-    font-size: 62px;
-    padding-top: 54px;
+  .header-one,
+  .header-two,
+  .header-three {
+    font-size: 64px;
   }
   .tech-icons {
     margin: none;
@@ -181,5 +197,35 @@ svg:focus {
   .tech-text-two,
   .tech-text-three {
     font-size: 54px;
+  }
+  .tech-icons-container {
+    margin-top: 8px;
+    height: 40px;
+  }
+}
+@media all and (max-width: 1030px) and (min-width: 850px) {
+  .header-one,
+  .header-two,
+  .header-three {
+    font-size: 72px;
+  }
+  .subtext {
+    font-size: 24px;
+    margin: 16px;
+  }
+  .img-one {
+    width: 48%;
+    margin-left: 240px;
+  }
+  .img-two {
+    width: 88%;
+    margin-left: 88px;
+  }
+  .img-three {
+    width: 720px;
+    margin-left: 144px;
+  }
+  .tech-icons-container {
+    height: 56px;
   }
 }

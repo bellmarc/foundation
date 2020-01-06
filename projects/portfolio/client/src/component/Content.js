@@ -12,7 +12,7 @@ const Content = () => {
                     <h2 className="header-one">
                        Vidly
                     </h2>
-                    <p className="subtext-one subtext">C2C Platform connecting Videographers to Clients to Capture Special Moments
+                    <p className="subtext-one subtext">C2C Platform capturing special moments by connecting Videographers to Clients
                         </p>
                     <a href="https://vidly-memories.herokuapp.com/" className="screen">
                         <div className="portfolio-item-one-card">
@@ -98,7 +98,7 @@ const Content = () => {
                     <h2 className="header-two">
                        Lash Girl Club Inc.
                     </h2>
-                    <p className="subtext-three">E-Commerce/Social Media Platform</p>
+                    <p className="subtext-three subtext">E-Commerce/Social Media Platform</p>
                 <div className="portfolio-item-three-card">
                 <img src={ sampleThree } className="img-three" alt="sample of my website work"/>
                 </div>

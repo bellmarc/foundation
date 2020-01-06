@@ -14,7 +14,8 @@ section {
 .home-hero-banner {
   flex: 1 100%;
   position: relative;
-  padding-bottom: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   /* padding: 160 48px 160px 48px; */
   background: #f2ffff;
   background-image: linear-gradient(
