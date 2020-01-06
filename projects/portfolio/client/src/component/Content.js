@@ -17,10 +17,6 @@ const Content = () => {
                             <img src={ sample } className="img-one" alt="sample of my mobile website work"/>
                         </div>
                     </a>
-            </section>
-                    {/* <p className="tech-text-one">
-                        Technologies:
-                    </p> */}
                 <div className="content-tech-one">
                 <div className="tech-icons-container">
                     <svg viewBox="0 0 128 128" className="svg-icon">
@@ -51,6 +47,10 @@ const Content = () => {
             </svg>
                 </div>
                 </div>
+            </section>
+                    {/* <p className="tech-text-one">
+                        Technologies:
+                    </p> */}
             <section className="content-card-two card">
                     <h2 className="header-two">
                        Game Of Thrones Fanpage
