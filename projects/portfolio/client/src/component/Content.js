@@ -61,7 +61,7 @@ const Content = () => {
                         </p>
                         <p className="subtext-two subtext">and Character Search
                         </p>
-                    <a href="https://gameofthrones.herokuapp.com/" className="screen">
+                    <a href="https://gameofthrones.surge.sh/" className="screen">
                         <div className="portfolio-item-one-card">
                             <img src={ sampleTwo } className="img-two" alt="sample of my website work"/>
                         </div>

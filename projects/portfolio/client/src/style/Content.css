@@ -4,7 +4,8 @@
   display: flex;
 }
 .card {
-  /* flex: 1 0 100%;
+  flex: 1 0 100%;
+  /*
   position: relative;
   background-size: cover; */
   background-repeat: no-repeat;
@@ -200,7 +201,8 @@ svg:focus {
     height: 40px;
   }
 }
-@media all and (min-width: 1300px) and (min-width: 850px) {
+
+@media screen and (min-width: 1239px) and (min-width: 850px) {
   .header-one,
   .header-two,
   .header-three {
@@ -224,5 +226,15 @@ svg:focus {
   }
   .tech-icons-container {
     height: 56px;
+  }
+}
+@media only screen and (min-device-width: 1240px) and (max-device-width: 1600px) {
+  .portfolio-item-one-card,
+  .portfolio-item-two-card,
+  .portfolio-item-three-card {
+    flex: 1 0 100%;
+  }
+  .img-one {
+    width: 80%;
   }
 }

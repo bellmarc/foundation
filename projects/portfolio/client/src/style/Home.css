@@ -109,7 +109,7 @@ section {
   border: none;
   transition: all 0.4s ease 0s;
 }
-.project-header-container {
+.header-container {
   background-color: #2c4361;
   color: whitesmoke;
   flex: 1 100%;

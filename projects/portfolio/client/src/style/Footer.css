@@ -37,19 +37,25 @@ div.flex-container {
 @media (min-width: 750px) {
   div.flex-container {
     margin-right: 128px;
-    height: 48px;
+    height: 56px;
   }
   .contact-icon {
     margin: 8px;
+  }
+  .bg-contact {
+    padding-bottom: 56px;
   }
 }
 
-@media all and (max-width: 1030px) and (min-width: 850px) {
+@media all and (max-width: 1230px) and (min-width: 850px) {
   div.flex-container {
     margin-right: 240px;
-    height: 64px;
+    height: 72px;
   }
   .contact-icon {
     margin: 8px;
+  }
+  .bg-contact {
+    padding-bottom: 56px;
   }
 }
