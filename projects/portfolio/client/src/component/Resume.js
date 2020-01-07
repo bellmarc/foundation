@@ -3,8 +3,9 @@ import '../style/Resume.css';
 
 const Resume = () => {
     return (
-        <main className="resume-container">
-            RESUME HERE
+        <main className="resume-pdf">
+            <button>Print</button>
+            <button>Download</button>
         </main>
     )
 }

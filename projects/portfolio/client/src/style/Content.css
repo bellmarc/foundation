@@ -173,7 +173,7 @@ svg:focus {
   .img-one {
     margin-top: 8px;
     width: 64%;
-    margin-left: 120px;
+    margin-left: 128px;
     border-radius: 8px;
     border: 18px solid rgb(38, 37, 37);
     content: url("../assets/vidly.png");
@@ -190,9 +190,6 @@ svg:focus {
   .header-three {
     font-size: 64px;
   }
-  .tech-icons {
-    margin: none;
-  }
   .tech-text-one,
   .tech-text-two,
   .tech-text-three {
@@ -203,7 +200,7 @@ svg:focus {
     height: 40px;
   }
 }
-@media all and (max-width: 1030px) and (min-width: 850px) {
+@media all and (min-width: 1300px) and (min-width: 850px) {
   .header-one,
   .header-two,
   .header-three {

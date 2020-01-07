@@ -22,9 +22,9 @@ div.flex-container {
   padding: 42px;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 375px) {
   div.flex-container {
-    padding-left: 52px;
+    margin-right: 16px;
   }
 }
 
