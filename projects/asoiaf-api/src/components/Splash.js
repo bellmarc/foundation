@@ -18,7 +18,7 @@ const Splash = props => {
         </div>
         <div className="hero-overlay">
           <h1 className="hero-title">
-            <animated.div style={spring}>You Win or You Die</animated.div>
+            <animated.div className="hidden-text" style={spring}></animated.div>
           </h1>
           <h2 className="hero-subtitle">Winter is Coming</h2>
           <Music play={props.play} togglePlay={props.togglePlay} />
