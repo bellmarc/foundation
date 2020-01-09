@@ -5,7 +5,7 @@ import '../style/DesignWork.css';
 
 const DesignWork = () => {
   return (
-      <div>
+      <div className="design-work-container">
           {/* <p>Design Work</p> */}
           <Iframe
           url="//invis.io/DEVE6KCYU3M"
@@ -15,7 +15,6 @@ const DesignWork = () => {
           display="initial"
           position="relative"
           frameborder="0"
-
           allowFullScreen
           >
           </Iframe>

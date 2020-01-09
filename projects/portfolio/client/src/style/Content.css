@@ -110,7 +110,9 @@ svg:focus {
 
 @media (min-width: 375px) and (max-width: 499px) {
   .img-one {
-    width: 360px;
+    width: 88%;
+    height: auto;
+    object-fit: cover;
     /* margin-right: 60px; */
   }
 }
@@ -202,7 +204,7 @@ svg:focus {
   }
 }
 
-@media screen and (min-width: 1239px) and (min-width: 850px) {
+@media screen and (min-width: 1024px) and (min-width: 850px) {
   .header-one,
   .header-two,
   .header-three {
@@ -221,20 +223,41 @@ svg:focus {
     margin-left: 88px;
   }
   .img-three {
-    width: 720px;
+    width: 25%;
     margin-left: 144px;
   }
   .tech-icons-container {
     height: 56px;
   }
 }
-@media only screen and (min-device-width: 1240px) and (max-device-width: 1600px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1600px) {
   .portfolio-item-one-card,
   .portfolio-item-two-card,
   .portfolio-item-three-card {
+    display: flex;
     flex: 1 0 100%;
+  }
+  .header-one,
+  .header-two,
+  .header-three {
+    font-size: 72px;
+  }
+  .subtext {
+    font-size: 24px;
+    margin: 16px;
   }
   .img-one {
     width: 80%;
+  }
+  .img-two {
+    width: 88%;
+    margin-left: 88px;
+  }
+  .img-three {
+    width: 25%;
+    margin-left: 144px;
+  }
+  .tech-icons-container {
+    height: 56px;
   }
 }

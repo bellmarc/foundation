@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import Content from './Content.js';
-import DesignWork from './DesignWork.js';
+// import DesignWork from './DesignWork.js';
 // import PortfolioList from '../component/PortfolioList.js';
 import Footer from './Footer.js';
 import '../style/Home.css';
@@ -31,10 +31,10 @@ const Home = () => {
           </div>
             {/* <PortfolioList /> */}
           <Content />
-          <div className="header-container">
+          {/* <div className="header-container">
             <h2 className="project-header-text">UX/UI Design Projects </h2>
-          </div>
-            <DesignWork />
+          </div> */}
+            {/* <DesignWork /> */}
           <Footer />
         </section>
     )
