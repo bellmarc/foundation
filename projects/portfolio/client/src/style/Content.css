@@ -106,6 +106,7 @@ svg:focus {
   /* margin-right: 8px; */
   width: 100%;
   height: auto;
+  margin: auto;
 }
 
 @media (min-width: 375px) and (max-width: 499px) {
@@ -113,7 +114,7 @@ svg:focus {
     width: 88%;
     height: auto;
     object-fit: cover;
-    /* margin-right: 60px; */
+    margin-right: 60px;
   }
 }
 @media all and (max-width: 749px) and (min-width: 500px) {
@@ -129,7 +130,6 @@ svg:focus {
   }
   .img-one {
     width: 64%;
-    margin-left: 88px;
     border-radius: 8px;
     border: 18px solid rgb(38, 37, 37);
     content: url("../assets/vidly.png");
@@ -142,7 +142,8 @@ svg:focus {
   } */
 
   .img-three {
-    width: 520px;
+    /* 576px */
+    width: 88%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,8 +176,7 @@ svg:focus {
   }
   .img-one {
     margin-top: 8px;
-    width: 64%;
-    margin-left: 128px;
+    width: 56%;
     border-radius: 8px;
     border: 18px solid rgb(38, 37, 37);
     content: url("../assets/vidly.png");
@@ -185,8 +185,7 @@ svg:focus {
     margin-top: 8px;
   }
   .img-three {
-    width: 576px;
-    margin-left: 88px;
+    width: 88%;
   }
   .header-one,
   .header-two,
@@ -216,15 +215,15 @@ svg:focus {
   }
   .img-one {
     width: 48%;
-    margin-left: 240px;
+    /* margin-left: 240px; */
   }
   .img-two {
     width: 88%;
-    margin-left: 88px;
+    /* margin-left: 88px; */
   }
   .img-three {
-    width: 25%;
-    margin-left: 144px;
+    width: 72%;
+    /* margin-left: 204px; */
   }
   .tech-icons-container {
     height: 56px;
@@ -247,15 +246,13 @@ svg:focus {
     margin: 16px;
   }
   .img-one {
-    width: 80%;
+    width: 42%;
   }
   .img-two {
     width: 88%;
-    margin-left: 88px;
   }
   .img-three {
-    width: 25%;
-    margin-left: 144px;
+    width: 64%;
   }
   .tech-icons-container {
     height: 56px;

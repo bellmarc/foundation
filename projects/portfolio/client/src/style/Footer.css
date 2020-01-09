@@ -43,19 +43,31 @@ div.flex-container {
     margin: 8px;
   }
   .bg-contact {
-    padding-bottom: 56px;
+    padding-bottom: 64px;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 850px) {
+  div.flex-container {
+    margin-right: 96px;
+    height: 72px;
+  }
+  .contact-icon {
+    margin: 42px;
+  }
+  .bg-contact {
+    padding-bottom: 72px;
   }
 }
 
-@media all and (max-width: 1230px) and (min-width: 850px) {
+@media all and (max-width: 1530px) and (min-width: 1025px) {
   div.flex-container {
     margin-right: 240px;
     height: 72px;
   }
   .contact-icon {
-    margin: 8px;
+    margin: 42px;
   }
   .bg-contact {
-    padding-bottom: 56px;
+    padding-bottom: 96px;
   }
 }
