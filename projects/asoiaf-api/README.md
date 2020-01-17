@@ -14,8 +14,7 @@ slide: https://hackmd.io/p/template-talk-slide
 
 ---
 ### What I'm Building:
-A study management tool focused on students and professionals looking to mantain or learn new skills.
-Users can prioritize topics and the app will keep track and help them decide where to spend their time studying.
+A Game Of Thrones fanpage for users of the HBO series, featuring all houses, Sworn Members of each House, character search and Westeros/Essos world map.
 
 ---
 
