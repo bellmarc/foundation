@@ -47,13 +47,13 @@ section {
 }
 
 .text-quote {
-  color: #2c4361;
+  color: #070f22;
   padding: 10px;
   line-height: 150%;
   font-size: 1rem;
 }
 .text-author {
-  color: #2c4361;
+  color: #070f22;
   padding: 10px;
   font-size: 0.8rem;
   font-weight: bold;
@@ -93,7 +93,7 @@ section {
   font-size: 16px;
   display: inline-block;
   background: #c6e8e9;
-  color: #2c4361;
+  color: #070f22;
   padding: 0.5em 1.5em 0.5em 1.5em;
   border-radius: 50px;
   border: none;
@@ -102,7 +102,7 @@ section {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #2c4361;
+  background: #070f22;
   padding: 20px;
   border-radius: 5px;
   display: inline-block;
@@ -110,7 +110,7 @@ section {
   transition: all 0.4s ease 0s;
 }
 .header-container {
-  background-color: #2c4361;
+  background-color: #070f22;
   color: whitesmoke;
   flex: 1 100%;
   font-family: "Muli", sans-serif;

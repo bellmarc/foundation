@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.eac9794e.chunk.css",
+    "main.css": "/static/css/main.cef508fd.chunk.css",
     "main.js": "/static/js/main.4ef4d913.chunk.js",
     "main.js.map": "/static/js/main.4ef4d913.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.67a84473.js",
@@ -8,9 +8,9 @@
     "static/js/2.fdd991e2.chunk.js": "/static/js/2.fdd991e2.chunk.js",
     "static/js/2.fdd991e2.chunk.js.map": "/static/js/2.fdd991e2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.294bc3f2f999eb354cf82faf62fdf82e.js": "/precache-manifest.294bc3f2f999eb354cf82faf62fdf82e.js",
+    "precache-manifest.d59743b909aa0341746ff4e7a4e37c94.js": "/precache-manifest.d59743b909aa0341746ff4e7a4e37c94.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.eac9794e.chunk.css.map": "/static/css/main.eac9794e.chunk.css.map",
+    "static/css/main.cef508fd.chunk.css.map": "/static/css/main.cef508fd.chunk.css.map",
     "static/media/Content.css": "/static/media/vidly.0479efaa.png",
     "static/media/got-macbook-view.png": "/static/media/got-macbook-view.d1528d70.png",
     "static/media/lash-girl-splash.jpg": "/static/media/lash-girl-splash.e4d5a65c.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.67a84473.js",
     "static/js/2.fdd991e2.chunk.js",
-    "static/css/main.eac9794e.chunk.css",
+    "static/css/main.cef508fd.chunk.css",
     "static/js/main.4ef4d913.chunk.js"
   ]
 }

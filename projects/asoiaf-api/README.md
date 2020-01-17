@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+title: ASOIAF React Project
+tags: Templates, Talk
+description: View the slide with "Slide Mode".
+---
 
-## Available Scripts
+# Game Of Thrones Fanpage Project
 
-In the project directory, you can run:
+<!-- Put the link to this slide here so people can follow -->
+slide: https://hackmd.io/p/template-talk-slide
 
-### `npm start`
+---
+<img src="https://i.imgur.com/ea4n1vP.png" width="680" height="480"/>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
+### What I'm Building:
+A study management tool focused on students and professionals looking to mantain or learn new skills.
+Users can prioritize topics and the app will keep track and help them decide where to spend their time studying.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Technologies Included
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ReactJS, Node, Axios, JSX, CSS, and two APIs.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### MVP(Minimum Viable Product):
+- Splash page video with Toggle On/Off music button.
+- Main page featuring every house with pagination, when clicked, the house displays all associated members with basic information.
+- Note: Images were not included in asoiaf api so I had to link the endpoint to a second API and placeholders present until images loaded (if image is available).
+- Search function by character name (first and last required)
+- Map of Westeros (linked to interactive map)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### User stories
+- User views landing page and can mute/play intro music if desired. Icon indicates sound ability.
+- User is prompted to click 'See More' button to enter Main page.
+- User views navigation bar featuring 'Home', About', 'Search icon', & 'Westeros Map'
+- Home page displays 3 x 3 card-like layout of Houses cards, linked to a separate page of character cards
+- If User selects a House card, they may view all characters with origin ties to the House.
+- If User decides to search on the Home page navbar, they may find a particular character and information on them.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### Other features to be added:
+- Optimize load time of APi images
+- Add functionality to favorite character via local Storage.
+- Develop more flexiblity in search parameters for characters who don't meet criteria of a first or last name.
+- Build an interactive map (PostGres DB via tutorial)of Westeros/Essos integrated onto Map page.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Content script
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- useContext
+- Topics
+- React Components:
+    - Home, About, Search, CharacterByHouse, CharacterByName, Map, Music
+- Added context (Music & Character Providers)
+- Use Lifecycle methods (HTTP requests)
+    - i.e: componentDidMount
+- Incorporate render-props and HOC's
+  - added
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Wrap up
 
-### Code Splitting
+- Fanpage of Game of Thrones HBO series created for users to explore houses and characters associated with each and also search and save favorite characters.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### :computer: API
 
-### Making a Progressive Web App
+This project will be built using Two API's of Ice and Fire & :
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+-  [An API of Ice and Fire](https://anapioficeandfire.com/)
 
-### Advanced Configuration
+-  [GOT-API](https://api.got.show/doc/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- [GitHub](https://github.com/bellmarc)
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
