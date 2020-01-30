@@ -13,7 +13,7 @@ slide: https://hackmd.io/p/template-talk-slide
 <img src="https://i.imgur.com/ea4n1vP.png" width="680" height="480"/>
 
 ---
-### What I'm Building:
+### What I Built:
 A Game Of Thrones fanpage for users of the HBO series, featuring all houses, Sworn Members of each House, character search and Westeros/Essos world map.
 
 ---
