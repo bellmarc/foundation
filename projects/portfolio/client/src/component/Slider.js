@@ -11,6 +11,7 @@ function Slider() {
         <div className="slider-container">
             <img src={sliderImg1} className="splash page" alt="lash girl club splash page"/>
             <img src={sliderImg2} className="products" alt="lash girl club products page"/>
+            {/* on image apply onMouseEnter/Leave */}
         </div>
     )
 }
